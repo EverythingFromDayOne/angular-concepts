@@ -9,93 +9,97 @@ rather than the original day-by-day format.
 
 ## Structure
 
-Content is organized by **roadmap node**, not by day number. Each file maps to
-one node on the [Angular roadmap](https://nxhhuy.tech/roadmap) so articles
-slot directly into the tree when they're ready.
+Content is organized by **roadmap node**. Each file maps to one node on the
+[Angular roadmap](https://nxhhuy.tech/roadmap).
 
 ```
 docs/
   components/
-    lifecycle.md              ← gap (Claude)
-    animations.md             ← gap (Claude)
-    change-detection.md       ← gap (Claude, Opus)
-    dynamic-components.md     ← Day 38
-    component-interactions.md ← Days 7, 8, 9, 44
+    lifecycle.md
+    animations.md
+    change-detection.md
+    angular-devtools.md
+    dynamic-components.md
+    component-interactions.md
     templates/
-      data-binding.md         ← Day 3
-      control-flow.md         ← gap (Claude)
-      content-projection.md   ← Day 13
-      templates-architecture.md ← Days 10, 17
+      data-binding.md
+      control-flow.md
+      content-projection.md
+      templates-architecture.md
     styling/
-      view-encapsulation.md   ← gap (Claude)
-      sass.md                 ← gap (Claude)
-      angular-material.md     ← gap (Claude)
+      view-encapsulation.md
+      angular-material.md
+      ui-library-comparison.md
   directives/
-    structural-directives.md  ← Days 4, 5
-    attribute-directives.md   ← Day 6
-    ng-template-ng-container.md ← Day 14
-    directive-composition.md  ← Day 47
+    structural-directives.md
+    attribute-directives.md
+    ng-template-ng-container.md
+    directive-composition.md
   pipes/
-    pipes.md                  ← Day 18 (built-in + custom sections)
+    pipes.md
   routing/
-    routing.md                ← Day 27
-    router-configuration.md   ← Day 28
-    lazy-loading.md           ← Day 29
-    guards-resolvers.md       ← Days 30, 31, 32
-    router-link.md            ← gap (Claude)
-    router-outlets.md         ← gap (Claude)
+    routing.md
+    router-configuration.md
+    lazy-loading.md
+    guards-resolvers.md
+    router-link.md
+    router-outlets.md
   dependency-injection/
-    dependency-injection.md   ← Days 15, 16, 48 (Opus)
+    dependency-injection.md
   forms/
-    template-driven-forms.md  ← Days 33, 34
-    reactive-forms.md         ← Days 35, 36
-    validation.md             ← Day 37
-    control-value-accessor.md ← Day 43
-    signal-forms.md           ← gap (Claude)
+    template-driven-forms.md
+    reactive-forms.md
+    validation.md
+    control-value-accessor.md
+    signal-forms.md
   reactivity/
-    signals.md                ← gap (Claude, Opus)
-    signal-inputs.md          ← gap (Claude)
-    to-signal.md              ← gap (Claude)
+    signals.md
+    signal-inputs.md
+    to-signal.md
     rxjs/
-      rxjs.md                 ← Day 19 (intro + overview)
-      rxjs-creation.md        ← Day 20
-      rxjs-transformation.md  ← Day 21
-      rxjs-filtering.md       ← Day 22
-      rxjs-combination.md     ← Day 23
-      rxjs-error-handling.md  ← Day 24
-      rxjs-higher-order.md    ← Day 25
-      rxjs-subjects.md        ← Days 26, 45
+      rxjs.md
+      rxjs-creation.md
+      rxjs-transformation.md
+      rxjs-filtering.md
+      rxjs-combination.md
+      rxjs-error-handling.md
+      rxjs-higher-order.md
+      rxjs-subjects.md
   http/
-    typed-requests.md         ← gap (Claude)
-    interceptors.md           ← gap (Claude)
-    error-handling.md         ← gap (Claude)
+    http.md
+    interceptors.md
+    error-handling.md
   testing/
-    unit-tests.md             ← gap (Claude)
-    integration-tests.md      ← gap (Claude)
-    component-harnesses.md    ← gap (Claude)
-    e2e-testing.md            ← gap (Claude)
+    unit-tests.md
+    integration-tests.md
+    component-harnesses.md
+    e2e-testing.md
   state-management/
-    ngrx.md                   ← gap (Claude)
-    ngrx-signal-store.md      ← gap (Claude)
-    ngxs.md                   ← gap (Claude)
+    ngrx.md
+    ngrx-signal-store.md
+    ngxs.md
   rendering/
-    defer-blocks.md           ← gap (Claude)
-    ssr-hydration.md          ← gap (Claude, Opus)
-    view-ref.md               ← gap (Claude)
+    defer-blocks.md
+    ssr-hydration.md
+    view-ref.md
   monorepo/
-    nx.md                     ← gap (Claude)
-    module-federation.md      ← Day 39
-  web-components/
-    angular-elements.md       ← gap (Claude)
-  cross-platform/
-    pwa.md                    ← gap (Claude)
-    ionic.md                  ← gap (Claude)
-  _orphans/                   ← source days with no roadmap node
-    getting-started.md        ← Days 1, 2
-    typescript-prereqs.md     ← Days 11, 12
-    jira-clone.md             ← Days 40, 41
-    cdk-coercion.md           ← Day 42
-    js-widget-embedding.md    ← Day 46
+    module-federation.md
+  tooling/
+    nx.md
+    sass.md
+    angular-elements.md
+    pwa.md
+    ionic.md
+    schematics.md
+    builders.md
+    built-in-i18n.md
+    ngx-translate.md
+  _orphans/
+    getting-started.md
+    typescript-prereqs.md
+    jira-clone.md
+    cdk-coercion.md
+    js-widget-embedding.md
 ```
 
 ---
