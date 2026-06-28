@@ -124,7 +124,7 @@ ng add @ngrx/store-devtools  # Chrome/Firefox DevTools extension
 
 ```typescript
 // app.config.ts — standalone API (replaces NgModule imports)
-import { provideStore } from '@ngrx/store';
+import { provideStore, provideState } from '@ngrx/store';
 import { provideEffects } from '@ngrx/effects';
 import { provideStoreDevtools } from '@ngrx/store-devtools';
 import { isDevMode } from '@angular/core';
@@ -145,9 +145,9 @@ export const appConfig: ApplicationConfig = {
 };
 ```
 
-<!-- legacy: written for Angular 9 (2020) — modernized in the upgrade pass -->
+Pre-standalone reference — the older NgModule approach (Angular 2–13):
+
 ```typescript
-// NgModule approach (Angular 2–13)
 @NgModule({
   imports: [
     StoreModule.forRoot({}),
@@ -274,7 +274,7 @@ Effects listen for actions, perform async work, and dispatch new actions:
 // users.effects.ts
 import { Injectable, inject } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { catchError, exhaustMap, map, of } from 'rxjs';
+import { catchError, exhaustMap, map, of, switchMap } from 'rxjs';
 import { UsersService } from './users.service';
 import { UsersActions } from './users.actions';
 

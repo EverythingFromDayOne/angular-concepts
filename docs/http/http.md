@@ -78,16 +78,15 @@ getUsers() {
 
 ### XHR → Fetch transition
 
-For its first eight years, `HttpClient` used `XMLHttpRequest` under the hood via
-the `xhr2` package. Angular v22 completes a multi-version migration to the browser's
+For most of its life, `HttpClient` used `XMLHttpRequest` under the hood via the
+`xhr2` package. Angular v22 completes a multi-version migration to the browser's
 native **Fetch API** as the default backend:
 
 | Era | Backend | How to configure |
 | --- | --- | --- |
-| Angular 4–17 | XHR (default) | `provideHttpClient()` — XHR implicit |
-| Angular 18 | XHR (default) | `provideHttpClient(withFetch())` to opt into Fetch |
-| Angular 19+ | **Fetch (default)** | `provideHttpClient()` — Fetch implicit; `withXhr()` to opt back |
-| Angular v22 | **Fetch (default)** | `withFetch()` is deprecated; `withXhr()` opt-in deprecated for SSR |
+| Angular 4–16 | XHR (default) | `provideHttpClient()` — XHR implicit |
+| Angular 16.1–21 | XHR (default) | `provideHttpClient(withFetch())` to opt into Fetch (recommended for SSR) |
+| Angular v22 | **Fetch (default)** | `provideHttpClient()` — Fetch implicit; `withFetch()` deprecated; `withXhr()` to opt back; server-side XHR deprecated (removal in v23) |
 
 Fetch is more modern, has native abort support, works correctly in SSR (XHR's
 underlying `xhr2` library doesn't handle SSR redirects safely), and is the basis
@@ -141,9 +140,9 @@ export const appConfig: ApplicationConfig = {
 };
 ```
 
-<!-- legacy: written for Angular 9 (2020) — modernized in the upgrade pass -->
+Pre-standalone reference — the older NgModule approach (Angular 2–13):
+
 ```typescript
-// NgModule approach (Angular 2–13)
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -155,8 +154,11 @@ export class AppModule {}
 
 ### Injecting HttpClient
 
-Inject `HttpClient` in a service (or component). The `@Service()` decorator is
-the modern shorthand for `@Injectable({ providedIn: 'root' })`:
+Inject `HttpClient` in a service (or component). In Angular v22, the new
+`@Service()` decorator is an ergonomic alternative to
+`@Injectable({ providedIn: 'root' })` for the common root-singleton case.
+Examples below use the broader-compatible `@Injectable` form — both work
+identically at runtime:
 
 ```typescript
 import { Injectable, inject } from '@angular/core';
@@ -193,6 +195,19 @@ export class UserService {
   delete(id: number): Observable<void> {
     return this.http.delete<void>(`${this.baseUrl}/${id}`);
   }
+}
+```
+
+The `@Service()` equivalent is a one-line change at the top — drop the
+configuration object since `providedIn: 'root'` is the default behavior:
+
+```typescript
+import { Service, inject } from '@angular/core';
+
+@Service()
+export class UserService {
+  private http = inject(HttpClient);
+  // ...identical body
 }
 ```
 
@@ -456,7 +471,7 @@ The returned Observable is lazy — the HTTP request doesn't fire until
 
 ### Mistake 2 — Using withFetch() explicitly
 
-`withFetch()` is deprecated as of Angular 19+. Fetch is now the default:
+`withFetch()` is deprecated as of Angular v22. Fetch is now the default:
 
 ```typescript
 // ❌ Deprecated — withFetch() is no longer needed and will warn
@@ -523,24 +538,25 @@ The exception: `FormData` bodies should not have `Content-Type` set at all
 >   Class-based interceptors (`withInterceptorsFromDi`) remain supported
 >   but are no longer recommended.
 >
-> - **Angular 18 (2024):** `withFetch()` added to opt into the Fetch backend.
->   The HTTP transfer cache for SSR stabilized — no configuration needed.
+> - **Angular 16.1 (2023):** `withFetch()` added as an opt-in Fetch backend.
+>   Recommended for SSR for performance and Node-compatibility reasons.
 >
-> - **Angular 19 (2024):** Fetch becomes the **default** backend.
->   `withXhr()` introduced to opt back into XHR. `withFetch()` deprecated.
->   `withRequestsMadeViaParent()` stable — enables child injector interceptors
->   to delegate to the parent `HttpClient` chain.
+> - **Angular 18 (2024):** HTTP transfer cache for SSR stabilized — automatic
+>   when `provideClientHydration()` is present.
 >
-> - **Angular 22 (now):** `withFetch()` deprecated, XHR server support
->   deprecated (removal in v23). `httpResource()` and `rxResource()` stable
->   as signal-based alternatives for GET requests. The pipeline is:
->   `provideHttpClient()` with functional interceptors via `withInterceptors()`
->   for all new code.
+> - **Angular 21 (2025):** `HttpClient` provided in root by default —
+>   `provideHttpClient()` becomes optional when no feature configuration is
+>   needed.
+>
+> - **Angular v22 (now):** Fetch becomes the **default** HTTP backend.
+>   `withFetch()` deprecated (no longer needed). `withXhr()` available to opt
+>   back into XHR, but XHR server support deprecated (removal in v23).
+>   `httpResource()` and `rxResource()` stable as signal-based alternatives for
+>   GET requests. The recommended pipeline: `provideHttpClient()` with
+>   functional interceptors via `withInterceptors()` for all new code.
 
 ## See also
 
-- [Typed Requests](./typed-requests.md) — deep dive on generics, `HttpContext`,
-  and mapping response shapes
 - [Interceptors](./interceptors.md) — the full interceptor pipeline: auth
   headers, retry logic, caching, error normalization
 - [Error Handling](./error-handling.md) — `catchError`, `HttpErrorResponse`,
