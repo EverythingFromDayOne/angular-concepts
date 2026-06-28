@@ -853,4 +853,4 @@ A natural follow-up topic is custom elements (Angular Elements) for embeddable w
 
 Tiep Phan — https://github.com/tieppt
 
-*Translated from the original Vietnamese as part of the angular-concepts project. Modernized to Angular v22 with Native Federation v4 in the Phase 2 upgrade pass.*
+*Translated from the Vietnamese ["100 Days of Angular"](https://github.com/angular-vietnam/100-days-of-angular) series by Angular Vietnam. MIT licensed.*

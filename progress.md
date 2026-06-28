@@ -1,121 +1,175 @@
-# Progress Tracker
+# angular-concepts — Project Progress
 
-Single source of truth. Update this file the moment any status changes.
+> **Status as of:** Phase 2 modernization in progress; orphan migration complete; recipes track started.
 
-## Legend
+## Overview
 
-**Origin**
-- `translated` — article exists with teaching content from the original series
-- `gap` — written fresh for Angular v22 (no prior article)
+This repo translates and modernizes the Vietnamese ["100 Days of Angular"](https://github.com/angular-vietnam/100-days-of-angular) tutorial series into American-English Angular v22 concept docs, with original gap articles where the source series had no equivalent.
 
-**Translated**
-- `–` not started · `done` complete
-
-**Upgraded**
-- `–` not started · `done` modernized to Angular v22 with "What changed" callout
-
-**Reviewed**
-- `–` not started · `done` approved by Huy
-
-**Model** (for upgrade/gap work)
-- `S` = Sonnet 4.6 Max + Thinking ON
-- `O` = Opus 4.7 Max + Thinking ON
+| Track | Count | Status |
+| --- | --- | --- |
+| Phase 1 — Translation (Cursor) | 33 articles | ✅ Complete |
+| Phase 3 — Gap articles (Claude, written for v22) | 36 articles | ✅ Complete |
+| Phase 2 — Modernization of Phase 1 to v22 (Claude) | 33 articles | 🟡 In progress (~7/33) |
+| Orphan migration | 5 files | ✅ Complete |
+| Recipes (real-world scenarios) | 4 planned | 🟡 In progress (1/4) |
 
 ---
 
-## Roadmap articles
+## Phase 2 — Modernization status
 
-| Roadmap node ID | File | Source days | Merge type | Translated | Upgraded | Reviewed | Model |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| *(getting-started)* | `_orphans/getting-started.md` | 1, 2 | merge | done | – | – | S |
-| `data-binding` | `components/templates/data-binding.md` | 3 | 1:1 | done | – | – | S |
-| `structural-directives` | `directives/structural-directives.md` | 4, 5 | merge | done | – | – | S |
-| `attribute-directives` | `directives/attribute-directives.md` | 6 | 1:1 | done | – | – | S |
-| `component-interactions-input-output` | `components/component-interactions.md` | 7, 8, 9, 44 | merge | done | – | – | S |
-| `templates-architecture` | `components/templates/templates-architecture.md` | 10, 17 | merge | done | – | – | S |
-| `content-projection` | `components/templates/content-projection.md` | 13 | 1:1 | done | – | – | S |
-| `ng-template-ng-container` | `directives/ng-template-ng-container.md` | 14 | 1:1 | done | – | – | S |
-| `dependency-injection` | `dependency-injection/dependency-injection.md` | 15, 16, 48 | merge | done | done | – | O |
-| `pipes` | `pipes/pipes.md` | 18 | 1:1 → 2 sections | done | – | – | S |
-| `rxjs` | `reactivity/rxjs/rxjs.md` | 19 | seed | done | – | – | S |
-| (rxjs-creation) | `reactivity/rxjs/rxjs-creation.md` | 20 | sub | done | – | – | S |
-| (rxjs-transformation) | `reactivity/rxjs/rxjs-transformation.md` | 21 | sub | done | – | – | S |
-| (rxjs-filtering) | `reactivity/rxjs/rxjs-filtering.md` | 22 | sub | done | – | – | S |
-| (rxjs-combination) | `reactivity/rxjs/rxjs-combination.md` | 23 | sub | done | – | – | S |
-| (rxjs-error-handling) | `reactivity/rxjs/rxjs-error-handling.md` | 24 | sub | done | – | – | S |
-| (rxjs-higher-order) | `reactivity/rxjs/rxjs-higher-order.md` | 25 | sub | done | – | – | S |
-| (rxjs-subjects) | `reactivity/rxjs/rxjs-subjects.md` | 26, 45 | merge | done | – | – | S |
-| `routing` | `routing/routing.md` | 27 | 1:1 | done | – | – | S |
-| `configuration` | `routing/router-configuration.md` | 28 | 1:1 | done | – | – | S |
-| `lazy-loading` | `routing/lazy-loading.md` | 29 | 1:1 | done | – | – | S |
-| `guards-resolvers` | `routing/guards-resolvers.md` | 30, 31, 32 | merge | done | – | – | S |
-| `template-driven-forms` | `forms/template-driven-forms.md` | 33, 34 | merge | done | – | – | S |
-| `reactive-forms` | `forms/reactive-forms.md` | 35, 36 | merge | done | – | – | S |
-| `validation` | `forms/validation.md` | 37 | 1:1 | done | – | – | S |
-| `dynamic-components` | `components/dynamic-components.md` | 38 | 1:1 | done | – | – | S |
-| `module-federation` | `monorepo/module-federation.md` | 39 | 1:1 | done | done | – | S |
-| `control-value-accessor` | `forms/control-value-accessor.md` | 43 | 1:1 | done | – | – | S |
-| `directive-composition` | `directives/directive-composition.md` | 47 | 1:1 | done | – | – | S |
+Translated articles needing Angular 9 → v22 upgrade. Each gets the standard Phase 2 treatment: callout box at top with deltas, side-by-side legacy/v22 code blocks, cross-references to gap articles, mechanism reflection where the topic mechanism changed across versions.
 
-**Orphans** (no roadmap node yet)
+### Tier 1 — Opus · Max · Thinking ON (foundational, biggest mechanism deltas)
 
-| File | Source days | Translated | Upgraded | Reviewed |
-| --- | --- | --- | --- | --- |
-| `_orphans/typescript-prereqs.md` | 11, 12 | done | – | – |
-| `_orphans/jira-clone.md` | 40, 41 | done | – | – |
-| `_orphans/cdk-coercion.md` | 42 | done | – | – |
-| `_orphans/js-widget-embedding.md` | 46 | done | – | – |
+| Article | Status | Notes |
+| --- | --- | --- |
+| `dependency-injection/dependency-injection.md` | ✅ Done | `inject()` mechanism + injection context |
+| `routing/routing.md` | ✅ Done | `provideRouter` + `withComponentInputBinding` |
+| `forms/reactive-forms.md` | ✅ Done | Typed forms mapped-types mechanism |
+| `state-management/ngrx.md` | ✅ Done (polish) | Was a Phase 3 gap article; polished imports + legacy marker |
+| `http/http.md` | ✅ Done (polish) | Was a Phase 3 gap article; polished Fetch-default timeline |
 
----
+### Tier 2 — Sonnet 4.6 · High · Thinking ON (high-impact core)
 
-## Gap articles (written fresh for v22)
+| Article | Status | Notes |
+| --- | --- | --- |
+| `monorepo/module-federation.md` | ✅ Done | Webpack MF → Native Federation v4 (deep mechanism contrast per user ask) |
+| `components/dynamic-components.md` | ✅ Done | CFR removal in v22 + `setInput` + bindings API |
+| `directives/structural-directives.md` |  | `*ngIf` / `*ngFor` → `@if` / `@for` |
+| `directives/attribute-directives.md` |  | `host: {}` replaces `@HostBinding` / `@HostListener` |
+| `http/interceptors.md` |  | Functional interceptors over class-based |
+| `http/error-handling.md` |  | `tapResponse` over `catchError` in rxMethod |
+| `routing/guards-resolvers.md` |  | Functional `CanActivateFn` / `ResolveFn` |
+| `routing/lazy-loading.md` |  | `loadComponent` over `loadChildren` modules |
+| `routing/router-configuration.md` |  | `provideRouter()` feature functions |
+| `forms/template-driven-forms.md` |  | Signal model bindings, standalone `FormsModule` |
+| `forms/control-value-accessor.md` |  | CVA + `inject()` |
+| `forms/validation.md` |  | Typed validators, async signal validators |
+| `components/component-interactions.md` |  | `input()` / `output()` / `model()` / `viewChild()` |
+| `components/animations.md` |  | `provideAnimationsAsync()`, View Transitions API |
+| `pipes/pipes.md` |  | Standalone pipes, `inject()` in pipes |
 
-| Roadmap node ID | File | Depends on | Upgraded | Reviewed | Model |
-| --- | --- | --- | --- | --- | --- |
-| `lifecycle` | `components/lifecycle.md` | components | done | – | S |
-| `view-encapsulation` | `components/styling/view-encapsulation.md` | components | done | – | S |
-| `sass` | `tooling/sass.md` | — | done | – | S |
-| `angular-material` | `components/styling/angular-material.md` | — | done | – | S |
-| `ui-library-comparison` | `components/styling/ui-library-comparison.md` | — | done | – | S |
-| `animations` | `components/animations.md` | lifecycle | done | – | S |
-| `control-flow` | `components/templates/control-flow.md` | templates | done | – | S |
-| `change-detection` | `components/change-detection.md` | lifecycle, signals | done | – | **O** |
-| `angular-devtools` | `components/angular-devtools.md` | — | done | – | S |
-| `signals` | `reactivity/signals.md` | — | done | – | **O** |
-| `signal-inputs` | `reactivity/signal-inputs.md` | signals | done | – | S |
-| `to-signal-from-signal` | `reactivity/to-signal.md` | signals, rxjs | done | – | S |
-| `router-link` | `routing/router-link.md` | routing | done | – | S |
-| `router-outlets` | `routing/router-outlets.md` | routing | done | – | S |
-| `http` | `http/http.md` | — | done | – | S |
-| `interceptors` | `http/interceptors.md` | http | done | – | S |
-| `error-handling` | `http/error-handling.md` | http, rxjs | done | – | S |
-| `unit-tests` | `testing/unit-tests.md` | DI | done | – | S |
-| `integration-tests` | `testing/integration-tests.md` | unit-tests | done | – | S |
-| `component-harnesses` | `testing/component-harnesses.md` | integration-tests | done | – | S |
-| `e2e-testing` | `testing/e2e-testing.md` | — | done | – | S |
-| `ngrx` | `state-management/ngrx.md` | rxjs, signals | done | – | S |
-| `ngrx-signal-store` | `state-management/ngrx-signal-store.md` | signals, ngrx | done | – | S |
-| `ngxs` | `state-management/ngxs.md` | — | done | – | S |
-| `defer-blocks` | `rendering/defer-blocks.md` | — | done | – | S |
-| `ssr-hydration` | `rendering/ssr-hydration.md` | change-detection | done | – | **O** |
-| `view-ref` | `rendering/view-ref.md` | DI | done | – | S |
-| `signal-forms` | `forms/signal-forms.md` | signals, reactive-forms | done | – | S |
-| `nx` | `tooling/nx.md` | — | done | – | S |
-| `angular-elements` | `tooling/angular-elements.md` | DI | done | – | S |
-| `pwa` | `tooling/pwa.md` | — | done | – | S |
-| `ionic` | `tooling/ionic.md` | — | done | – | S |
-| `schematics` | `tooling/schematics.md` | — | done | – | S |
-| `builders` | `tooling/builders.md` | — | done | – | S |
-| `built-in-i18n` | `tooling/built-in-i18n.md` | — | done | – | S |
-| `ngx-translate` | `tooling/ngx-translate.md` | — | done | – | S |
+### Tier 3 — Sonnet 4.6 · High · Thinking ON (important, lower delta)
+
+| Article | Status | Notes |
+| --- | --- | --- |
+| `directives/ng-template-ng-container.md` |  | `@let` and deferred-template story |
+| `directives/directive-composition.md` |  | `hostDirectives` is v15+; may be partly gap-flavored |
+| `routing/router-link.md` |  | `withComponentInputBinding()` route params |
+| `routing/router-outlets.md` |  | Named outlets, hydration interplay |
+| `components/templates/data-binding.md` |  | Signal reads `value()`, `@let` declarations |
+| `components/templates/content-projection.md` |  | Mostly stable |
+| `components/templates/templates-architecture.md` |  | Built-in control flow, deferrable views |
+| `components/styling/angular-material.md` |  | Material 3 tokens, signal inputs |
+| `components/styling/ui-library-comparison.md` |  | Refresh library landscape |
+| `components/angular-devtools.md` |  | Signal graph inspector, hydration tab |
+| `state-management/ngxs.md` |  | NGXS signal selectors |
+| `testing/integration-tests.md` |  | `await fixture.whenStable()`, `TestBed.tick()` |
+| `testing/e2e-testing.md` |  | Playwright recommended; Protractor gone |
+| `rendering/view-ref.md` |  | `afterRender` / `afterNextRender` |
+
+### Tier 4 — RxJS family · Sonnet 4.6 · High · Thinking ON
+
+Light touch — RxJS as a library is stable, but Angular's relationship to it has changed (`toSignal()`, `toObservable()`, `takeUntilDestroyed()`, `inject(DestroyRef)`, `rxMethod` from NgRx Signals).
+
+| Article | Status |
+| --- | --- |
+| `reactivity/rxjs/rxjs.md` |  |
+| `reactivity/rxjs/rxjs-creation.md` |  |
+| `reactivity/rxjs/rxjs-transformation.md` |  |
+| `reactivity/rxjs/rxjs-filtering.md` |  |
+| `reactivity/rxjs/rxjs-combination.md` |  |
+| `reactivity/rxjs/rxjs-error-handling.md` |  |
+| `reactivity/rxjs/rxjs-higher-order.md` |  |
+| `reactivity/rxjs/rxjs-subjects.md` |  |
+
+### Tier 5 — Tooling · Sonnet 4.6 · High · Thinking ON
+
+| Article | Status | Notes |
+| --- | --- | --- |
+| `tooling/builders.md` |  | **Possibly Opus-worthy** — Application Builder (esbuild + Vite) is the biggest tooling shift since Ivy. Mirror the Native Federation deep-dive treatment if so. |
+| `tooling/schematics.md` |  | `ng update` migrations |
+| `tooling/built-in-i18n.md` |  | i18n with esbuild builder |
+| `tooling/nx.md` |  | Nx 19+ alignment |
+| `tooling/pwa.md` |  | Service worker + zoneless + SSR |
+| `tooling/angular-elements.md` |  | Standalone components as elements |
+| `tooling/sass.md` |  | Modern Sass module syntax |
+| `tooling/ionic.md` |  | Ionic 8+ + standalone |
+| `tooling/ngx-translate.md` |  | External lib; lighter touch |
 
 ---
 
-## Summary counts
+## Orphan migration
 
-| Category | Count | Translated | Upgraded | Reviewed |
-| --- | --- | --- | --- | --- |
-| Roadmap articles | 29 | 29 | 2 | 0 |
-| Orphan articles | 4 | 4 | 0 | 0 |
-| Gap articles | 36 | — | 36 | 0 |
-| **Total** | **69** | **33** | **38** | **0** |
+| Original | New location | Status |
+| --- | --- | --- |
+| `_orphans/jira-clone.md` | *(dropped — stack obsolete, partial coverage)* | ✅ |
+| `_orphans/typescript-prereqs.md` | `typescript-prereqs.md` | ✅ |
+| `_orphans/getting-started.md` | `getting-started.md` | ✅ |
+| `_orphans/cdk-coercion.md` | `tooling/cdk-coercion.md` | ✅ |
+| `_orphans/js-widget-embedding.md` | `recipes/elements/widget-deployment.md` | ✅ |
+
+`_orphans/` folder is empty and can be deleted.
+
+---
+
+## Recipes — real-world practical scenarios
+
+Sourced from [`EverythingFromDayOne/AngularDemos`](https://github.com/EverythingFromDayOne/AngularDemos/tree/development/apps/angular-demos/src/app/features). Different content shape from concept articles — scenario-driven, code-heavy, no mechanism reflection (links out to concept articles for that).
+
+| Recipe | Source demo | Status | Notes |
+| --- | --- | --- | --- |
+| `recipes/elements/widget-deployment.md` | (orphan migration) | ✅ Done | First recipe — established the template |
+| `recipes/reactivity/take-until-destroyed.md` | `features/takeUntilDestroyed` | 🔜 Queued | Warm-up — most self-contained, v22-locked convention |
+| `recipes/routing/preloading-strategy.md` | `features/preloading-strategy` | 🔜 Queued | Builds on Routing article |
+| `recipes/forms-and-search/search-engine.md` | `features/search-engine` | 🔜 Queued | Forms + RxJS + signals, most cross-cutting |
+| `recipes/advanced/self-rewrite-code.md` | `features/self-rewrite-code` | 🔜 Queued | Scope TBD — needs repo read first |
+
+---
+
+## Locked editorial conventions
+
+Apply to every Phase 2 modernized article. Recipes inherit most of these except mechanism reflections.
+
+- American English, friendly tutorial voice
+- `data-testid` over `ng-reflect-*` selectors
+- `await fixture.whenStable()` over `fixture.detectChanges()` in new test code
+- `withFetch()` deprecated — Fetch is the default in v22
+- `TestBed.tick()` over deprecated `flushEffects()`
+- Functional interceptors over class-based
+- `store.selectSignal()` for NgRx state reads
+- `tapResponse` over `catchError` inside `rxMethod` pipelines
+- Legacy NgModule-pattern code blocks get `<!-- legacy: written for Angular X (YEAR) — modernized in the upgrade pass -->`
+- Each article opens with a "What changed since the original" callout box (deltas specific to that article — not boilerplate)
+- v22 equivalents shown alongside legacy patterns
+- Cross-reference links to gap articles
+- Mechanism reflection section for topics that changed across Angular versions
+- Frontmatter: `status.upgraded: true` on completion
+
+## Workflow conventions
+
+- **One article per Claude turn** in normal cadence
+- **"Roll" / "keep rolling"** — continue to next article with less ceremony
+- **"Modernize this"** — start a new article
+- **"Go check on it, if it is ok then leave it otherwise polish it if truly necessary"** — light review pass on gap articles (HTTP, NgRx style)
+- **"Continue on this"** — modernize the article just uploaded
+- Outputs land in `/mnt/user-data/outputs/` for the user to retrieve
+- Working dir at `/home/claude/angular-concepts/docs/` (Claude scratchpad)
+- Source articles at `E:\linh tinh\EverythingFromDayOne\experimental-projects\angular-concepts\docs\` (user's local)
+
+## Open questions / pending decisions
+
+- [ ] Should the attribution footer pattern on completed articles be slimmed? (User raised; proposed: drop "Phase 2 upgrade pass" terminology, keep original author credit only)
+- [ ] Recipe-template details — is the current structure (scenario → walkthrough → comparisons → legacy ref → trade-offs → see also) right for all four queued recipes, or should some have variations?
+- [ ] `tooling/builders.md` — Opus or Sonnet? (Application Builder esbuild migration is mechanically substantial — could warrant the Native Federation deep-dive treatment)
+- [ ] README.md content shape — TBD, drafting next
+
+---
+
+## Quick stats
+
+- **Articles total:** 70+ (33 Phase 1 + 36 Phase 3 + orphans/recipes)
+- **Phase 2 completion:** ~7 / 33 (~21%)
+- **Recipes completion:** 1 / 4 + (others as scoped)
+- **Last updated:** [fill in date when committing]

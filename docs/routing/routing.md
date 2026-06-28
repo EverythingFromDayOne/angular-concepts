@@ -698,4 +698,4 @@ https://stackblitz.com/edit/angular-100-days-of-code-day-27-router-basic
 
 Trung Vo — https://github.com/trungk18
 
-*Translated from the original Vietnamese as part of the angular-concepts project. Modernized to Angular v22 in the Phase 2 upgrade pass.*
+*Translated from the Vietnamese ["100 Days of Angular"](https://github.com/angular-vietnam/100-days-of-angular) series by Angular Vietnam. MIT licensed.*

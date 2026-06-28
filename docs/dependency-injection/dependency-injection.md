@@ -1133,4 +1133,4 @@ Tiep Phan — https://github.com/tieppt
 
 Hien Pham — https://twitter.com/HienHuuPham
 
-*Translated from the original Vietnamese as part of the angular-concepts project. Modernized to Angular v22 in the Phase 2 upgrade pass.*
+*Translated from the Vietnamese ["100 Days of Angular"](https://github.com/angular-vietnam/100-days-of-angular) series by Angular Vietnam. MIT licensed.*

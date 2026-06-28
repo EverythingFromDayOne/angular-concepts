@@ -5,15 +5,33 @@ English translation and Angular v22 modernization of the
 series by **Angular Vietnam** — restructured around a learning roadmap tree
 rather than the original day-by-day format.
 
+**Targets Angular v22.** Concept articles assume v22 as the baseline; legacy
+patterns from Angular 9–15 are preserved with explicit `<!-- legacy -->`
+markers and side-by-side modern equivalents for migration context.
+
+---
+
+## Where to start
+
+- **New to Angular?** Start with [`getting-started.md`](./docs/getting-started.md), then [`typescript-prereqs.md`](./docs/typescript-prereqs.md), then pick a topic that interests you.
+- **Coming from Angular 9–15?** Every concept article opens with a "What changed since the original" callout showing the v22 deltas. Jump straight to whichever topic concerns you.
+- **Looking for practical patterns?** Check [`recipes/`](./docs/recipes/) — scenario-driven walkthroughs that combine multiple concepts end-to-end.
+- **Maintainer / contributor?** See [`progress.md`](./progress.md) for the full status tracker, locked editorial conventions, and the per-tier modernization queue.
+
 ---
 
 ## Structure
 
-Content is organized by **roadmap node**. Each file maps to one node on the
-[Angular roadmap](https://nxhhuy.tech/roadmap).
+Two content types live side by side:
+
+- **Concepts** — `docs/*/` organized by [Angular roadmap](https://nxhhuy.tech/roadmap) node. Answer *"what is X and how does it work."*
+- **Recipes** — `docs/recipes/` organized by domain. Answer *"how do I solve scenario Y end-to-end,"* with links back to concept articles for the underlying mechanics.
 
 ```
 docs/
+  getting-started.md
+  typescript-prereqs.md
+
   components/
     lifecycle.md
     animations.md
@@ -94,12 +112,12 @@ docs/
     builders.md
     built-in-i18n.md
     ngx-translate.md
-  _orphans/
-    getting-started.md
-    typescript-prereqs.md
-    jira-clone.md
     cdk-coercion.md
-    js-widget-embedding.md
+
+  recipes/
+    elements/
+      widget-deployment.md
+    # more recipes planned — see progress.md
 ```
 
 ---
@@ -112,7 +130,8 @@ docs/
 | 2 — Modernize | Claude (Sonnet/Opus) | Upgrade code to v22, add "What changed" callouts |
 | 3 — Fill gaps | Claude (Sonnet/Opus) | Write ~35 nodes with no source day |
 
-See [`progress.md`](./progress.md) for full status tracking.
+See [`progress.md`](./progress.md) for full status tracking, per-article tier
+recommendations, and the locked editorial conventions every article follows.
 
 ---
 
