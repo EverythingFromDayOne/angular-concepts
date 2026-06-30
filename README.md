@@ -1,155 +1,85 @@
-# Angular Concepts
+# angular-concepts
 
-English translation and Angular v22 modernization of the
-[100 Days of Angular](https://github.com/angular-vietnam/100-days-of-angular)
-series by **Angular Vietnam** — restructured around a learning roadmap tree
-rather than the original day-by-day format.
+A modern, opinionated Angular learning resource — English translation and Angular v22 modernization of the Vietnamese ["100 Days of Angular"](https://github.com/angular-vietnam/100-days-of-angular) tutorial series, structured around the [nxhhuy.tech](https://nxhhuy.tech) roadmap.
 
-**Targets Angular v22.** Concept articles assume v22 as the baseline; legacy
-patterns from Angular 9–15 are preserved with explicit `<!-- legacy -->`
-markers and side-by-side modern equivalents for migration context.
-
----
+**Targets Angular v22** with the modern idioms throughout: signals (`signal`/`computed`/`effect`), `inject()`, functional interceptors/guards/resolvers, `takeUntilDestroyed()`, `@if`/`@for`/`@switch` control flow, standalone components, `provideAppInitializer`, `input()`/`output()`/`model()` signal-based component I/O.
 
 ## Where to start
 
-- **New to Angular?** Start with [`getting-started.md`](./docs/getting-started.md), then [`typescript-prereqs.md`](./docs/typescript-prereqs.md), then pick a topic that interests you.
-- **Coming from Angular 9–15?** Every concept article opens with a "What changed since the original" callout showing the v22 deltas. Jump straight to whichever topic concerns you.
-- **Looking for practical patterns?** Check [`recipes/`](./docs/recipes/) — scenario-driven walkthroughs that combine multiple concepts end-to-end.
-- **Maintainer / contributor?** See [`progress.md`](./progress.md) for the full status tracker, locked editorial conventions, and the per-tier modernization queue.
-
----
+- **New to Angular** → `getting-started.md` and `typescript-prereqs.md`
+- **Existing Angular dev** → pick a concept article (`signals`, `routing`, `dependency-injection`, `http`) or jump straight to a recipe that matches a real-world problem you're hitting
+- **Looking for a specific bug fix** → `recipes/` is organized by problem domain; the recipes lead with the symptom
 
 ## Structure
 
-Two content types live side by side:
-
-- **Concepts** — `docs/*/` organized by [Angular roadmap](https://nxhhuy.tech/roadmap) node. Answer *"what is X and how does it work."*
-- **Recipes** — `docs/recipes/` organized by domain. Answer *"how do I solve scenario Y end-to-end,"* with links back to concept articles for the underlying mechanics.
-
 ```
 docs/
-  getting-started.md
-  typescript-prereqs.md
-
-  components/
-    lifecycle.md
-    animations.md
-    change-detection.md
-    angular-devtools.md
-    dynamic-components.md
-    component-interactions.md
-    templates/
-      data-binding.md
-      control-flow.md
-      content-projection.md
-      templates-architecture.md
-    styling/
-      view-encapsulation.md
-      angular-material.md
-      ui-library-comparison.md
-  directives/
-    structural-directives.md
-    attribute-directives.md
-    ng-template-ng-container.md
-    directive-composition.md
-  pipes/
-    pipes.md
-  routing/
-    routing.md
-    router-configuration.md
-    lazy-loading.md
-    guards-resolvers.md
-    router-link.md
-    router-outlets.md
-  dependency-injection/
-    dependency-injection.md
-  forms/
-    template-driven-forms.md
-    reactive-forms.md
-    validation.md
-    control-value-accessor.md
-    signal-forms.md
-  reactivity/
-    signals.md
-    signal-inputs.md
-    to-signal.md
-    rxjs/
-      rxjs.md
-      rxjs-creation.md
-      rxjs-transformation.md
-      rxjs-filtering.md
-      rxjs-combination.md
-      rxjs-error-handling.md
-      rxjs-higher-order.md
-      rxjs-subjects.md
-  http/
-    http.md
-    interceptors.md
-    error-handling.md
-  testing/
-    unit-tests.md
-    integration-tests.md
-    component-harnesses.md
-    e2e-testing.md
-  state-management/
-    ngrx.md
-    ngrx-signal-store.md
-    ngxs.md
-  rendering/
-    defer-blocks.md
-    ssr-hydration.md
-    view-ref.md
-  monorepo/
-    module-federation.md
-  tooling/
-    nx.md
-    sass.md
-    angular-elements.md
-    pwa.md
-    ionic.md
-    schematics.md
-    builders.md
-    built-in-i18n.md
-    ngx-translate.md
-    cdk-coercion.md
-
-  recipes/
-    elements/
-      widget-deployment.md
-    # more recipes planned — see progress.md
+├── getting-started.md
+├── typescript-prereqs.md
+│
+├── components/               concepts: components, lifecycle, change detection, dynamic components
+├── dependency-injection/     concepts: providers, hierarchical DI, lazy injection escape hatch
+├── directives/               concepts: structural + attribute directives
+├── forms/                    concepts: reactive forms, template-driven forms, validation
+├── http/                     concepts: HttpClient, interceptors, error handling
+├── monorepo/                 concepts: Nx, module federation
+├── pipes/                    concepts: built-in + custom pipes
+├── reactivity/               concepts: signals, RxJS, toSignal, takeUntilDestroyed
+├── routing/                  concepts: provideRouter, guards (functional), resolvers
+├── state-management/         concepts: NgRx, signal store
+├── styling/                  concepts: ng-content, view encapsulation, host bindings
+├── testing/                  concepts: TestBed, component testing, mocking
+├── tooling/                  concepts: CLI, builders, i18n, CDK utilities
+│
+└── recipes/                  problem-solving — concrete bugs, concrete fixes
+    ├── auth/                 4 recipes — the auth-flow composition story
+    ├── components/           2 recipes — virtual scroll, component communication
+    ├── elements/             1 recipe  — Angular Elements deployment
+    ├── forms-and-search/     4 recipes — search, dynamic forms, async validation, optimistic UI
+    ├── http/                 3 recipes — progress tracking, retry, deduplication
+    ├── reactivity/           2 recipes — takeUntilDestroyed, race conditions
+    └── routing/              1 recipe  — preloading strategies
 ```
 
----
+## Recipes index — quick lookup by symptom
 
-## Three phases
+| Problem | Recipe |
+| --- | --- |
+| "User clicks Like, sees nothing for 400ms, clicks again" | [`forms-and-search/optimistic-updates`](recipes/forms-and-search/optimistic-updates.md) |
+| "Five components on the page fetch the same URL" | [`http/request-deduplication`](recipes/http/request-deduplication.md) |
+| "API blips and user sees error toast for nothing" | [`http/retry-with-backoff`](recipes/http/retry-with-backoff.md) |
+| "User saves twice fast, old response overwrites new state" | [`reactivity/race-conditions`](recipes/reactivity/race-conditions.md) |
+| "10,000-row list and Chrome dies" | [`components/virtual-scrolling`](recipes/components/virtual-scrolling.md) |
+| "Where should this shared state live? NgRx or not?" | [`components/component-communication`](recipes/components/component-communication.md) |
+| "Form fields lose data when user toggles a section" | [`forms-and-search/dynamic-forms`](recipes/forms-and-search/dynamic-forms.md) |
+| "Username availability check stuck in pending forever" | [`forms-and-search/async-validation`](recipes/forms-and-search/async-validation.md) |
+| "Search results jump as user types fast" | [`forms-and-search/search-engine`](recipes/forms-and-search/search-engine.md) |
+| "JWT interceptor needs AuthService, AuthService needs HttpClient → cycle" | [`auth/jwt-interceptor-circular-dep`](recipes/auth/jwt-interceptor-circular-dep.md) |
+| "Where do auth tokens belong — localStorage, cookie, memory?" | [`auth/token-storage-security`](recipes/auth/token-storage-security.md) |
+| "F5 reload logs the user out" | [`auth/app-initialization`](recipes/auth/app-initialization.md) |
+| "Sensitive action needs re-authentication ('sudo mode')" | [`auth/step-up-authentication`](recipes/auth/step-up-authentication.md) |
+| "File upload needs a progress bar" | [`http/progress-tracking`](recipes/http/progress-tracking.md) |
+| "Lazy modules — when to preload, when not to" | [`routing/preloading-strategy`](recipes/routing/preloading-strategy.md) |
+| "Subscription cleanup boilerplate in every component" | [`reactivity/take-until-destroyed`](recipes/reactivity/take-until-destroyed.md) |
+| "Embed Angular as a widget in a non-Angular site" | [`elements/widget-deployment`](recipes/elements/widget-deployment.md) |
 
-| Phase | Who | What |
+## Phases
+
+| Phase | Status | Description |
 | --- | --- | --- |
-| 1 — Translate | Cursor | Vietnamese → English, roadmap-node files |
-| 2 — Modernize | Claude (Sonnet/Opus) | Upgrade code to v22, add "What changed" callouts |
-| 3 — Fill gaps | Claude (Sonnet/Opus) | Write ~35 nodes with no source day |
+| Phase 1 | ✅ Complete | English translation of the original 33-day Vietnamese series |
+| Phase 2 | 🟡 In progress | Modernization of Phase 1 articles to v22 idioms |
+| Phase 3 | ✅ Complete | 36 gap articles — topics absent from the original series |
+| Recipes | 🟡 Growing | Real-world problem-solving recipes; composes concept articles |
 
-See [`progress.md`](./progress.md) for full status tracking, per-article tier
-recommendations, and the locked editorial conventions every article follows.
-
----
+See [`progress.md`](progress.md) for detailed status.
 
 ## Credits
 
-All teaching and examples originate with the Angular Vietnam authors.
-See [`CREDITS.md`](./CREDITS.md) for full attribution and per-day author map.
+This project is an English translation and modernization of ["100 Days of Angular"](https://github.com/angular-vietnam/100-days-of-angular) by Angular Vietnam. Original authors: Tiep Phan, Chau Tran, Trung Vo, Tuan Le, Khanh Tiet, Hien Pham. Released under MIT license.
 
-**Original series:** https://github.com/angular-vietnam/100-days-of-angular
-
-If this project is useful, please support the original authors:
-- Chau Tran — https://github.com/sponsors/nartc
-- Trung Vo — https://www.buymeacoffee.com/trungvose
-- Tiep Phan — https://www.facebook.com/pttiep
-
----
+See [`CREDITS.md`](CREDITS.md) for per-day attribution.
 
 ## License
 
-MIT. See [`LICENSE`](./LICENSE).
-Original © 2020 Angular Vietnam · Derivative © 2026 angular-concepts contributors.
+MIT — see [`LICENSE`](LICENSE).
