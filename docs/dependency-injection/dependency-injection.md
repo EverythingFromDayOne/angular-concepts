@@ -970,6 +970,82 @@ export class MyComponent {
 
 ---
 
+## Lazy injection — `Injector` as an escape hatch
+
+There's a class of problems neither `inject()` nor constructor injection can solve directly: **circular dependencies between providers whose constructors run eagerly.** The textbook case is a class-based HTTP interceptor that needs `AuthService`, while `AuthService` itself uses `HttpClient` — which can't be initialized until interceptors are registered. Constructor injection makes the cycle a startup error; `inject()` at field-initializer time hits the same wall, because both resolve eagerly inside the injection context.
+
+The escape hatch: **inject `Injector` itself and defer the actual dependency lookup until call time.**
+
+### The TypeScript getter pattern
+
+The cleanest expression of lazy injection uses a private getter — the dependency reads like a normal property, but every access goes through `Injector.get()`:
+
+```typescript
+import { Injectable, inject, Injector } from '@angular/core';
+import { ServiceB } from './service-b.service';
+
+@Injectable({ providedIn: 'root' })
+export class ServiceA {
+  private readonly injector = inject(Injector);
+
+  // Lazy: resolved only when this getter is read, not at construction time.
+  private get serviceB(): ServiceB {
+    return this.injector.get(ServiceB);
+  }
+
+  public myMethod(): void {
+    // Reads like a normal property — the cycle is broken at construction.
+    this.serviceB.doSomething();
+  }
+}
+```
+
+What this buys you: `ServiceA`'s constructor only requires `Injector`. The injector tree can construct `ServiceA` without first constructing `ServiceB`. By the time `myMethod()` runs and the getter fires, `ServiceB` exists in the injector cache (constructed lazily on first `.get()` call, then cached by `providedIn: 'root'`).
+
+What you pay: the `ServiceA → ServiceB` dependency is invisible to TypeScript and to the Angular CLI's analyzer. Removing `ServiceB` from the project won't produce a compile error in `ServiceA`; you find out at runtime when `.get(ServiceB)` throws `NullInjectorError`. You're trading static guarantees for runtime flexibility.
+
+### Variations on the pattern
+
+```typescript
+// One-off lookup inside a method — the simplest shape
+public someMethod() {
+  const heavyService = this.injector.get(HeavyAnalyticsService);
+  heavyService.process();
+}
+
+// Optional dependency — return null instead of throwing
+public conditionalFeature() {
+  const sound = this.injector.get(SoundEffectsService, null);
+  if (sound) {
+    sound.play();
+  }
+  // …silent fallback when the consumer hasn't provided the optional service
+}
+
+// Reaching into the environment injector for non-service tokens
+const envInjector = inject(EnvironmentInjector);
+const config = envInjector.get(MY_CONFIG_TOKEN);
+```
+
+The `null` fallback variant is the canonical pattern for **plugin architectures**: a library that uses an optional service if the consumer has provided one, and falls back silently if not.
+
+### When to reach for this — and when not to
+
+| Situation | Use lazy injection? |
+| --- | --- |
+| Class-based HTTP interceptor that needs `AuthService` | Sometimes — but functional interceptors (`HttpInterceptorFn`) avoid the problem entirely. Prefer functional in v22. |
+| Interceptor handling 401 by calling back into auth refresh | Yes — the cycle is genuine at runtime even with functional interceptors. See the JWT interceptor circular-dependency recipe in `recipes/auth/`. |
+| Lazy-loaded heavy service that shouldn't bloat the initial bundle | Yes — `injector.get(HeavyService)` defers the import resolution until the method runs, keeping the service in its own chunk. |
+| Optional library dependency (plugin architecture) | Yes — `injector.get(Token, null)` is the canonical "is this available?" pattern. |
+| Two services that genuinely depend on each other's data | No — refactor. Extract the shared concern into a third service (e.g., `TokenService` between `AuthService` and `JwtInterceptor`). Lazy injection masks an architectural smell here. |
+| You want to avoid declaring constructor params for terseness | No — `inject()` is the right answer. Lazy injection is for breaking cycles, not for ergonomics. |
+
+> **The functional interceptor wrinkle.** In v22, the recommended HTTP interceptor shape is the functional form (`HttpInterceptorFn`). Functional interceptors don't have constructors — they call `inject()` at request-handling time, not at provider-registration time. That eliminates the AuthService↔Interceptor cycle for the *common* case without lazy injection at all. The pattern remains useful for the *advanced* case where the interceptor needs to call back into a service that itself uses `HttpClient` (refresh-token flows, retry-with-reauth, step-up authentication). See `recipes/auth/` for end-to-end walkthroughs.
+
+The deeper rule: **lazy injection is an escape hatch, not a default.** Reach for it when refactoring genuinely can't break the cycle. If you find yourself reaching for it regularly, that's a signal to look at your service responsibilities — almost always there's a shared concern that wants to be extracted into its own service, and the cycle disappears with the SRP refactor.
+
+---
+
 ## Mechanism reflection — how DI evolved from Angular 9 to v22
 
 DI in Angular has had one truly load-bearing change since 2020: the introduction of the **`inject()` function and the injection context**. Everything else — standalone components, signal inputs, control flow — is layered on top of it. It's worth digging into how DI actually worked then versus now, because the "why" makes the "what" much easier to reason about.
@@ -1133,4 +1209,4 @@ Tiep Phan — https://github.com/tieppt
 
 Hien Pham — https://twitter.com/HienHuuPham
 
-*Translated from the Vietnamese ["100 Days of Angular"](https://github.com/angular-vietnam/100-days-of-angular) series by Angular Vietnam. MIT licensed.*
+*Translated from the original Vietnamese as part of the angular-concepts project. Modernized to Angular v22 in the Phase 2 upgrade pass.*
