@@ -26,42 +26,75 @@ docs/
 ├── pipes/                    concepts: built-in + custom pipes
 ├── reactivity/               concepts: signals, RxJS, toSignal, takeUntilDestroyed
 ├── routing/                  concepts: provideRouter, guards (functional), resolvers
-├── state-management/         concepts: NgRx, signal store
+├── ssr/                      concepts: SSR, hydration, TransferState
+├── state-management/         concepts: NgRx, Signal Store
 ├── styling/                  concepts: ng-content, view encapsulation, host bindings
 ├── testing/                  concepts: TestBed, component testing, mocking
-├── tooling/                  concepts: CLI, builders, i18n, CDK utilities
+├── tooling/                  concepts: CLI, builders, i18n, CDK utilities, PWA
 │
 └── recipes/                  problem-solving — concrete bugs, concrete fixes
     ├── auth/                 4 recipes — the auth-flow composition story
     ├── components/           2 recipes — virtual scroll, component communication
     ├── elements/             1 recipe  — Angular Elements deployment
-    ├── forms-and-search/     4 recipes — search, dynamic forms, async validation, optimistic UI
-    ├── http/                 3 recipes — progress tracking, retry, deduplication
+    ├── forms-and-search/     5 recipes — search, dynamic forms, async validation, optimistic UI, wizards
+    ├── http/                 4 recipes — progress, retry, deduplication, WebSocket
+    ├── performance/          4 recipes — auditing, bundle splitting, images, Web Workers
+    ├── pwa/                  1 recipe  — service worker / offline-first
     ├── reactivity/           2 recipes — takeUntilDestroyed, race conditions
-    └── routing/              1 recipe  — preloading strategies
+    ├── routing/              1 recipe  — preloading strategies
+    ├── ssr/                  1 recipe  — SSR / hydration debugging
+    ├── state-management/     1 recipe  — NgRx → Signal Store migration
+    └── testing/              1 recipe  — testing signal-based components
 ```
 
 ## Recipes index — quick lookup by symptom
 
+### User-facing / UX symptoms
 | Problem | Recipe |
 | --- | --- |
 | "User clicks Like, sees nothing for 400ms, clicks again" | [`forms-and-search/optimistic-updates`](recipes/forms-and-search/optimistic-updates.md) |
-| "Five components on the page fetch the same URL" | [`http/request-deduplication`](recipes/http/request-deduplication.md) |
-| "API blips and user sees error toast for nothing" | [`http/retry-with-backoff`](recipes/http/retry-with-backoff.md) |
-| "User saves twice fast, old response overwrites new state" | [`reactivity/race-conditions`](recipes/reactivity/race-conditions.md) |
-| "10,000-row list and Chrome dies" | [`components/virtual-scrolling`](recipes/components/virtual-scrolling.md) |
-| "Where should this shared state live? NgRx or not?" | [`components/component-communication`](recipes/components/component-communication.md) |
+| "Users lose form data when navigating back through wizard steps" | [`forms-and-search/multi-step-wizards`](recipes/forms-and-search/multi-step-wizards.md) |
 | "Form fields lose data when user toggles a section" | [`forms-and-search/dynamic-forms`](recipes/forms-and-search/dynamic-forms.md) |
-| "Username availability check stuck in pending forever" | [`forms-and-search/async-validation`](recipes/forms-and-search/async-validation.md) |
 | "Search results jump as user types fast" | [`forms-and-search/search-engine`](recipes/forms-and-search/search-engine.md) |
-| "JWT interceptor needs AuthService, AuthService needs HttpClient → cycle" | [`auth/jwt-interceptor-circular-dep`](recipes/auth/jwt-interceptor-circular-dep.md) |
-| "Where do auth tokens belong — localStorage, cookie, memory?" | [`auth/token-storage-security`](recipes/auth/token-storage-security.md) |
+| "Username availability check stuck in pending forever" | [`forms-and-search/async-validation`](recipes/forms-and-search/async-validation.md) |
+| "10,000-row list and Chrome dies" | [`components/virtual-scrolling`](recipes/components/virtual-scrolling.md) |
+| "The app freezes when I import a large CSV / generate a PDF" | [`performance/web-worker-integration`](recipes/performance/web-worker-integration.md) |
+| "Users lose data when they go offline (subway, flights)" | [`pwa/service-worker-offline-first`](recipes/pwa/service-worker-offline-first.md) |
 | "F5 reload logs the user out" | [`auth/app-initialization`](recipes/auth/app-initialization.md) |
 | "Sensitive action needs re-authentication ('sudo mode')" | [`auth/step-up-authentication`](recipes/auth/step-up-authentication.md) |
 | "File upload needs a progress bar" | [`http/progress-tracking`](recipes/http/progress-tracking.md) |
-| "Lazy modules — when to preload, when not to" | [`routing/preloading-strategy`](recipes/routing/preloading-strategy.md) |
+
+### Performance / scaling symptoms
+| Problem | Recipe |
+| --- | --- |
+| "The app feels slow — where do I even look?" | [`performance/performance-auditing`](recipes/performance/performance-auditing.md) |
+| "Main JS bundle is 800KB, lazy loading isn't enough" | [`performance/bundle-splitting-strategies`](recipes/performance/bundle-splitting-strategies.md) |
+| "LCP is bad because of heavy hero images" | [`performance/image-optimization`](recipes/performance/image-optimization.md) |
+| "Five components on the page fetch the same URL" | [`http/request-deduplication`](recipes/http/request-deduplication.md) |
+| "API blips and user sees error toast for nothing" | [`http/retry-with-backoff`](recipes/http/retry-with-backoff.md) |
+| "User saves twice fast, old response overwrites new state" | [`reactivity/race-conditions`](recipes/reactivity/race-conditions.md) |
 | "Subscription cleanup boilerplate in every component" | [`reactivity/take-until-destroyed`](recipes/reactivity/take-until-destroyed.md) |
+| "Lazy modules — when to preload, when not to" | [`routing/preloading-strategy`](recipes/routing/preloading-strategy.md) |
+
+### Architecture / integration
+| Problem | Recipe |
+| --- | --- |
+| "Where should shared state live? NgRx or not?" | [`components/component-communication`](recipes/components/component-communication.md) |
+| "I want less NgRx boilerplate, incremental migration" | [`state-management/ngrx-to-signal-store-migration`](recipes/state-management/ngrx-to-signal-store-migration.md) |
+| "I need real-time server updates (chat, live data)" | [`http/websocket-real-time`](recipes/http/websocket-real-time.md) |
+| "SSR shows 'Hello, undefined' or NG05000 warnings" | [`ssr/ssr-hydration-deep-dive`](recipes/ssr/ssr-hydration-deep-dive.md) |
 | "Embed Angular as a widget in a non-Angular site" | [`elements/widget-deployment`](recipes/elements/widget-deployment.md) |
+
+### Auth / security
+| Problem | Recipe |
+| --- | --- |
+| "JWT interceptor needs AuthService, AuthService needs HttpClient → cycle" | [`auth/jwt-interceptor-circular-dep`](recipes/auth/jwt-interceptor-circular-dep.md) |
+| "Where do auth tokens belong — localStorage, cookie, memory?" | [`auth/token-storage-security`](recipes/auth/token-storage-security.md) |
+
+### Testing
+| Problem | Recipe |
+| --- | --- |
+| "How do I test signal-based v22 components?" | [`testing/testing-signal-components`](recipes/testing/testing-signal-components.md) |
 
 ## Phases
 
@@ -70,7 +103,7 @@ docs/
 | Phase 1 | ✅ Complete | English translation of the original 33-day Vietnamese series |
 | Phase 2 | 🟡 In progress | Modernization of Phase 1 articles to v22 idioms |
 | Phase 3 | ✅ Complete | 36 gap articles — topics absent from the original series |
-| Recipes | 🟡 Growing | Real-world problem-solving recipes; composes concept articles |
+| Recipes | 🟢 Rich | 27 real-world problem-solving recipes; composes concept articles |
 
 See [`progress.md`](progress.md) for detailed status.
 
