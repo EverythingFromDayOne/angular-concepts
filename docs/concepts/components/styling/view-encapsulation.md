@@ -452,7 +452,7 @@ components. Don't use it in regular app components.
 
 ## See also
 
-- [Sass](./sass.md) — preprocessing component styles with variables, mixins,
+- [Sass](../../tooling/sass.md) — preprocessing component styles with variables, mixins,
   and partials
 - [Angular Material](./angular-material.md) — how Material's theming system
   uses CSS custom properties to work across encapsulation boundaries

@@ -19,7 +19,7 @@ status:
 > stale-while-revalidate cached search component. Each stage adds one
 > capability so the architectural choices stay visible.
 >
-> **Concepts you'll touch:** [RxJS](../../reactivity/rxjs/rxjs.md), [Signals](../../reactivity/signals.md), [toSignal](../../reactivity/to-signal.md), [HTTP](../../http/http.md), [Routing](../../routing/routing.md)
+> **Concepts you'll touch:** [RxJS](../../concepts/reactivity/rxjs/rxjs.md), [Signals](../../concepts/reactivity/signals.md), [toSignal](../../concepts/reactivity/to-signal.md), [HTTP](../../concepts/http/http.md), [Routing](../../concepts/routing/routing.md)
 >
 > **Time:** ~30 minutes to read; an afternoon to extend to your own data
 > shape.
@@ -862,12 +862,12 @@ Don't add anything else if you don't need it.
 
 ## See also
 
-- [RxJS — higher-order operators](../../reactivity/rxjs/rxjs-higher-order.md) — `switchMap`, `mergeMap`, `concatMap`, `exhaustMap`
-- [RxJS — combination operators](../../reactivity/rxjs/rxjs-combination.md) — `merge`, `combineLatest`, `zip`
-- [Signals](../../reactivity/signals.md) — `signal()`, `computed()`, `effect()`
-- [toSignal / toObservable](../../reactivity/to-signal.md) — bridging RxJS and signals
-- [HTTP](../../http/http.md) — `HttpClient`, cancellation, error handling
-- [Routing](../../routing/routing.md) — query params, `route.snapshot`, `withComponentInputBinding`
+- [RxJS — higher-order operators](../../concepts/reactivity/rxjs/rxjs-higher-order.md) — `switchMap`, `mergeMap`, `concatMap`, `exhaustMap`
+- [RxJS — combination operators](../../concepts/reactivity/rxjs/rxjs-combination.md) — `merge`, `combineLatest`, `zip`
+- [Signals](../../concepts/reactivity/signals.md) — `signal()`, `computed()`, `effect()`
+- [toSignal / toObservable](../../concepts/reactivity/to-signal.md) — bridging RxJS and signals
+- [HTTP](../../concepts/http/http.md) — `HttpClient`, cancellation, error handling
+- [Routing](../../concepts/routing/routing.md) — query params, `route.snapshot`, `withComponentInputBinding`
 - [`takeUntilDestroyed`](../reactivity/take-until-destroyed.md) — companion recipe; the cleanup primitive that `toSignal` uses internally
 
 ## References

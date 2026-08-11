@@ -28,7 +28,7 @@ angular_baseline: "22"
 >
 > Every webpack-era code block below is preserved with its `<!-- legacy -->` marker and followed by a v22 Native Federation equivalent so you can see what migration actually looks like step by step. If you've been there with webpack MF, the deep mechanism contrast at the end is where the "why" lives.
 >
-> **See also**: [Standalone Migration](../standalone-migration.md) · [SSR & Hydration](../ssr-hydration.md) · [Router (modern)](../router-modern.md)
+> **See also**: Standalone Migration · [SSR & Hydration](../rendering/ssr-hydration.md) · Router (modern)
 
 ---
 
@@ -826,11 +826,11 @@ A natural follow-up topic is custom elements (Angular Elements) for embeddable w
 
 ## See also (related gap articles)
 
-- [Standalone Migration](../standalone-migration.md) — moving off `@NgModule` and `RouterModule.forRoot`
-- [Router (modern)](../router-modern.md) — `provideRouter`, functional guards, `loadComponent`
-- [SSR & Hydration](../ssr-hydration.md) — non-destructive hydration, incremental hydration, federation interplay
-- [HTTP (modern)](../http-modern.md) — `provideHttpClient`, why `withFetch()` is deprecated
-- [Zoneless](../zoneless.md) — why `zone.js` is now optional in v22
+- Standalone Migration — moving off `@NgModule` and `RouterModule.forRoot`
+- Router (modern) — `provideRouter`, functional guards, `loadComponent`
+- [SSR & Hydration](../rendering/ssr-hydration.md) — non-destructive hydration, incremental hydration, federation interplay
+- HTTP (modern) — `provideHttpClient`, why `withFetch()` is deprecated
+- Zoneless — why `zone.js` is now optional in v22
 
 ## Code sample
 

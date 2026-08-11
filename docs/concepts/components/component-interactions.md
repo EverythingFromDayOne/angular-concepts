@@ -290,7 +290,7 @@ export class AuthorListComponent implements OnInit {
 
 ## Custom two-way binding
 
-We covered two-way binding in [data binding](../templates/data-binding.md). Custom two-way binding pairs an `@Input` with an `@Output` whose name is the input name plus `Change` — the same pattern as `ngModel` and `ngModelChange`.
+We covered two-way binding in [data binding](./templates/data-binding.md). Custom two-way binding pairs an `@Input` with an `@Output` whose name is the input name plus `Change` — the same pattern as `ngModel` and `ngModelChange`.
 
 ### `ngModel` recap
 

@@ -21,7 +21,7 @@ status:
 > `TokenService`) that fixes it for real, and the one runtime case where
 > lazy injection is still the right tool.
 >
-> **Concepts you'll touch:** [Dependency Injection](../../dependency-injection/dependency-injection.md), [HTTP](../../http/http.md), [HTTP Interceptors](../../http/interceptors.md)
+> **Concepts you'll touch:** [Dependency Injection](../../concepts/dependency-injection/dependency-injection.md), [HTTP](../../concepts/http/http.md), [HTTP Interceptors](../../concepts/http/interceptors.md)
 >
 > **Time:** ~25 minutes to read; ~45 minutes to retrofit into an existing
 > app that already has the bug.
@@ -142,7 +142,7 @@ The error goes away. Requests get tokens attached. Ship it, right?
 
 What broke the cycle: the interceptor no longer asks for `AuthService` at the moment it's *registered*. It asks for `Injector` (which always exists) and defers the `AuthService` lookup until the first HTTP request flows. By that time, `HttpClient` has been fully constructed, `AuthService` has been instantiated lazily, and `injector.get(AuthService)` returns the cached instance.
 
-See [Dependency Injection — Lazy injection as an escape hatch](../../dependency-injection/dependency-injection.md#lazy-injection--injector-as-an-escape-hatch) for the full mechanism deep-dive.
+See [Dependency Injection — Lazy injection as an escape hatch](../../concepts/dependency-injection/dependency-injection.md#lazy-injection--injector-as-an-escape-hatch) for the full mechanism deep-dive.
 
 What you pay:
 
@@ -436,9 +436,9 @@ That's covered in detail in the [Token Storage Security](./token-storage-securit
 
 ## See also
 
-- [Dependency Injection — Lazy injection as an escape hatch](../../dependency-injection/dependency-injection.md#lazy-injection--injector-as-an-escape-hatch) — the mechanism deep-dive: why `Injector.get()` breaks construction-time cycles
-- [HTTP](../../http/http.md) — `HttpClient`, `HttpInterceptorFn`, `provideHttpClient`
-- [HTTP Interceptors](../../http/interceptors.md) — concept-level coverage of interceptor primitives
+- [Dependency Injection — Lazy injection as an escape hatch](../../concepts/dependency-injection/dependency-injection.md#lazy-injection--injector-as-an-escape-hatch) — the mechanism deep-dive: why `Injector.get()` breaks construction-time cycles
+- [HTTP](../../concepts/http/http.md) — `HttpClient`, `HttpInterceptorFn`, `provideHttpClient`
+- [HTTP Interceptors](../../concepts/http/interceptors.md) — concept-level coverage of interceptor primitives
 - [Token Storage Security](./token-storage-security.md) — next recipe in this series: where tokens should actually live (RAM vs localStorage vs HttpOnly cookie), and the refresh queue for parallel 401s
 - [App Initialization](./app-initialization.md) — handling F5 reload and silent token restoration
 - [Step-up Authentication](./step-up-authentication.md) — scope-based re-auth for sensitive actions

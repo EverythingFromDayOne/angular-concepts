@@ -48,7 +48,7 @@ angular_baseline: "22"
 > existed in the first place (View Engine NgFactory files) and what Ivy
 > changed to make them dead weight.
 >
-> **See also**: [Signal Inputs](../reactivity/signal-inputs.md) · [Signal Queries](../reactivity/signal-queries.md) · [Standalone Migration](../tooling/standalone-migration.md) · [Change Detection](../components/change-detection.md)
+> **See also**: [Signal Inputs](../reactivity/signal-inputs.md) · Signal Queries · Standalone Migration · [Change Detection](../components/change-detection.md)
 
 ---
 
@@ -676,9 +676,9 @@ cleanup by removing the resolver entirely.
 ## See also
 
 - [Signal Inputs](../reactivity/signal-inputs.md) — `input()`, `input.required()`, `model()`
-- [Signal Queries](../reactivity/signal-queries.md) — `viewChild()`, `viewChildren()`, `contentChild()`
+- Signal Queries — `viewChild()`, `viewChildren()`, `contentChild()`
 - [Change Detection](../components/change-detection.md) — why `setInput()` handles `OnPush` correctly
-- [Standalone Migration](../tooling/standalone-migration.md) — why `entryComponents` and `@NgModule` are gone
+- Standalone Migration — why `entryComponents` and `@NgModule` are gone
 - [Defer Blocks](../rendering/defer-blocks.md) — `@defer` is often a better fit than imperative dynamic loading for "render this component when needed"
 
 ## Code sample

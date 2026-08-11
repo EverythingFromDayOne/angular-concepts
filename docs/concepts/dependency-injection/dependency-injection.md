@@ -27,7 +27,7 @@ angular_baseline: "22"
 >
 > Every Angular 9 example below is preserved with its `<!-- legacy -->` marker, followed by a v22 equivalent so you can see how the same DI concept maps to today's syntax. The article closes with a mechanism reflection digging into **why** `inject()` and the injection context exist at all — that's the most consequential change since Angular 9.
 >
-> **See also**: [Modern DI with `inject()`](../di-modern.md) · [DI Tokens](../di-tokens.md) · [Environment Injector](../environment-injector.md) · [Standalone Migration](../standalone-migration.md) · [Signal Inputs](../signal-inputs.md) · [Signal Queries](../signal-queries.md) · [Control Flow](../control-flow.md)
+> **See also**: Modern DI with `inject()` · DI Tokens · Environment Injector · Standalone Migration · Signal Inputs · Signal Queries · Control Flow
 
 ---
 
@@ -292,7 +292,7 @@ Because DI works at the component level, a child can inject its parent. Consider
 
 You could use `EventEmitter` to notify the parent, or inject the parent and call its methods directly.
 
-> **Sidebar — `contentChildren()` is the modern alternative for *this specific use case*.** In v22, a tabs component is often built with `contentChildren(TabPanelComponent)` on the parent, which returns a `Signal<readonly TabPanelComponent[]>` — no parent injection from the child needed. We're sticking with parent injection here because it's what's being taught as a DI pattern, but be aware that for composite components like tabs, accordions, or steppers, signal queries are often the cleaner v22 idiom. See [Signal Queries](../signal-queries.md).
+> **Sidebar — `contentChildren()` is the modern alternative for *this specific use case*.** In v22, a tabs component is often built with `contentChildren(TabPanelComponent)` on the parent, which returns a `Signal<readonly TabPanelComponent[]>` — no parent injection from the child needed. We're sticking with parent injection here because it's what's being taught as a DI pattern, but be aware that for composite components like tabs, accordions, or steppers, signal queries are often the cleaner v22 idiom. See Signal Queries.
 
 **tab-group.component.ts**
 
@@ -1172,15 +1172,15 @@ We've covered DI concepts, Angular's injector/provider model, provider overrides
 
 ## See also (related gap articles)
 
-- [Modern DI with `inject()`](../di-modern.md) — deep dive into `inject()`, injection context, and `runInInjectionContext()`
-- [DI Tokens](../di-tokens.md) — `InjectionToken<T>`, multi-providers, and design patterns
-- [Environment Injector](../environment-injector.md) — root vs platform vs route-level injectors, lazy boundaries
-- [Standalone Migration](../standalone-migration.md) — migrating off `@NgModule`
-- [Signal Inputs](../signal-inputs.md) — `input()`, `output()`, `model()` in depth
-- [Signal Queries](../signal-queries.md) — `viewChild()`, `viewChildren()`, `contentChild()`, `contentChildren()`
-- [Control Flow](../control-flow.md) — `@if`, `@for`, `@switch`, `@let`
-- [Router (modern)](../router-modern.md) — functional guards/resolvers that lean on `inject()`
-- [Unit Tests](../unit-tests.md) — `TestBed.inject()`, `TestBed.tick()`, `await fixture.whenStable()`
+- Modern DI with `inject()` — deep dive into `inject()`, injection context, and `runInInjectionContext()`
+- DI Tokens — `InjectionToken<T>`, multi-providers, and design patterns
+- Environment Injector — root vs platform vs route-level injectors, lazy boundaries
+- Standalone Migration — migrating off `@NgModule`
+- Signal Inputs — `input()`, `output()`, `model()` in depth
+- Signal Queries — `viewChild()`, `viewChildren()`, `contentChild()`, `contentChildren()`
+- Control Flow — `@if`, `@for`, `@switch`, `@let`
+- Router (modern) — functional guards/resolvers that lean on `inject()`
+- Unit Tests — `TestBed.inject()`, `TestBed.tick()`, `await fixture.whenStable()`
 
 ## Further reading
 

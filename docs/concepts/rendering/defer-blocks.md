@@ -441,6 +441,6 @@ split what it knows is exclusive to the `@defer` block:
   `loadComponent` and `loadChildren`
 - [SSR & Hydration](./ssr-hydration.md) — how `@defer` interacts with
   server-side rendering and incremental hydration
-- [Angular DevTools](../developer-tools/angular-devtools.md) — visualizing
+- [Angular DevTools](../components/angular-devtools.md) — visualizing
   deferred block boundaries in the component tree
 - [Official docs — @defer](https://angular.dev/guide/defer)

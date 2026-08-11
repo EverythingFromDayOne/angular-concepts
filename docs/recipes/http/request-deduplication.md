@@ -21,7 +21,7 @@ status:
 > helper, service-level methods, global interceptor) and the rules for
 > when each one applies.
 >
-> **Concepts you'll touch:** [HTTP](../../http/http.md), [HTTP Interceptors](../../http/interceptors.md), [RxJS](../../reactivity/rxjs/rxjs.md), [Signals](../../reactivity/signals.md)
+> **Concepts you'll touch:** [HTTP](../../concepts/http/http.md), [HTTP Interceptors](../../concepts/http/interceptors.md), [RxJS](../../concepts/reactivity/rxjs/rxjs.md), [Signals](../../concepts/reactivity/signals.md)
 >
 > **Time:** ~20 minutes to read; ~1 hour to identify the duplicated
 > requests in your own app via the Network tab.
@@ -341,7 +341,7 @@ The three patterns sound similar but solve different problems:
 | --- | --- | --- |
 | **Dedup (no TTL)** | Multiple concurrent calls for the same key → one shared execution. After all subscribers leave, the next call is fresh. | Components on the same page each independently fetching the same data within the same tick. The "page-load thundering herd." |
 | **Dedup + TTL** | Same as above, but the cache survives for a window. Calls within the window skip the HTTP entirely. | Data that's stable for minutes — user profile, department list, currency rates, app config. |
-| **SWR (stale-while-revalidate)** | Always return cache immediately, then fetch in the background, then update. | Data where instant render matters more than freshness — feed, search results, dashboards visited often. See the [search-engine recipe](../forms-and-search/search-engine.md). |
+| **SWR (stale-while-revalidate)** | Always return cache immediately, then fetch in the background, then update. | Data where instant render matters more than freshness — feed, search results, dashboards visited often. See the [search-engine recipe](../form-and-search/search-engine.md). |
 
 You can layer them. The user-service in Pattern 2 already combines dedup (concurrent calls share) with TTL caching (skip the call entirely for N minutes). Adding SWR on top would mean: return cached data instantly, fire a background fetch, update reactively when fresh data arrives.
 
@@ -478,10 +478,10 @@ This is the React Query / RTK Query pattern. For Angular apps complex enough to 
 ## See also
 
 - [Retry with Backoff](./retry-with-backoff.md) — composes with dedup; the interceptor ordering story explains how one retry runs for N subscribers
-- [Search Engine](../forms-and-search/search-engine.md) — the SWR pattern; complementary to dedup for different use cases
-- [HTTP](../../http/http.md) — `HttpClient`, request configuration, interceptors overview
-- [HTTP Interceptors](../../http/interceptors.md) — interceptor primitives in depth
-- [RxJS — higher-order operators](../../reactivity/rxjs/rxjs-higher-order.md) — `shareReplay`, multicast semantics
+- [Search Engine](../form-and-search/search-engine.md) — the SWR pattern; complementary to dedup for different use cases
+- [HTTP](../../concepts/http/http.md) — `HttpClient`, request configuration, interceptors overview
+- [HTTP Interceptors](../../concepts/http/interceptors.md) — interceptor primitives in depth
+- [RxJS — higher-order operators](../../concepts/reactivity/rxjs/rxjs-higher-order.md) — `shareReplay`, multicast semantics
 
 ## References
 

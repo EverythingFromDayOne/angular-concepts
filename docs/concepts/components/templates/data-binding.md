@@ -22,7 +22,7 @@ Such binding relationships exist among data in programming as well. In this arti
 
 ## Interpolation
 
-As mentioned in [the getting started article](../../_orphans/getting-started.md), an Angular component, at its core, is just a TypeScript class extended with extra metadata, such as an Angular template, thanks to the `Component` decorator. So, how can data from the TypeScript class be sent to and displayed inside its corresponding Angular template? Let the double curly braces `{{` and `}}` show you the way:
+As mentioned in [the getting started article](../../foundations/getting-started.md), an Angular component, at its core, is just a TypeScript class extended with extra metadata, such as an Angular template, thanks to the `Component` decorator. So, how can data from the TypeScript class be sent to and displayed inside its corresponding Angular template? Let the double curly braces `{{` and `}}` show you the way:
 
 ```typescript
 import { Component } from "@angular/core";

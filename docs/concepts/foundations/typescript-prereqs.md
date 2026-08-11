@@ -26,7 +26,7 @@ angular_baseline: "22"
 >
 > No mechanism reflection — TypeScript primer content is largely timeless. The closing "Angular + TypeScript today" sidebar covers the relationship evolution briefly.
 >
-> **See also**: [Reactive Forms](forms/reactive-forms.md) (typed forms in v22) · [Signal Inputs](reactivity/signal-inputs.md) · [Dependency Injection](dependency-injection/dependency-injection.md)
+> **See also**: [Reactive Forms](../forms/reactive-forms.md) (typed forms in v22) · [Signal Inputs](../reactivity/signal-inputs.md) · [Dependency Injection](../dependency-injection/dependency-injection.md)
 
 ---
 
@@ -186,7 +186,7 @@ class CatService extends BaseService<Cat> {
 > heavily — `FormGroup<TControls>`, `FormControl<T>`, `FormArray<TControl>`.
 > Signal inputs use `InputSignal<T>`. The Router uses `Routes` arrays with
 > typed `data` and `resolve` shapes. Comfort with generics pays off
-> immediately. See [Reactive Forms](forms/reactive-forms.md) for the
+> immediately. See [Reactive Forms](../forms/reactive-forms.md) for the
 > typed-forms deep dive.
 
 ## Why TypeScript?
@@ -404,7 +404,7 @@ The Angular team has leaned harder into TypeScript over each major release. A fe
 
 - **v9 (2020):** Ivy compiler. Better type inference into template expressions, stricter null checks via `strictNullChecks`, type-aware AOT errors.
 - **v12 (2021):** `strict` mode in `ng new` projects by default. Strict template type checking (`strictTemplates`) recommended for new code.
-- **v14 (2022):** **Typed forms.** `FormGroup<TControls>`, `FormControl<T>`, `FormArray<TControl>` — the forms library finally has real types after years of `any`. See [Reactive Forms](forms/reactive-forms.md).
+- **v14 (2022):** **Typed forms.** `FormGroup<TControls>`, `FormControl<T>`, `FormArray<TControl>` — the forms library finally has real types after years of `any`. See [Reactive Forms](../forms/reactive-forms.md).
 - **v16 (2023):** Signal inputs — `input<T>()` returns `InputSignal<T>`, fully typed in both directions (component definition and binding sites).
 - **v17 (2023):** Standalone components are the default. Built-in control flow (`@if`, `@for`, `@switch`) with stricter type checking than the old structural directives.
 - **v22 (now):** TypeScript 5.5+ minimum. The Application Builder (esbuild) emits TypeScript-checked output as the default. **Signal Forms** (experimental) leans even further into typed reactive primitives.

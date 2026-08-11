@@ -22,7 +22,7 @@ status:
 > or `mergeMap`. Each has a use case where it's the only right answer; each
 > has cases where it's a silent bug.
 >
-> **Concepts you'll touch:** [Higher-order operators](../../reactivity/rxjs/rxjs-higher-order.md), [RxJS](../../reactivity/rxjs/rxjs.md), [Signals](../../reactivity/signals.md), [HTTP](../../http/http.md)
+> **Concepts you'll touch:** [Higher-order operators](../../concepts/reactivity/rxjs/rxjs-higher-order.md), [RxJS](../../concepts/reactivity/rxjs/rxjs.md), [Signals](../../concepts/reactivity/signals.md), [HTTP](../../concepts/http/http.md)
 >
 > **Time:** ~30 minutes to read; ~2 hours to audit your codebase for
 > the bugs once you can recognize them.
@@ -149,7 +149,7 @@ User types "Java" (request fires), then "JavaScript" (second request). Server re
 
 **The fix is the same**: replace `mergeMap` with `switchMap`. New emission cancels old.
 
-This pattern is covered in detail in the [Search Engine recipe](../forms-and-search/search-engine.md) — it's the load-bearing reason that recipe leads with `switchMap`. If you've already followed that recipe, you've already fixed this race.
+This pattern is covered in detail in the [Search Engine recipe](../form-and-search/search-engine.md) — it's the load-bearing reason that recipe leads with `switchMap`. If you've already followed that recipe, you've already fixed this race.
 
 ---
 
@@ -530,11 +530,11 @@ records$.pipe(
 
 ## See also
 
-- [Search Engine](../forms-and-search/search-engine.md) — the canonical `switchMap` use case, with multi-stage progression
+- [Search Engine](../form-and-search/search-engine.md) — the canonical `switchMap` use case, with multi-stage progression
 - [takeUntilDestroyed (custom operators)](./take-until-destroyed.md) — the cleanup primitive for component subscriptions
 - [Retry with Backoff](../http/retry-with-backoff.md) — composes with these operators; the interceptor sits outside, the operator inside
-- [Higher-order operators (concept article)](../../reactivity/rxjs/rxjs-higher-order.md) — the underlying RxJS primitives in depth
-- [Signals](../../reactivity/signals.md) — `signal`, `computed`, `toObservable` for bridging into these operators
+- [Higher-order operators (concept article)](../../concepts/reactivity/rxjs/rxjs-higher-order.md) — the underlying RxJS primitives in depth
+- [Signals](../../concepts/reactivity/signals.md) — `signal`, `computed`, `toObservable` for bridging into these operators
 
 ## References
 

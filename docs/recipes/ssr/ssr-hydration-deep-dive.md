@@ -24,7 +24,7 @@ status:
 > and the specific console warning messages you'll see when things go
 > wrong.
 >
-> **Concepts you'll touch:** [SSR & Hydration](../../ssr/ssr-hydration.md), [Signals](../../reactivity/signals.md), [HTTP](../../http/http.md), [Change Detection](../../components/change-detection.md)
+> **Concepts you'll touch:** [SSR & Hydration](../../concepts/rendering/ssr-hydration.md), [Signals](../../concepts/reactivity/signals.md), [HTTP](../../concepts/http/http.md), [Change Detection](../../concepts/components/change-detection.md)
 >
 > **Time:** ~35 minutes to read; days-to-weeks to debug real hydration
 > mismatches in a production codebase.
@@ -654,11 +654,11 @@ For SEO-critical content, `@defer` is often the wrong tool — search crawlers m
 
 ## See also
 
-- [SSR & Hydration (concept article)](../../ssr/ssr-hydration.md) — the deeper conceptual coverage
+- [SSR & Hydration (concept article)](../../concepts/rendering/ssr-hydration.md) — the deeper conceptual coverage
 - [Performance Auditing](../performance/performance-auditing.md) — LCP, FCP, TBT are the metrics SSR improves; this recipe covers measuring
-- [Signals](../../reactivity/signals.md) — the primitives used in `afterNextRender` patterns
-- [HTTP](../../http/http.md) — `provideHttpClient(withFetch())` for SSR-friendly HTTP
-- [Change Detection](../../components/change-detection.md) — hydration + zoneless composition
+- [Signals](../../concepts/reactivity/signals.md) — the primitives used in `afterNextRender` patterns
+- [HTTP](../../concepts/http/http.md) — `provideHttpClient(withFetch())` for SSR-friendly HTTP
+- [Change Detection](../../concepts/components/change-detection.md) — hydration + zoneless composition
 - [Component Communication](../components/component-communication.md) — patterns that need adaptation for SSR (avoid module-level side effects, use signal-based services)
 
 ## References

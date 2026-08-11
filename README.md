@@ -36,7 +36,7 @@ docs/
     ├── auth/                 4 recipes — the auth-flow composition story
     ├── components/           2 recipes — virtual scroll, component communication
     ├── elements/             1 recipe  — Angular Elements deployment
-    ├── forms-and-search/     5 recipes — search, dynamic forms, async validation, optimistic UI, wizards
+    ├── form-and-search/     5 recipes — search, dynamic forms, async validation, optimistic UI, wizards
     ├── http/                 4 recipes — progress, retry, deduplication, WebSocket
     ├── performance/          4 recipes — auditing, bundle splitting, images, Web Workers
     ├── pwa/                  1 recipe  — service worker / offline-first
@@ -52,49 +52,49 @@ docs/
 ### User-facing / UX symptoms
 | Problem | Recipe |
 | --- | --- |
-| "User clicks Like, sees nothing for 400ms, clicks again" | [`forms-and-search/optimistic-updates`](recipes/forms-and-search/optimistic-updates.md) |
-| "Users lose form data when navigating back through wizard steps" | [`forms-and-search/multi-step-wizards`](recipes/forms-and-search/multi-step-wizards.md) |
-| "Form fields lose data when user toggles a section" | [`forms-and-search/dynamic-forms`](recipes/forms-and-search/dynamic-forms.md) |
-| "Search results jump as user types fast" | [`forms-and-search/search-engine`](recipes/forms-and-search/search-engine.md) |
-| "Username availability check stuck in pending forever" | [`forms-and-search/async-validation`](recipes/forms-and-search/async-validation.md) |
-| "10,000-row list and Chrome dies" | [`components/virtual-scrolling`](recipes/components/virtual-scrolling.md) |
-| "The app freezes when I import a large CSV / generate a PDF" | [`performance/web-worker-integration`](recipes/performance/web-worker-integration.md) |
-| "Users lose data when they go offline (subway, flights)" | [`pwa/service-worker-offline-first`](recipes/pwa/service-worker-offline-first.md) |
-| "F5 reload logs the user out" | [`auth/app-initialization`](recipes/auth/app-initialization.md) |
-| "Sensitive action needs re-authentication ('sudo mode')" | [`auth/step-up-authentication`](recipes/auth/step-up-authentication.md) |
-| "File upload needs a progress bar" | [`http/progress-tracking`](recipes/http/progress-tracking.md) |
+| "User clicks Like, sees nothing for 400ms, clicks again" | [`form-and-search/optimistic-updates`](./docs/recipes/form-and-search/optimistic-updates.md) |
+| "Users lose form data when navigating back through wizard steps" | [`form-and-search/multi-step-wizards`](./docs/recipes/form-and-search/multi-step-wizards.md) |
+| "Form fields lose data when user toggles a section" | [`form-and-search/dynamic-forms`](./docs/recipes/form-and-search/dynamic-forms.md) |
+| "Search results jump as user types fast" | [`form-and-search/search-engine`](./docs/recipes/form-and-search/search-engine.md) |
+| "Username availability check stuck in pending forever" | [`form-and-search/async-validation`](./docs/recipes/form-and-search/async-validation.md) |
+| "10,000-row list and Chrome dies" | [`components/virtual-scrolling`](./docs/recipes/components/virtual-scrolling.md) |
+| "The app freezes when I import a large CSV / generate a PDF" | [`performance/web-worker-integration`](./docs/recipes/performance/web-worker-integration.md) |
+| "Users lose data when they go offline (subway, flights)" | [`pwa/service-worker-offline-first`](./docs/recipes/pwa/service-worker-offline-first.md) |
+| "F5 reload logs the user out" | [`auth/app-initialization`](./docs/recipes/auth/app-initialization.md) |
+| "Sensitive action needs re-authentication ('sudo mode')" | [`auth/step-up-authentication`](./docs/recipes/auth/step-up-authentication.md) |
+| "File upload needs a progress bar" | [`http/progress-tracking`](./docs/recipes/http/progress-tracking.md) |
 
 ### Performance / scaling symptoms
 | Problem | Recipe |
 | --- | --- |
-| "The app feels slow — where do I even look?" | [`performance/performance-auditing`](recipes/performance/performance-auditing.md) |
-| "Main JS bundle is 800KB, lazy loading isn't enough" | [`performance/bundle-splitting-strategies`](recipes/performance/bundle-splitting-strategies.md) |
-| "LCP is bad because of heavy hero images" | [`performance/image-optimization`](recipes/performance/image-optimization.md) |
-| "Five components on the page fetch the same URL" | [`http/request-deduplication`](recipes/http/request-deduplication.md) |
-| "API blips and user sees error toast for nothing" | [`http/retry-with-backoff`](recipes/http/retry-with-backoff.md) |
-| "User saves twice fast, old response overwrites new state" | [`reactivity/race-conditions`](recipes/reactivity/race-conditions.md) |
-| "Subscription cleanup boilerplate in every component" | [`reactivity/take-until-destroyed`](recipes/reactivity/take-until-destroyed.md) |
-| "Lazy modules — when to preload, when not to" | [`routing/preloading-strategy`](recipes/routing/preloading-strategy.md) |
+| "The app feels slow — where do I even look?" | [`performance/performance-auditing`](./docs/recipes/performance/performance-auditing.md) |
+| "Main JS bundle is 800KB, lazy loading isn't enough" | [`performance/bundle-splitting-strategies`](./docs/recipes/performance/bundle-splitting-strategies.md) |
+| "LCP is bad because of heavy hero images" | [`performance/image-optimization`](./docs/recipes/performance/image-optimization.md) |
+| "Five components on the page fetch the same URL" | [`http/request-deduplication`](./docs/recipes/http/request-deduplication.md) |
+| "API blips and user sees error toast for nothing" | [`http/retry-with-backoff`](./docs/recipes/http/retry-with-backoff.md) |
+| "User saves twice fast, old response overwrites new state" | [`reactivity/race-conditions`](./docs/recipes/reactivity/race-conditions.md) |
+| "Subscription cleanup boilerplate in every component" | [`reactivity/take-until-destroyed`](./docs/recipes/reactivity/take-until-destroyed.md) |
+| "Lazy modules — when to preload, when not to" | [`routing/preloading-strategy`](./docs/recipes/routing/preloading-strategy.md) |
 
 ### Architecture / integration
 | Problem | Recipe |
 | --- | --- |
-| "Where should shared state live? NgRx or not?" | [`components/component-communication`](recipes/components/component-communication.md) |
-| "I want less NgRx boilerplate, incremental migration" | [`state-management/ngrx-to-signal-store-migration`](recipes/state-management/ngrx-to-signal-store-migration.md) |
-| "I need real-time server updates (chat, live data)" | [`http/websocket-real-time`](recipes/http/websocket-real-time.md) |
-| "SSR shows 'Hello, undefined' or NG05000 warnings" | [`ssr/ssr-hydration-deep-dive`](recipes/ssr/ssr-hydration-deep-dive.md) |
-| "Embed Angular as a widget in a non-Angular site" | [`elements/widget-deployment`](recipes/elements/widget-deployment.md) |
+| "Where should shared state live? NgRx or not?" | [`components/component-communication`](./docs/recipes/components/component-communication.md) |
+| "I want less NgRx boilerplate, incremental migration" | [`state-management/ngrx-to-signal-store-migration`](./docs/recipes/state-management/ngrx-to-signal-store-migration.md) |
+| "I need real-time server updates (chat, live data)" | [`http/websocket-real-time`](./docs/recipes/http/websocket-real-time.md) |
+| "SSR shows 'Hello, undefined' or NG05000 warnings" | [`ssr/ssr-hydration-deep-dive`](./docs/recipes/ssr/ssr-hydration-deep-dive.md) |
+| "Embed Angular as a widget in a non-Angular site" | [`elements/widget-deployment`](./docs/recipes/elements/widget-deployment.md) |
 
 ### Auth / security
 | Problem | Recipe |
 | --- | --- |
-| "JWT interceptor needs AuthService, AuthService needs HttpClient → cycle" | [`auth/jwt-interceptor-circular-dep`](recipes/auth/jwt-interceptor-circular-dep.md) |
-| "Where do auth tokens belong — localStorage, cookie, memory?" | [`auth/token-storage-security`](recipes/auth/token-storage-security.md) |
+| "JWT interceptor needs AuthService, AuthService needs HttpClient → cycle" | [`auth/jwt-interceptor-circular-dep`](./docs/recipes/auth/jwt-interceptor-circular-dep.md) |
+| "Where do auth tokens belong — localStorage, cookie, memory?" | [`auth/token-storage-security`](./docs/recipes/auth/token-storage-security.md) |
 
 ### Testing
 | Problem | Recipe |
 | --- | --- |
-| "How do I test signal-based v22 components?" | [`testing/testing-signal-components`](recipes/testing/testing-signal-components.md) |
+| "How do I test signal-based v22 components?" | [`testing/testing-signal-components`](./docs/recipes/testing/testing-signal-components.md) |
 
 ## Phases
 

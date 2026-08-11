@@ -28,7 +28,7 @@ angular_baseline: "22"
 >
 > The Angular 9 walkthrough is preserved with `<!-- legacy -->` markers and followed by v22 equivalents. The closing "Why no AppModule?" section briefly explains the standalone shift in beginner-friendly terms — it's not a deep mechanism reflection, just enough context to understand what you're seeing.
 >
-> **See also**: [TypeScript Prerequisites](typescript-prereqs.md) · [Dependency Injection](dependency-injection/dependency-injection.md) · [Routing](routing/routing.md)
+> **See also**: [TypeScript Prerequisites](typescript-prereqs.md) · [Dependency Injection](../dependency-injection/dependency-injection.md) · [Routing](../routing/routing.md)
 
 ---
 
@@ -436,7 +436,7 @@ That's enough for today! Next, we'll cover **data binding**.
 
 ## Why no `AppModule`?
 
-You might be wondering why `AppModule` exists in older Angular code if v22 doesn't need it. Here's the short version, suitable for a Day 1 article — the deeper story lives in [Standalone Migration](tooling/standalone-migration.md).
+You might be wondering why `AppModule` exists in older Angular code if v22 doesn't need it. Here's the short version, suitable for a Day 1 article — the deeper story lives in Standalone Migration.
 
 When Angular shipped in 2016, components needed a containing "module" to declare them. The NgModule served three jobs:
 

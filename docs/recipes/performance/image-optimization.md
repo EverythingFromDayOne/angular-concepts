@@ -22,7 +22,7 @@ status:
 > alternatives when you can't use the directive (background images,
 > canvas), and the "NG02xxx" warnings that tell you what to fix.
 >
-> **Concepts you'll touch:** [Components](../../components/components.md), [Performance Auditing](./performance-auditing.md), [Routing](../../routing/routing.md), [SSR / Hydration](../../ssr/ssr-hydration.md)
+> **Concepts you'll touch:** Components, [Performance Auditing](./performance-auditing.md), [Routing](../../concepts/routing/routing.md), [SSR / Hydration](../../concepts/rendering/ssr-hydration.md)
 >
 > **Time:** ~20 minutes to read; ~2 hours to retrofit an image-heavy
 > page and measure the LCP improvement.
@@ -537,7 +537,7 @@ The directive doesn't clash with virtual scrolling — CDK handles which rows re
 - [Bundle Splitting Strategies](./bundle-splitting-strategies.md) — `@defer` blocks for below-the-fold sections including image galleries
 - [SSR + Hydration](../ssr/ssr-hydration-deep-dive.md) — priority image preloading via `<link rel="preload">` composes with SSR; server-rendered pages benefit most from proper image priority
 - [Virtual Scrolling](../components/virtual-scrolling.md) — images inside virtualized lists
-- [Components](../../components/components.md) — standalone-imports for the directive
+- Components — standalone-imports for the directive
 
 ## References
 

@@ -601,7 +601,7 @@ JavaScript and silently does nothing.
   side effects
 - [Change Detection](../components/change-detection.md) — how zoneless and
   SSR interact
-- [HTTP](../http/typed-requests.md) — the SSR transfer cache for HTTP requests
+- HTTP — the SSR transfer cache for HTTP requests
 - [Official docs — Hydration](https://angular.dev/guide/hydration)
 - [Official docs — Incremental Hydration](https://angular.dev/guide/incremental-hydration)
 - [Official docs — Server-side rendering](https://angular.dev/guide/ssr)

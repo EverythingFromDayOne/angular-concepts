@@ -93,7 +93,7 @@ Sourced from the Vietnamese series' demos.
 | Widget deployment | `recipes/elements/widget-deployment.md` | 534 |
 | takeUntilDestroyed | `recipes/reactivity/take-until-destroyed.md` | 516 |
 | Preloading strategy | `recipes/routing/preloading-strategy.md` | 636 |
-| Search engine (multi-stage) | `recipes/forms-and-search/search-engine.md` | 885 |
+| Search engine (multi-stage) | `recipes/form-and-search/search-engine.md` | 885 |
 | Progress tracking | `recipes/http/progress-tracking.md` | 562 |
 
 ### Auth series (✅ complete — 4)
@@ -119,10 +119,10 @@ Tightly composed chain — each recipe builds on the previous.
 
 | Recipe | File | Lines |
 | --- | --- | --- |
-| Dynamic forms | `recipes/forms-and-search/dynamic-forms.md` | 748 |
-| Async validation | `recipes/forms-and-search/async-validation.md` | 467 |
-| Optimistic updates | `recipes/forms-and-search/optimistic-updates.md` | 603 |
-| Multi-step wizards | `recipes/forms-and-search/multi-step-wizards.md` | 725 |
+| Dynamic forms | `recipes/form-and-search/dynamic-forms.md` | 748 |
+| Async validation | `recipes/form-and-search/async-validation.md` | 467 |
+| Optimistic updates | `recipes/form-and-search/optimistic-updates.md` | 603 |
+| Multi-step wizards | `recipes/form-and-search/multi-step-wizards.md` | 725 |
 
 ### Components at scale (✅ complete — 2)
 

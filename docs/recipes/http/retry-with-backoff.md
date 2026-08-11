@@ -21,7 +21,7 @@ status:
 > a strict policy on which errors are retryable vs which are terminal.
 > Users only see an error toast after the system has genuinely given up.
 >
-> **Concepts you'll touch:** [HTTP](../../http/http.md), [HTTP Interceptors](../../http/interceptors.md), [RxJS error handling](../../reactivity/rxjs/rxjs-error-handling.md), [Signals](../../reactivity/signals.md)
+> **Concepts you'll touch:** [HTTP](../../concepts/http/http.md), [HTTP Interceptors](../../concepts/http/interceptors.md), [RxJS error handling](../../concepts/reactivity/rxjs/rxjs-error-handling.md), [Signals](../../concepts/reactivity/signals.md)
 >
 > **Time:** ~25 minutes to read; ~1.5 hours to wire up and test against
 > a real backend that you can artificially flake.
@@ -591,12 +591,12 @@ this.http.post<Analytics>('/api/track/click', payload).pipe(
 
 ## See also
 
-- [HTTP](../../http/http.md) — `HttpClient`, error types, interceptors
-- [HTTP Interceptors](../../http/interceptors.md) — functional interceptor primitives
-- [RxJS error handling](../../reactivity/rxjs/rxjs-error-handling.md) — `retry`, `catchError`, `throwError`, modern RxJS error patterns
+- [HTTP](../../concepts/http/http.md) — `HttpClient`, error types, interceptors
+- [HTTP Interceptors](../../concepts/http/interceptors.md) — functional interceptor primitives
+- [RxJS error handling](../../concepts/reactivity/rxjs/rxjs-error-handling.md) — `retry`, `catchError`, `throwError`, modern RxJS error patterns
 - [JWT Interceptor: Breaking the Circular Dependency](../auth/jwt-interceptor-circular-dep.md) — the auth interceptor whose order this recipe's interceptor depends on
 - [Upload and Download Progress](./progress-tracking.md) — composes with retry; the `trackProgress` operator runs inside the retried HTTP call
-- [Signals](../../reactivity/signals.md) — the storage primitive for retry-status UI state
+- [Signals](../../concepts/reactivity/signals.md) — the storage primitive for retry-status UI state
 
 ## References
 

@@ -292,7 +292,7 @@ userResource = httpResource<User>(() => `/api/users/${this.userId()}`);
 ```
 
 It sends a GET request whenever the URL-returning function's read signals
-change. See [HTTP](../http/typed-requests.md) for the full picture.
+change. See HTTP for the full picture.
 
 ### untracked — reading without subscribing
 
@@ -612,7 +612,7 @@ The same `equal` option works on `computed` and `linkedSignal`.
 - [Change Detection](../components/change-detection.md) — how signals replace
   Zone.js-driven CD; what zoneless really means
 - [RxJS](./rxjs/rxjs.md) — when to reach for RxJS vs signals
-- [HTTP](../http/typed-requests.md) — `httpResource` for signal-driven HTTP
+- HTTP — `httpResource` for signal-driven HTTP
 - [Signal Forms](../forms/signal-forms.md) — forms built on signals
 - [Official docs — Signals overview](https://angular.dev/guide/signals)
 - [Official docs — linkedSignal](https://angular.dev/guide/signals/linked-signal)

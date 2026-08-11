@@ -24,7 +24,7 @@ status:
 > [request-deduplication](../http/request-deduplication.md) cache handles
 > the "stale read after mutation" problem.
 >
-> **Concepts you'll touch:** [Signals](../../reactivity/signals.md), [HTTP](../../http/http.md), [Higher-order operators](../../reactivity/rxjs/rxjs-higher-order.md)
+> **Concepts you'll touch:** [Signals](../../concepts/reactivity/signals.md), [HTTP](../../concepts/http/http.md), [Higher-order operators](../../concepts/reactivity/rxjs/rxjs-higher-order.md)
 >
 > **Time:** ~25 minutes to read; ~2 hours to refactor a pessimistic
 > update flow once you can see the patterns.
@@ -583,11 +583,11 @@ For chat apps, IDE-style undo stacks, or offline-first apps, this becomes essent
 
 ## See also
 
-- [Signals](../../reactivity/signals.md) — the storage primitive that makes snapshot/restore cheap
+- [Signals](../../concepts/reactivity/signals.md) — the storage primitive that makes snapshot/restore cheap
 - [Race Conditions](../reactivity/race-conditions.md) — the `exhaustMap` pattern for double-click protection; the source-merge pattern for multi-source mutations
 - [Request Deduplication](../http/request-deduplication.md) — the cache invalidation pattern that closes the read-after-write loop
 - [Retry with Backoff](../http/retry-with-backoff.md) — composes inside the optimistic-update's HTTP call to handle transient failures
-- [HTTP](../../http/http.md) — `HttpClient`, error handling, request configuration
+- [HTTP](../../concepts/http/http.md) — `HttpClient`, error handling, request configuration
 - [Async Validation](./async-validation.md) — the optimistic-validity hint pattern for forms
 
 ## References

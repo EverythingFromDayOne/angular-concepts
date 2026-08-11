@@ -23,7 +23,7 @@ status:
 > plus honest guidance on which slices to migrate first and which
 > to leave alone.
 >
-> **Concepts you'll touch:** [NgRx / State Management](../../state-management/ngrx.md), [Signals](../../reactivity/signals.md), [Dependency Injection](../../dependency-injection/dependency-injection.md), [HTTP](../../http/http.md)
+> **Concepts you'll touch:** [NgRx / State Management](../../concepts/state-management/ngrx.md), [Signals](../../concepts/reactivity/signals.md), [Dependency Injection](../../concepts/dependency-injection/dependency-injection.md), [HTTP](../../concepts/http/http.md)
 >
 > **Time:** ~35 minutes to read; the actual migration is
 > feature-by-feature over weeks or months depending on codebase size.
@@ -855,11 +855,11 @@ The recipe assumes you've decided to migrate. Cases where you shouldn't:
 
 ## See also
 
-- [NgRx / State Management](../../state-management/ngrx.md) — the concept article; deeper coverage of both NgRx and Signal Store patterns
+- [NgRx / State Management](../../concepts/state-management/ngrx.md) — the concept article; deeper coverage of both NgRx and Signal Store patterns
 - [Component Communication](../components/component-communication.md) — the "when NgRx is right" discussion; also covers the signal-service pattern that's an alternative to Signal Store for simpler cases
-- [Signals](../../reactivity/signals.md) — the underlying reactivity model
+- [Signals](../../concepts/reactivity/signals.md) — the underlying reactivity model
 - [Race Conditions](../reactivity/race-conditions.md) — RxJS operators used in `rxMethod` pipes work identically
-- [Optimistic Updates](../forms-and-search/optimistic-updates.md) — the snapshot/restore pattern; Signal Store makes this even cleaner because the whole state can be snapshotted as one call
+- [Optimistic Updates](../form-and-search/optimistic-updates.md) — the snapshot/restore pattern; Signal Store makes this even cleaner because the whole state can be snapshotted as one call
 - [Request Deduplication](../http/request-deduplication.md) — cache invalidation via mutation is straightforward with Signal Store methods
 
 ## References

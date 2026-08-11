@@ -25,7 +25,7 @@ status:
 > debugging workflow for "why isn't this chunk actually being
 > split?"
 >
-> **Concepts you'll touch:** [Angular CLI / Tooling](../../tooling/ng-cli.md), [Lazy Loading](../../routing/lazy-loading.md), [Components](../../components/components.md), [Performance Auditing](./performance-auditing.md)
+> **Concepts you'll touch:** Angular CLI / Tooling, [Lazy Loading](../../concepts/routing/lazy-loading.md), Components, [Performance Auditing](./performance-auditing.md)
 >
 > **Time:** ~30 minutes to read; ~1 day for a real bundle audit and
 > the resulting refactors.
@@ -665,10 +665,10 @@ If you see this warning during build, hunt down the static import path. The warn
 
 - [Performance Auditing](./performance-auditing.md) — LCP diagnosis (which drives the "why are we bundling") question
 - [Preloading Strategies](../routing/preloading-strategy.md) — network-aware preloading in depth
-- [Lazy Loading](../../routing/lazy-loading.md) — `loadComponent`, `loadChildren`, resolver patterns
+- [Lazy Loading](../../concepts/routing/lazy-loading.md) — `loadComponent`, `loadChildren`, resolver patterns
 - [SSR + Hydration](../ssr/ssr-hydration-deep-dive.md) — `@defer` and SSR interaction; `afterNextRender` for browser-only dynamic imports
-- [Angular CLI / Tooling](../../tooling/ng-cli.md) — the `application` builder, build configurations
-- [Signals](../../reactivity/signals.md) — the reactivity model that composes with lazy loading
+- Angular CLI / Tooling — the `application` builder, build configurations
+- [Signals](../../concepts/reactivity/signals.md) — the reactivity model that composes with lazy loading
 
 ## References
 

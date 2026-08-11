@@ -42,7 +42,7 @@ angular_baseline: "22"
 > functions are framed as the niche/library-author toolbox they actually are
 > in v22.
 >
-> **See also**: [Signal Inputs](../reactivity/signal-inputs.md) · [Attribute Directives](../directives/attribute-directives.md)
+> **See also**: [Signal Inputs](../../concepts/reactivity/signal-inputs.md) · [Attribute Directives](../../concepts/directives/attribute-directives.md)
 
 ---
 
@@ -344,9 +344,9 @@ the same behavior with less ceremony.
 
 ## See also
 
-- [Signal Inputs](../reactivity/signal-inputs.md) — `input()`, `input.required()`, and the transform option in depth
-- [Attribute Directives](../directives/attribute-directives.md) — coercion in custom directive inputs
-- [Reactive Forms](../forms/reactive-forms.md) — typed forms use a related pattern (typed value flows)
+- [Signal Inputs](../../concepts/reactivity/signal-inputs.md) — `input()`, `input.required()`, and the transform option in depth
+- [Attribute Directives](../../concepts/directives/attribute-directives.md) — coercion in custom directive inputs
+- [Reactive Forms](../../concepts/forms/reactive-forms.md) — typed forms use a related pattern (typed value flows)
 
 ## Source code
 
