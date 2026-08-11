@@ -534,9 +534,3 @@ You now know template-driven form basics — `FormsModule`, `ngForm`, `ngModel`,
 - https://angular.io/guide/form-validation
 - https://angular.io/guide/reactive-forms
 - [Experimenting with Angular template-driven forms (Vietnamese)](https://www.tiepphan.com/thu-nghiem-voi-angular-template-driven-forms-trong-angular/)
-
-## Author
-
-Tiep Phan — https://github.com/tieppt
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

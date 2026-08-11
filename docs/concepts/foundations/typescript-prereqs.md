@@ -428,9 +428,3 @@ You now have foundational **what**, **how**, and **why** for **TypeScript** plus
 - [`satisfies` operator (TS 4.9 release notes)](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-9.html#satisfies-operator)
 - [Angular v22 release notes (angular.dev)](https://angular.dev/reference/releases)
 - [Angular Style Guide](https://angular.dev/style-guide)
-
-## Author
-
-Chau Tran — https://github.com/nartc
-
-*Translated from the Vietnamese ["100 Days of Angular"](https://github.com/angular-vietnam/100-days-of-angular) series by Angular Vietnam. MIT licensed.*

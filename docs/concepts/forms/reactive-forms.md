@@ -810,9 +810,3 @@ For async validators and cross-field checks, see [form validation](validation.md
 - [Validators API (angular.dev)](https://angular.dev/api/forms/Validators)
 - [Experimenting with Angular reactive forms (Vietnamese)](https://www.tiepphan.com/thu-nghiem-voi-angular-reactive-forms-trong-angular/)
 - [Experimenting with Angular template-driven forms (Vietnamese)](https://www.tiepphan.com/thu-nghiem-voi-angular-template-driven-forms-trong-angular/)
-
-## Author
-
-Tiep Phan — https://github.com/tieppt · Trung Vo — https://github.com/trungk18
-
-*Translated from the Vietnamese ["100 Days of Angular"](https://github.com/angular-vietnam/100-days-of-angular) series by Angular Vietnam. MIT licensed.*

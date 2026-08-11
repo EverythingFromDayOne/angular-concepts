@@ -215,9 +215,3 @@ Further reading:
 [![Structural Directives](https://img.youtube.com/vi/Yujs6hi-l4w/0.jpg)](https://youtu.be/Yujs6hi-l4w) <!-- TODO: asset -->
 
 [![NgForOf](https://img.youtube.com/vi/q7CQPEPSkD0/0.jpg)](https://youtu.be/q7CQPEPSkD0) <!-- TODO: asset -->
-
-## Author
-
-Tiep Phan — https://github.com/tieppt
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

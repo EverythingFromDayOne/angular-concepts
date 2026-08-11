@@ -729,9 +729,3 @@ You now have the Router navigation lifecycle, the main guard types (`CanActivate
 - [Angular route resolver (Vietnamese)](https://www.tiepphan.com/angular-route-resolver/)
 - https://indepth.dev/angular-router-series-pillar-2-understanding-the-routers-navigation-cycle/
 - https://vsavkin.com/the-powerful-url-matching-engine-of-angular-router-775dad593b03
-
-## Author
-
-Tiep Phan — https://github.com/tieppt
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

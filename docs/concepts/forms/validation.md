@@ -358,9 +358,3 @@ this.registerForm = this._fb.group(
 ## Youtube Video
 
 [![Day 37](https://img.youtube.com/vi/-ib5p8KbapQ/0.jpg)](https://youtu.be/-ib5p8KbapQ) <!-- TODO: asset -->
-
-## Author
-
-Trung Vo — https://github.com/trungk18
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

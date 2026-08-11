@@ -556,9 +556,3 @@ Another big day of RxJS. The operators and use cases here are ones I've applied 
 
 - [RxJS Overview](https://rxjs.dev/guide/overview)
 - [LearnRxJS](https://www.learnrxjs.io/)
-
-## Author
-
-Chau Tran — https://github.com/nartc
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

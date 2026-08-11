@@ -121,9 +121,3 @@ Disabled controls are **omitted** from `FormGroup.value`. Use `FormGroup.getRawV
 ## Source code
 
 https://stackblitz.com/edit/angular-disable-reactive-form-control-directive?file=src/app/disabled-control.directive.ts
-
-## Author
-
-Chau Tran — https://github.com/nartc
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

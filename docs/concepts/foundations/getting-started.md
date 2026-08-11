@@ -476,9 +476,3 @@ You've installed Node.js (20+ or 22+) and the Angular CLI v22, scaffolded an app
 - [Angular architecture overview (angular.dev)](https://angular.dev/essentials)
 - [Standalone components (angular.dev)](https://angular.dev/guide/components)
 - [Angular version compatibility table](https://angular.dev/reference/versions)
-
-## Author
-
-Tiep Phan — https://github.com/tieppt
-
-*Translated from the Vietnamese ["100 Days of Angular"](https://github.com/angular-vietnam/100-days-of-angular) series by Angular Vietnam. MIT licensed.*

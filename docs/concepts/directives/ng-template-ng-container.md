@@ -243,9 +243,3 @@ Further reading:
 ## Youtube Video
 
 [![ng-template and ngTemplateOutlet](https://img.youtube.com/vi/3JM8pDR-MaU/0.jpg)](https://youtu.be/3JM8pDR-MaU) <!-- TODO: asset -->
-
-## Author
-
-Trung Vo — https://github.com/trungk18
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

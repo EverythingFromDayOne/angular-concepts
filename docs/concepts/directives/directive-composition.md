@@ -257,9 +257,3 @@ This pattern reduces duplication when many selects share UI but differ only by d
 ## Code sample
 
 - https://github.com/ngoctuanle/composition-datasource-with-directive
-
-## Author
-
-Tuan Le — https://github.com/ngoctuanle
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

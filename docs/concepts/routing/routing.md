@@ -694,9 +694,3 @@ You should now understand:
 ## Code example
 
 https://stackblitz.com/edit/angular-100-days-of-code-day-27-router-basic
-
-## Author
-
-Trung Vo — https://github.com/trungk18
-
-*Translated from the Vietnamese ["100 Days of Angular"](https://github.com/angular-vietnam/100-days-of-angular) series by Angular Vietnam. MIT licensed.*

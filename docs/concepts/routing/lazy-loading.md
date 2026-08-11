@@ -23,7 +23,7 @@ A regular user who is not an admin will never need to open the admin page to man
 
 ## Day 28 recap: feature module
 
-Quick refresher: in [the router configuration article](router-configuration.md), Tiep showed how to configure a feature module called `ArticleModule`:
+Quick refresher: in [the router configuration article](router-configuration.md), we configured a feature module called `ArticleModule`:
 
 <!-- legacy: written for Angular 9 (2020) — modernized in the upgrade pass -->
 ```ts
@@ -278,9 +278,3 @@ https://stackblitz.com/edit/angular-100-days-of-code-day-29-router-lazy
 - https://angular.io/guide/lazy-loading-ngmodules#preloading-modules
 - [Angular Router series (Vietnamese)](https://www.tiepphan.com/angular-router-series/)
 - https://web.dev/route-preloading-in-angular/
-
-## Author
-
-Trung Vo — https://github.com/trungk18
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

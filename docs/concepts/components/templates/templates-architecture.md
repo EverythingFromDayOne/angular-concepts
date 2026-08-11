@@ -386,9 +386,3 @@ Further reading:
 - https://stackblitz.com/edit/angular-ivy-100-days-of-code-day-10?file=src/app/app.component.ts
 - https://stackblitz.com/edit/angular-ivy-100-days-of-code-day-17?file=src%2Fapp%2Fapp.component.html
 - https://stackblitz.com/edit/angular-ivy-100-days-of-code-day-17-contentchildren?file=src%2Fapp%2Ftab-group%2Ftab-group.component.ts
-
-## Author
-
-Tiep Phan — https://github.com/tieppt
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

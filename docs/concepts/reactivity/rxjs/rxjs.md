@@ -283,9 +283,3 @@ Further reading:
 ## Code sample
 
 https://stackblitz.com/edit/rxjs-racgao?file=index.ts
-
-## Author
-
-Tiep Phan — https://github.com/tieppt
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

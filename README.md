@@ -107,12 +107,6 @@ docs/
 
 See [`progress.md`](progress.md) for detailed status.
 
-## Credits
-
-This project is an English translation and modernization of ["100 Days of Angular"](https://github.com/angular-vietnam/100-days-of-angular) by Angular Vietnam. Original authors: Tiep Phan, Chau Tran, Trung Vo, Tuan Le, Khanh Tiet, Hien Pham. Released under MIT license.
-
-See [`CREDITS.md`](CREDITS.md) for per-day attribution.
-
 ## License
 
-MIT — see [`LICENSE`](LICENSE).
+Prose (articles and recipes) is licensed under CC BY 4.0; code is licensed under MIT — see [`LICENSE`](LICENSE).

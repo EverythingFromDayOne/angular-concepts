@@ -301,9 +301,3 @@ Today we strengthened our RxJS toolkit with error-handling and conditional opera
 - [RxJS Overview](https://rxjs.dev/guide/overview)
 - [LearnRxJS](https://www.learnrxjs.io/)
 - [rxmarbles](https://rxmarbles.com/)
-
-## Author
-
-Tiep Phan — https://github.com/tieppt
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

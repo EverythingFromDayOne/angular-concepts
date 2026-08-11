@@ -765,9 +765,3 @@ We've covered **Subject** variants, multicasting (`share`, `shareReplay`, `multi
 - [LearnRxJS](https://www.learnrxjs.io/)
 - [rxmarbles](https://rxmarbles.com/)
 - [RxJS Subject — Tiep Phan (Vietnamese)](https://www.tiepphan.com/rxjs-reactive-programming/#rxjs-subject)
-
-## Author
-
-Tiep Phan — https://github.com/tieppt
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

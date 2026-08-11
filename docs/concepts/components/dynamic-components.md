@@ -696,9 +696,3 @@ cleanup by removing the resolver entirely.
 - [Dynamic component rendering in 5 minutes (Vietnamese)](https://www.tiepphan.com/angular-trong-5-phut-dynamic-component-rendering/)
 - https://stackblitz.com/edit/angular-dynamic-components-example
 - https://www.youtube.com/watch?v=dZD7pw6rmRA
-
-## Author
-
-Khanh Tiet — https://github.com/januaryofmine
-
-*Translated from the Vietnamese ["100 Days of Angular"](https://github.com/angular-vietnam/100-days-of-angular) series by Angular Vietnam. MIT licensed.*

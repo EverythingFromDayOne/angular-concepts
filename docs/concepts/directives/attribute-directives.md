@@ -91,9 +91,3 @@ Further reading:
 ## Youtube Video
 
 [![Attribute Directives](https://img.youtube.com/vi/Zh36WRD3MMQ/0.jpg)](https://youtu.be/Zh36WRD3MMQ) <!-- TODO: asset -->
-
-## Author
-
-Tiep Phan — https://github.com/tieppt
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

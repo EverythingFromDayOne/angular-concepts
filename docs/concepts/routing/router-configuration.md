@@ -340,9 +340,3 @@ Feature modules with `forChild`, redirects, routing modules, child routes, `Acti
 
 - [Angular Router guide](https://angular.io/guide/router)
 - [Angular Router series — Tiep Phan (Vietnamese)](https://www.tiepphan.com/angular-router-series/)
-
-## Author
-
-Tiep Phan — https://github.com/tieppt
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

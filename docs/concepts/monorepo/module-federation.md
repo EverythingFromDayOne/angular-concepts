@@ -849,9 +849,3 @@ A natural follow-up topic is custom elements (Angular Elements) for embeddable w
 - [Micro Frontends — Martin Fowler](https://martinfowler.com/articles/micro-frontends.html)
 - [Module Federation advanced API (legacy webpack reference)](https://medium.com/dev-genius/module-federation-advanced-api-inwebpack-5-0-0-beta-17-71cd4d42e534)
 - [The Microfrontend Revolution Part 2: Module Federation with Angular (legacy webpack reference)](https://www.angulararchitects.io/aktuelles/the-microfrontend-revolution-part-2-module-federation-with-angular/)
-
-## Author
-
-Tiep Phan — https://github.com/tieppt
-
-*Translated from the Vietnamese ["100 Days of Angular"](https://github.com/angular-vietnam/100-days-of-angular) series by Angular Vietnam. MIT licensed.*

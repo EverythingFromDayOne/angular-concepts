@@ -168,9 +168,3 @@ If you want to dive further into today's topic with the official Angular documen
 - https://angular.io/guide/architecture-components#data-binding
 
 In the next article, we'll explore conditional `if else` in Angular.
-
-## Author
-
-Tiep Phan — https://github.com/tieppt
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

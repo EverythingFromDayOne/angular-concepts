@@ -318,9 +318,3 @@ Further reading:
 ## Code sample
 
 https://stackblitz.com/edit/angular-100-days-of-code-day-18-pipes
-
-## Author
-
-Trung Vo — https://github.com/trungk18
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

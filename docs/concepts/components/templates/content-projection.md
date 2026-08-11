@@ -169,9 +169,3 @@ Further reading:
 ## Code sample
 
 https://stackblitz.com/edit/angular-ivy-100-days-of-code-day-13?file=src%2Fapp%2Ftoggle%2Ftoggle.component.html
-
-## Author
-
-Tiep Phan — https://github.com/tieppt
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

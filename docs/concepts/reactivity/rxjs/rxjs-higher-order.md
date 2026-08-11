@@ -357,9 +357,3 @@ Today's operators are among the most important in **RxJS** and **Angular** for o
 
 - [RxJS Overview](https://rxjs.dev/guide/overview)
 - [LearnRxJS](https://www.learnrxjs.io/)
-
-## Author
-
-Chau Tran — https://github.com/nartc
-
-*Translated from the original Vietnamese as part of the angular-concepts project.*

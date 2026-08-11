@@ -360,9 +360,3 @@ https://stackblitz.com/edit/angular-ivy-cdk-coercion?file=src/app/child/child.co
 - [Input transforms guide (angular.dev)](https://angular.dev/guide/components/inputs#transforms)
 - [`@angular/cdk/coercion` source](https://github.com/angular/components/tree/main/src/cdk/coercion)
 - [JS type coercion explained (freeCodeCamp)](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/)
-
-## Author
-
-Chau Tran — https://github.com/nartc · Trung Vo — https://github.com/trungk18
-
-*Translated from the Vietnamese ["100 Days of Angular"](https://github.com/angular-vietnam/100-days-of-angular) series by Angular Vietnam. MIT licensed.*
