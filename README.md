@@ -14,23 +14,22 @@ A modern, opinionated Angular learning resource — English translation and Angu
 
 ```
 docs/
-├── getting-started.md
-├── typescript-prereqs.md
-│
-├── components/               concepts: components, lifecycle, change detection, dynamic components
-├── dependency-injection/     concepts: providers, hierarchical DI, lazy injection escape hatch
-├── directives/               concepts: structural + attribute directives
-├── forms/                    concepts: reactive forms, template-driven forms, validation
-├── http/                     concepts: HttpClient, interceptors, error handling
-├── monorepo/                 concepts: Nx, module federation
-├── pipes/                    concepts: built-in + custom pipes
-├── reactivity/               concepts: signals, RxJS, toSignal, takeUntilDestroyed
-├── routing/                  concepts: provideRouter, guards (functional), resolvers
-├── ssr/                      concepts: SSR, hydration, TransferState
-├── state-management/         concepts: NgRx, Signal Store
-├── styling/                  concepts: ng-content, view encapsulation, host bindings
-├── testing/                  concepts: TestBed, component testing, mocking
-├── tooling/                  concepts: CLI, builders, i18n, CDK utilities, PWA
+├── concepts/
+│   ├── foundations/           getting-started.md, typescript-prereqs.md
+│   ├── components/               concepts: components, lifecycle, change detection, dynamic components
+│   ├── dependency-injection/     concepts: providers, hierarchical DI, lazy injection escape hatch
+│   ├── directives/               concepts: structural + attribute directives
+│   ├── forms/                    concepts: reactive forms, template-driven forms, validation
+│   ├── http/                     concepts: HttpClient, interceptors, error handling
+│   ├── monorepo/                 concepts: Nx, module federation
+│   ├── pipes/                    concepts: built-in + custom pipes
+│   ├── reactivity/               concepts: signals, RxJS, toSignal, takeUntilDestroyed
+│   ├── routing/                  concepts: provideRouter, guards (functional), resolvers
+│   ├── ssr/                      concepts: SSR, hydration, TransferState
+│   ├── state-management/         concepts: NgRx, Signal Store
+│   ├── styling/                  concepts: ng-content, view encapsulation, host bindings
+│   ├── testing/                  concepts: TestBed, component testing, mocking
+│   └── tooling/                  concepts: CLI, builders, i18n, CDK utilities, PWA
 │
 └── recipes/                  problem-solving — concrete bugs, concrete fixes
     ├── auth/                 4 recipes — the auth-flow composition story
