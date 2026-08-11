@@ -1,15 +1,16 @@
 ---
-roadmap_node: "component-interactions-input-output"
-title: "Component Interactions: Input, Output, and Two-Way Binding"
-file: "components/component-interactions.md"
-source_days: [7, 8, 9, 44]
-original_authors: ["Tiep Phan", "Chau Tran"]
-status:
+article_id: component-interactions
+concept_folder: components
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: needs-upgrade
+translation:
+  source_days: [7, 8, 9, 44]
+  angular_when_written: "9"
   translated: true
   upgraded: false
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Component Interactions: Input, Output, and Two-Way Binding

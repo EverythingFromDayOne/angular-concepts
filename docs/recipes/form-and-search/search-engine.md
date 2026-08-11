@@ -1,11 +1,9 @@
 ---
 recipe_id: "search-engine"
-title: "A Search Engine in Five Stages"
-file: "recipes/forms-and-search/search-engine.md"
 primary_concept: "reactivity/rxjs/rxjs"
 related_concepts: ["reactivity/signals", "reactivity/to-signal", "http/http", "routing/routing"]
 demo_repo: "https://github.com/EverythingFromDayOne/AngularDemos/tree/development/apps/angular-demos/src/app/features/search-engine"
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "advanced"
 status:
   upgraded: true

@@ -1,11 +1,9 @@
 ---
 recipe_id: "web-worker-integration"
-title: "Web Workers: Heavy Computation Without Freezing the UI"
-file: "recipes/performance/web-worker-integration.md"
 primary_concept: "components/components"
 related_concepts: ["performance/performance-auditing", "reactivity/signals", "http/http"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "advanced"
 status:
   upgraded: true

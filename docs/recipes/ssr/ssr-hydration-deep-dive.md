@@ -1,11 +1,9 @@
 ---
 recipe_id: "ssr-hydration-deep-dive"
-title: "SSR + Hydration: Debugging the Mismatches"
-file: "recipes/ssr/ssr-hydration-deep-dive.md"
 primary_concept: "ssr/ssr-hydration"
 related_concepts: ["reactivity/signals", "http/http", "components/change-detection"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "advanced"
 status:
   upgraded: true

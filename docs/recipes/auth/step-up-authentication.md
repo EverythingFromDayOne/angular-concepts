@@ -1,11 +1,9 @@
 ---
 recipe_id: "step-up-authentication"
-title: "Step-up Authentication: Re-auth for Sensitive Actions"
-file: "recipes/auth/step-up-authentication.md"
 primary_concept: "http/interceptors"
 related_concepts: ["dependency-injection/dependency-injection", "reactivity/signals", "http/http"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "advanced"
 status:
   upgraded: true

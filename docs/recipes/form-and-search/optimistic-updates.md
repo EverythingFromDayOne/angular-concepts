@@ -1,11 +1,9 @@
 ---
 recipe_id: "optimistic-updates"
-title: "Optimistic Updates: UI That Feels Instant Without Lying"
-file: "recipes/forms-and-search/optimistic-updates.md"
 primary_concept: "reactivity/signals"
 related_concepts: ["reactivity/signals", "http/http", "reactivity/rxjs/rxjs-higher-order"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

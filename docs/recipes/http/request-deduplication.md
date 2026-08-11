@@ -1,11 +1,9 @@
 ---
 recipe_id: "request-deduplication"
-title: "Request Deduplication: One Call When Five Would Fire"
-file: "recipes/http/request-deduplication.md"
 primary_concept: "http/http"
 related_concepts: ["http/interceptors", "reactivity/rxjs/rxjs", "reactivity/signals"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

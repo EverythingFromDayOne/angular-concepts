@@ -1,11 +1,16 @@
 ---
-title: "Choosing an Angular UI Library"
-file: "components/styling/ui-library-comparison.md"
-status:
+article_id: ui-library-comparison
+concept_folder: components/styling
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: draft
+translation:
+  source_days: []
+  angular_when_written: null
   translated: false
   upgraded: true
   reviewed: false
-angular_baseline: "22"
 ---
 
 # Choosing an Angular UI Library

@@ -1,11 +1,9 @@
 ---
 recipe_id: "token-storage-security"
-title: "Token Storage: Where Tokens Should Actually Live"
-file: "recipes/auth/token-storage-security.md"
 primary_concept: "http/http"
 related_concepts: ["dependency-injection/dependency-injection", "reactivity/signals", "http/interceptors"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

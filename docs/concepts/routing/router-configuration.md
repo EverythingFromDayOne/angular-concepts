@@ -1,15 +1,16 @@
 ---
-roadmap_node: "configuration"
-title: "Angular Router — Feature Modules, Child Routes, and Services"
-file: "routing/router-configuration.md"
-source_days: [28]
-original_authors: ["Tiep Phan"]
-status:
+article_id: router-configuration
+concept_folder: routing
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: needs-upgrade
+translation:
+  source_days: [28]
+  angular_when_written: "9"
   translated: true
   upgraded: false
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Angular Router — Feature Modules, Child Routes, and Services

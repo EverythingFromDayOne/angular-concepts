@@ -1,11 +1,9 @@
 ---
 recipe_id: "progress-tracking"
-title: "Upload and Download Progress with HttpClient"
-file: "recipes/http/progress-tracking.md"
 primary_concept: "http/http"
 related_concepts: ["reactivity/rxjs/rxjs", "reactivity/rxjs/rxjs-higher-order", "reactivity/signals", "reactivity/to-signal"]
 demo_repo: "https://github.com/EverythingFromDayOne/AngularDemos/tree/development/apps/angular-demos/src/app/features/self-rewrite-code"
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

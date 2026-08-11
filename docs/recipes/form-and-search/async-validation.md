@@ -1,11 +1,9 @@
 ---
 recipe_id: "async-validation"
-title: "Async Validation: Username Availability Without the Flicker"
-file: "recipes/forms-and-search/async-validation.md"
 primary_concept: "forms/validation"
 related_concepts: ["forms/reactive-forms", "reactivity/rxjs/rxjs-higher-order", "reactivity/signals", "http/http"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

@@ -1,11 +1,9 @@
 ---
 recipe_id: "dynamic-forms"
-title: "Dynamic Forms: Shape That Changes With User Input"
-file: "recipes/forms-and-search/dynamic-forms.md"
 primary_concept: "forms/reactive-forms"
 related_concepts: ["forms/validation", "reactivity/signals", "reactivity/to-signal"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

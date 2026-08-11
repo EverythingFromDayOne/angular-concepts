@@ -1,15 +1,16 @@
 ---
-roadmap_node: "validation"
-title: "Angular Form Async Validators"
-file: "forms/validation.md"
-source_days: [37]
-original_authors: ["Trung Vo"]
-status:
+article_id: validation
+concept_folder: forms
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: needs-upgrade
+translation:
+  source_days: [37]
+  angular_when_written: "9"
   translated: true
   upgraded: false
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Angular Form Async Validators

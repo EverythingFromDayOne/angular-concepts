@@ -1,15 +1,16 @@
 ---
-roadmap_node: "rxjs-higher-order"
-title: "RxJS Higher-Order Observables and Utility Operators"
-file: "reactivity/rxjs/rxjs-higher-order.md"
-source_days: [25]
-original_authors: ["Chau Tran"]
-status:
+article_id: rxjs-higher-order
+concept_folder: reactivity/rxjs
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: needs-upgrade
+translation:
+  source_days: [25]
+  angular_when_written: "9"
   translated: true
   upgraded: false
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # RxJS Higher-Order Observables and Utility Operators

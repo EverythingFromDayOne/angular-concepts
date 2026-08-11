@@ -1,11 +1,9 @@
 ---
 recipe_id: "app-initialization"
-title: "App Initialization: Silent Token Restoration on Reload"
-file: "recipes/auth/app-initialization.md"
 primary_concept: "routing/routing"
 related_concepts: ["dependency-injection/dependency-injection", "http/http", "reactivity/signals"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

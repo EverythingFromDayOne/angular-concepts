@@ -1,11 +1,9 @@
 ---
 recipe_id: "image-optimization"
-title: "Image Optimization: LCP Wins Without Rewriting Everything"
-file: "recipes/performance/image-optimization.md"
 primary_concept: "components/components"
 related_concepts: ["performance/performance-auditing", "routing/routing", "ssr/ssr-hydration"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

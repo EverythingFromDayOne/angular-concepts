@@ -1,15 +1,16 @@
 ---
-roadmap_node: "pipes"
-title: "Transform Data with Angular Pipes"
-file: "pipes/pipes.md"
-source_days: [18]
-original_authors: ["Trung Vo"]
-status:
+article_id: pipes
+concept_folder: pipes
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: needs-upgrade
+translation:
+  source_days: [18]
+  angular_when_written: "9"
   translated: true
   upgraded: false
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Transform Data with Angular Pipes

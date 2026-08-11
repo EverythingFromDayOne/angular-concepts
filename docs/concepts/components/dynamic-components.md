@@ -1,15 +1,16 @@
 ---
-roadmap_node: "dynamic-components"
-title: "Dynamic Components in Angular"
-file: "components/dynamic-components.md"
-source_days: [38]
-original_authors: ["Khanh Tiet"]
-status:
+article_id: dynamic-components
+concept_folder: components
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: draft
+translation:
+  source_days: [38]
+  angular_when_written: "9"
   translated: true
   upgraded: true
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Dynamic Components in Angular

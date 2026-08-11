@@ -1,15 +1,16 @@
 ---
-roadmap_node: "typescript-prereqs"
-title: "TypeScript Prerequisites for Angular"
-file: "typescript-prereqs.md"
-source_days: [11, 12]
-original_authors: ["Chau Tran"]
-status:
+article_id: typescript-prereqs
+concept_folder: foundations
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: draft
+translation:
+  source_days: [11, 12]
+  angular_when_written: "9"
   translated: true
   upgraded: true
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # TypeScript Prerequisites for Angular

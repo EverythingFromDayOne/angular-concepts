@@ -1,15 +1,16 @@
 ---
-roadmap_node: "dependency-injection"
-title: "Dependency Injection"
-file: "dependency-injection/dependency-injection.md"
-source_days: [15, 16, 48]
-original_authors: ["Tiep Phan", "Hien Pham"]
-status:
+article_id: dependency-injection
+concept_folder: dependency-injection
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: draft
+translation:
+  source_days: [15, 16, 48]
+  angular_when_written: "9"
   translated: true
   upgraded: true
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Dependency Injection

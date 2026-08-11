@@ -1,15 +1,16 @@
 ---
-roadmap_node: "lazy-loading"
-title: "Angular Router — Lazy Loading Modules"
-file: "routing/lazy-loading.md"
-source_days: [29]
-original_authors: ["Trung Vo"]
-status:
+article_id: lazy-loading
+concept_folder: routing
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: needs-upgrade
+translation:
+  source_days: [29]
+  angular_when_written: "9"
   translated: true
   upgraded: false
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Angular Router — Lazy Loading Modules

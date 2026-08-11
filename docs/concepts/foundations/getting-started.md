@@ -1,15 +1,16 @@
 ---
-roadmap_node: "getting-started"
-title: "Getting Started with Angular"
-file: "getting-started.md"
-source_days: [1, 2]
-original_authors: ["Tiep Phan"]
-status:
+article_id: getting-started
+concept_folder: foundations
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: draft
+translation:
+  source_days: [1, 2]
+  angular_when_written: "9"
   translated: true
   upgraded: true
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Getting Started with Angular

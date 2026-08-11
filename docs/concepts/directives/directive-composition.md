@@ -1,15 +1,16 @@
 ---
-roadmap_node: "directive-composition"
-title: "Composing Form Data Sources with Directives"
-file: "directives/directive-composition.md"
-source_days: [47]
-original_authors: ["Tuan Le"]
-status:
+article_id: directive-composition
+concept_folder: directives
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: needs-upgrade
+translation:
+  source_days: [47]
+  angular_when_written: "9"
   translated: true
   upgraded: false
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Composing Form Data Sources with Directives

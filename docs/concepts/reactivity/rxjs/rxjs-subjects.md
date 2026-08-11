@@ -1,15 +1,16 @@
 ---
-roadmap_node: "rxjs-subjects"
-title: "RxJS Subjects, Multicasting, and Unsubscribe in Angular"
-file: "reactivity/rxjs/rxjs-subjects.md"
-source_days: [26, 45]
-original_authors: ["Tiep Phan"]
-status:
+article_id: rxjs-subjects
+concept_folder: reactivity/rxjs
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: needs-upgrade
+translation:
+  source_days: [26, 45]
+  angular_when_written: "9"
   translated: true
   upgraded: false
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # RxJS Subjects, Multicasting, and Unsubscribe in Angular

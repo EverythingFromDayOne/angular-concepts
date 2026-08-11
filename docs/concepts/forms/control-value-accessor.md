@@ -1,15 +1,16 @@
 ---
-roadmap_node: "control-value-accessor"
-title: "DisabledControlDirective for Reactive Forms"
-file: "forms/control-value-accessor.md"
-source_days: [43]
-original_authors: ["Chau Tran"]
-status:
+article_id: control-value-accessor
+concept_folder: forms
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: needs-upgrade
+translation:
+  source_days: [43]
+  angular_when_written: "9"
   translated: true
   upgraded: false
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # DisabledControlDirective for Reactive Forms

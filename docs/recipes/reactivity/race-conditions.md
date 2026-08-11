@@ -1,11 +1,9 @@
 ---
 recipe_id: "race-conditions"
-title: "Race Conditions: Picking the Right Higher-Order Operator"
-file: "recipes/reactivity/race-conditions.md"
 primary_concept: "reactivity/rxjs/rxjs-higher-order"
 related_concepts: ["reactivity/rxjs/rxjs", "reactivity/signals", "http/http", "reactivity/to-signal"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

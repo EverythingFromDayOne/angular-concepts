@@ -1,15 +1,16 @@
 ---
-roadmap_node: "http"
-title: "HTTP"
-file: "http/http.md"
-source_days: []
-original_authors: []
-status:
+article_id: http
+concept_folder: http
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: draft
+translation:
+  source_days: []
+  angular_when_written: null
   translated: false
   upgraded: true
   reviewed: false
-angular_when_written: null
-angular_baseline: "22"
 ---
 
 > **Modern Angular only**

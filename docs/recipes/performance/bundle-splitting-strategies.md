@@ -1,11 +1,9 @@
 ---
 recipe_id: "bundle-splitting-strategies"
-title: "Bundle Splitting: Beyond Lazy Routes"
-file: "recipes/performance/bundle-splitting-strategies.md"
 primary_concept: "tooling/ng-cli"
 related_concepts: ["routing/lazy-loading", "components/components", "performance/performance-auditing"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

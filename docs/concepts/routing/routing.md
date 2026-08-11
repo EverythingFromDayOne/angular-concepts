@@ -1,15 +1,16 @@
 ---
-roadmap_node: "routing"
-title: "Angular Router"
-file: "routing/routing.md"
-source_days: [27]
-original_authors: ["Trung Vo"]
-status:
+article_id: routing
+concept_folder: routing
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: draft
+translation:
+  source_days: [27]
+  angular_when_written: "9"
   translated: true
   upgraded: true
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Angular Router

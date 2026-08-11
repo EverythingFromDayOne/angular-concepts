@@ -1,11 +1,9 @@
 ---
 recipe_id: "performance-auditing"
-title: "Performance Auditing: \"The App Is Slow, Where Do I Look?\""
-file: "recipes/performance/performance-auditing.md"
 primary_concept: "components/change-detection"
 related_concepts: ["reactivity/signals", "components/components", "routing/lazy-loading"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

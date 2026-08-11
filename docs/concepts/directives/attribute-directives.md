@@ -1,15 +1,16 @@
 ---
-roadmap_node: "attribute-directives"
-title: "Attribute Directives"
-file: "directives/attribute-directives.md"
-source_days: [6]
-original_authors: ["Tiep Phan"]
-status:
+article_id: attribute-directives
+concept_folder: directives
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: needs-upgrade
+translation:
+  source_days: [6]
+  angular_when_written: "9"
   translated: true
   upgraded: false
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Attribute Directives

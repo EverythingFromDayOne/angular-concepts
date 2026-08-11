@@ -1,15 +1,16 @@
 ---
-roadmap_node: "module-federation"
-title: "Micro Frontends with Module Federation"
-file: "monorepo/module-federation.md"
-source_days: [39]
-original_authors: ["Tiep Phan"]
-status:
+article_id: module-federation
+concept_folder: monorepo
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: draft
+translation:
+  source_days: [39]
+  angular_when_written: "11"
   translated: true
   upgraded: true
   reviewed: false
-angular_when_written: "11"
-angular_baseline: "22"
 ---
 
 # Micro Frontends with Module Federation

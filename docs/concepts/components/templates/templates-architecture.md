@@ -1,15 +1,16 @@
 ---
-roadmap_node: "templates-architecture"
-title: "Template Variables, ViewChild, and ContentChild"
-file: "components/templates/templates-architecture.md"
-source_days: [10, 17]
-original_authors: ["Tiep Phan"]
-status:
+article_id: templates-architecture
+concept_folder: components/templates
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: needs-upgrade
+translation:
+  source_days: [10, 17]
+  angular_when_written: "9"
   translated: true
   upgraded: false
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Template Variables, ViewChild, and ContentChild

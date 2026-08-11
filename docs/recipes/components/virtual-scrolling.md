@@ -1,11 +1,9 @@
 ---
 recipe_id: "virtual-scrolling"
-title: "Virtual Scrolling: Rendering 10,000 Items Without Killing the Browser"
-file: "recipes/components/virtual-scrolling.md"
 primary_concept: "components/components"
 related_concepts: ["reactivity/signals", "http/http", "components/standalone-components"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

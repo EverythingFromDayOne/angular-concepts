@@ -1,11 +1,9 @@
 ---
 recipe_id: "ngrx-to-signal-store-migration"
-title: "NgRx → Signal Store: Migrating Without a Big-Bang Rewrite"
-file: "recipes/state-management/ngrx-to-signal-store-migration.md"
 primary_concept: "state-management/ngrx"
 related_concepts: ["reactivity/signals", "dependency-injection/dependency-injection", "http/http"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "advanced"
 status:
   upgraded: true

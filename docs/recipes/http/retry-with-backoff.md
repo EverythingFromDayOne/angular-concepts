@@ -1,11 +1,9 @@
 ---
 recipe_id: "retry-with-backoff"
-title: "Retry with Backoff: Surviving Transient API Failures"
-file: "recipes/http/retry-with-backoff.md"
 primary_concept: "http/http"
 related_concepts: ["http/interceptors", "reactivity/rxjs/rxjs-error-handling", "reactivity/signals"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

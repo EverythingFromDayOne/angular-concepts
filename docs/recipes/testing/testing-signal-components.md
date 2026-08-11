@@ -1,11 +1,9 @@
 ---
 recipe_id: "testing-signal-components"
-title: "Testing Signal-Based Components: Patterns for the v22 Era"
-file: "recipes/testing/testing-signal-components.md"
 primary_concept: "testing/component-testing"
 related_concepts: ["reactivity/signals", "components/components", "dependency-injection/dependency-injection"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

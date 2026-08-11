@@ -1,11 +1,9 @@
 ---
 recipe_id: "multi-step-wizards"
-title: "Multi-Step Wizards: State That Survives the Back Button"
-file: "recipes/forms-and-search/multi-step-wizards.md"
 primary_concept: "forms/reactive-forms"
 related_concepts: ["reactivity/signals", "routing/routing", "components/components"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

@@ -1,15 +1,16 @@
 ---
-roadmap_node: "data-binding"
-title: "Angular Data Binding"
-file: "components/templates/data-binding.md"
-source_days: [3]
-original_authors: ["Tiep Phan"]
-status:
+article_id: data-binding
+concept_folder: components/templates
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: needs-upgrade
+translation:
+  source_days: [3]
+  angular_when_written: "9"
   translated: true
   upgraded: false
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Angular Data Binding

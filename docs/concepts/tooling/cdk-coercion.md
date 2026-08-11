@@ -1,15 +1,16 @@
 ---
-roadmap_node: "cdk-coercion"
-title: "Input Coercion: built-in transforms and CDK utilities"
-file: "tooling/cdk-coercion.md"
-source_days: [42]
-original_authors: ["Chau Tran", "Trung Vo"]
-status:
+article_id: cdk-coercion
+concept_folder: tooling
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: draft
+translation:
+  source_days: [42]
+  angular_when_written: "9"
   translated: true
   upgraded: true
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Input Coercion: built-in transforms and CDK utilities

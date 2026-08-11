@@ -1,15 +1,16 @@
 ---
-roadmap_node: "content-projection"
-title: "Content Projection"
-file: "components/templates/content-projection.md"
-source_days: [13]
-original_authors: ["Tiep Phan"]
-status:
+article_id: content-projection
+concept_folder: components/templates
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: needs-upgrade
+translation:
+  source_days: [13]
+  angular_when_written: "9"
   translated: true
   upgraded: false
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Content Projection

@@ -1,11 +1,9 @@
 ---
 recipe_id: "take-until-destroyed"
-title: "Custom RxJS Operators with takeUntilDestroyed"
-file: "recipes/reactivity/take-until-destroyed.md"
 primary_concept: "reactivity/rxjs/rxjs"
 related_concepts: ["dependency-injection/dependency-injection", "reactivity/to-signal", "reactivity/signals"]
 demo_repo: "https://github.com/EverythingFromDayOne/AngularDemos/tree/development/apps/angular-demos/src/app/features/takeUntilDestroyed"
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

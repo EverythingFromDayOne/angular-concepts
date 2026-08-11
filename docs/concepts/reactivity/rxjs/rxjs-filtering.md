@@ -1,15 +1,16 @@
 ---
-roadmap_node: "rxjs-filtering"
-title: "RxJS Filtering Operators"
-file: "reactivity/rxjs/rxjs-filtering.md"
-source_days: [22]
-original_authors: ["Chau Tran"]
-status:
+article_id: rxjs-filtering
+concept_folder: reactivity/rxjs
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: needs-upgrade
+translation:
+  source_days: [22]
+  angular_when_written: "9"
   translated: true
   upgraded: false
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # RxJS Filtering Operators

@@ -1,15 +1,16 @@
 ---
-roadmap_node: "view-ref"
-title: "ViewRef & Renderer2"
-file: "rendering/view-ref.md"
-source_days: []
-original_authors: []
-status:
+article_id: view-ref
+concept_folder: rendering
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: draft
+translation:
+  source_days: []
+  angular_when_written: null
   translated: false
   upgraded: true
   reviewed: false
-angular_when_written: null
-angular_baseline: "22"
 ---
 
 > **Modern Angular only**

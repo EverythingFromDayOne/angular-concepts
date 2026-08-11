@@ -1,11 +1,9 @@
 ---
 recipe_id: "preloading-strategy"
-title: "Hover- and Viewport-Triggered Route Preloading"
-file: "recipes/routing/preloading-strategy.md"
 primary_concept: "routing/routing"
 related_concepts: ["routing/lazy-loading", "routing/router-configuration", "dependency-injection/dependency-injection"]
 demo_repo: "https://github.com/EverythingFromDayOne/AngularDemos/tree/development/apps/angular-demos/src/app/features/preloading-strategy"
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

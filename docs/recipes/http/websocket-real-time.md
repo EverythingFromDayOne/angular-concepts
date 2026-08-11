@@ -1,11 +1,9 @@
 ---
 recipe_id: "websocket-real-time"
-title: "WebSocket Integration: Real-Time Data Without the Reconnection Hell"
-file: "recipes/http/websocket-real-time.md"
 primary_concept: "http/http"
 related_concepts: ["reactivity/signals", "reactivity/rxjs/rxjs", "dependency-injection/dependency-injection"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

@@ -1,11 +1,9 @@
 ---
 recipe_id: "component-communication"
-title: "Component Communication: When NgRx Is Overkill (And When It Isn't)"
-file: "recipes/components/component-communication.md"
 primary_concept: "components/component-interactions"
 related_concepts: ["reactivity/signals", "dependency-injection/dependency-injection", "routing/routing", "state-management/ngrx"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

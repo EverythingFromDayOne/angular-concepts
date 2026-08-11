@@ -1,11 +1,9 @@
 ---
 recipe_id: "service-worker-offline-first"
-title: "Service Worker: Offline-First Without Losing User Data"
-file: "recipes/pwa/service-worker-offline-first.md"
 primary_concept: "tooling/pwa"
 related_concepts: ["reactivity/signals", "http/http", "dependency-injection/dependency-injection"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "advanced"
 status:
   upgraded: true

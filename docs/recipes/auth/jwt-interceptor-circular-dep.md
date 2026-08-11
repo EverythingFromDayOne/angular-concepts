@@ -1,11 +1,9 @@
 ---
 recipe_id: "jwt-interceptor-circular-dep"
-title: "JWT Interceptor: Breaking the Circular Dependency"
-file: "recipes/auth/jwt-interceptor-circular-dep.md"
 primary_concept: "dependency-injection/dependency-injection"
 related_concepts: ["http/http", "http/interceptors"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true

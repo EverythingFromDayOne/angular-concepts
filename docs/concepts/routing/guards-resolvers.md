@@ -1,15 +1,16 @@
 ---
-roadmap_node: "guards-resolvers"
-title: "Angular Router — Guards and Resolvers"
-file: "routing/guards-resolvers.md"
-source_days: [30, 31, 32]
-original_authors: ["Tiep Phan"]
-status:
+article_id: guards-resolvers
+concept_folder: routing
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: needs-upgrade
+translation:
+  source_days: [30, 31, 32]
+  angular_when_written: "9"
   translated: true
   upgraded: false
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Angular Router — Guards and Resolvers

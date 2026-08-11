@@ -1,15 +1,16 @@
 ---
-roadmap_node: "ng-template-ng-container"
-title: "ng-template, ngTemplateOutlet, and ng-container"
-file: "directives/ng-template-ng-container.md"
-source_days: [14]
-original_authors: ["Trung Vo"]
-status:
+article_id: ng-template-ng-container
+concept_folder: directives
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: needs-upgrade
+translation:
+  source_days: [14]
+  angular_when_written: "9"
   translated: true
   upgraded: false
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # ng-template, ngTemplateOutlet, and ng-container

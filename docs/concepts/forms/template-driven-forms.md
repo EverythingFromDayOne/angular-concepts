@@ -1,15 +1,16 @@
 ---
-roadmap_node: "template-driven-forms"
-title: "Angular Template-driven Forms"
-file: "forms/template-driven-forms.md"
-source_days: [33, 34]
-original_authors: ["Tiep Phan"]
-status:
+article_id: template-driven-forms
+concept_folder: forms
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: needs-upgrade
+translation:
+  source_days: [33, 34]
+  angular_when_written: "9"
   translated: true
   upgraded: false
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Angular Template-driven Forms

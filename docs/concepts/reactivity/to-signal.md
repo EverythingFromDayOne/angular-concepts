@@ -1,15 +1,16 @@
 ---
-roadmap_node: "to-signal-from-signal"
-title: "toSignal & toObservable"
-file: "reactivity/to-signal.md"
-source_days: []
-original_authors: []
-status:
+article_id: to-signal
+concept_folder: reactivity
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: draft
+translation:
+  source_days: []
+  angular_when_written: null
   translated: false
   upgraded: true
   reviewed: false
-angular_when_written: null
-angular_baseline: "22"
 ---
 
 > **Modern Angular only**

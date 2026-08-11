@@ -1,15 +1,16 @@
 ---
-roadmap_node: "reactive-forms"
-title: "Angular Reactive Forms"
-file: "forms/reactive-forms.md"
-source_days: [35, 36]
-original_authors: ["Tiep Phan", "Trung Vo"]
-status:
+article_id: reactive-forms
+concept_folder: forms
+angular_baseline: "22.1.1"
+verified_against: "@angular/core@22.1.1"
+verified_on: 2026-08-11
+status: draft
+translation:
+  source_days: [35, 36]
+  angular_when_written: "9"
   translated: true
   upgraded: true
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Angular Reactive Forms
