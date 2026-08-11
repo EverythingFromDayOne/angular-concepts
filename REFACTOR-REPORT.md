@@ -312,6 +312,11 @@ Everything below required a judgment call the prompt didn't fully specify.
    those three retargeted instead can do so with the same basename-lookup
    approach used for §3b.
 
+   **Resolved 2026-08-11.** Confirmed correct — the prompt's claim was
+   false. The three existing targets were retargeted in a follow-up commit
+   and the §3a bullet in `prompts/prompt-restructure.md` was corrected. The
+   other six basenames remain plain text.
+
 2. **`ui-library-comparison.md`'s missing source fields.** This one concept
    article lacked `source_days`, `original_authors`, and
    `angular_when_written` entirely (every other article declares them,

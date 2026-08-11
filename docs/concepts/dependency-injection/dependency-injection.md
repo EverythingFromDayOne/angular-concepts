@@ -28,7 +28,7 @@ translation:
 >
 > Every Angular 9 example below is preserved with its `<!-- legacy -->` marker, followed by a v22 equivalent so you can see how the same DI concept maps to today's syntax. The article closes with a mechanism reflection digging into **why** `inject()` and the injection context exist at all — that's the most consequential change since Angular 9.
 >
-> **See also**: Modern DI with `inject()` · DI Tokens · Environment Injector · Standalone Migration · Signal Inputs · Signal Queries · Control Flow
+> **See also**: Modern DI with `inject()` · DI Tokens · Environment Injector · Standalone Migration · [Signal Inputs](../reactivity/signal-inputs.md) · Signal Queries · [Control Flow](../components/templates/control-flow.md)
 
 ---
 
@@ -1177,11 +1177,11 @@ We've covered DI concepts, Angular's injector/provider model, provider overrides
 - DI Tokens — `InjectionToken<T>`, multi-providers, and design patterns
 - Environment Injector — root vs platform vs route-level injectors, lazy boundaries
 - Standalone Migration — migrating off `@NgModule`
-- Signal Inputs — `input()`, `output()`, `model()` in depth
+- [Signal Inputs](../reactivity/signal-inputs.md) — `input()`, `output()`, `model()` in depth
 - Signal Queries — `viewChild()`, `viewChildren()`, `contentChild()`, `contentChildren()`
-- Control Flow — `@if`, `@for`, `@switch`, `@let`
+- [Control Flow](../components/templates/control-flow.md) — `@if`, `@for`, `@switch`, `@let`
 - Router (modern) — functional guards/resolvers that lean on `inject()`
-- Unit Tests — `TestBed.inject()`, `TestBed.tick()`, `await fixture.whenStable()`
+- [Unit Tests](../testing/unit-tests.md) — `TestBed.inject()`, `TestBed.tick()`, `await fixture.whenStable()`
 
 ## Further reading
 

@@ -117,7 +117,9 @@ Then repair in this order:
 - Both `README.md` and `progress.md` refer to `forms-and-search`. The directory on disk is `form-and-search` — singular. Correct the references, do not rename the directory.
 - `docs/concepts/components/component-interactions.md` links `../templates/data-binding.md`. After the move the correct path is `templates/data-binding.md` (sibling folder under `components/`). Verify and fix.
 - `docs/concepts/components/templates/data-binding.md` links `../../_orphans/getting-started.md`. No `_orphans` directory exists. Retarget to `../../foundations/getting-started.md`.
-- `docs/concepts/dependency-injection/dependency-injection.md` contains 17 links to flat-root paths (`../di-modern.md`, `../signal-queries.md`, `../standalone-migration.md`, and others). **None of these files exist anywhere in the repo.** Do not invent targets. Convert each to plain text — strip the link syntax, keep the label — and list every one in the report under "unwritten articles referenced".
+- `docs/concepts/dependency-injection/dependency-injection.md` contains 17 links to flat-root paths spanning 9 distinct basenames. **Six of the nine do not exist anywhere in the repo** — `di-modern.md`, `di-tokens.md`, `environment-injector.md`, `signal-queries.md`, `standalone-migration.md`, `router-modern.md`. Convert those to plain text and list them in the report under "unwritten articles referenced". The remaining three **do** exist and must be retargeted per the general §3b rule: `signal-inputs.md` → `../reactivity/signal-inputs.md`, `control-flow.md` → `../components/templates/control-flow.md`, `unit-tests.md` → `../testing/unit-tests.md`.
+
+  (Corrected 2026-08-11: the original text of this bullet claimed none of the nine existed, which was false and caused three valid cross-references to be stripped.)
 
 **3b. Everything else.** For each remaining broken link, if a file with that exact basename exists somewhere in the repo, retarget to it. If no such file exists, strip the link syntax and keep the label, and add it to the "unwritten articles referenced" list.
 
