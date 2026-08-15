@@ -1,11 +1,9 @@
 ---
 recipe_id: "progress-tracking"
-title: "Upload and Download Progress with HttpClient"
-file: "recipes/http/progress-tracking.md"
 primary_concept: "http/http"
 related_concepts: ["reactivity/rxjs/rxjs", "reactivity/rxjs/rxjs-higher-order", "reactivity/signals", "reactivity/to-signal"]
 demo_repo: "https://github.com/EverythingFromDayOne/AngularDemos/tree/development/apps/angular-demos/src/app/features/self-rewrite-code"
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true
@@ -20,7 +18,7 @@ status:
 > downloads, handles servers that don't send `Content-Length`, and lets
 > consumer components drive a progress bar in three lines.
 >
-> **Concepts you'll touch:** [HTTP](../../http/http.md), [RxJS](../../reactivity/rxjs/rxjs.md), [Higher-order operators](../../reactivity/rxjs/rxjs-higher-order.md), [Signals](../../reactivity/signals.md)
+> **Concepts you'll touch:** [HTTP](../../concepts/http/http.md), [RxJS](../../concepts/reactivity/rxjs/rxjs.md), [Higher-order operators](../../concepts/reactivity/rxjs/rxjs-higher-order.md), [Signals](../../concepts/reactivity/signals.md)
 >
 > **Time:** ~15 minutes to read; ~30 minutes to integrate into an upload form.
 
@@ -73,7 +71,7 @@ won't work for SSR-rendered routes that issue XHR uploads. In practice
 uploads happen client-side from interactive routes, so this is rarely
 the constraint that blocks you.
 
-> **See also:** [HTTP](../../http/http.md) for the full Fetch/XHR
+> **See also:** [HTTP](../../concepts/http/http.md) for the full Fetch/XHR
 > transition timeline and the trade-offs of each backend.
 
 **Download progress works on both backends** — Fetch can stream the
@@ -542,10 +540,10 @@ calling the factory once per upload gives accurate throughput.
 
 ## See also
 
-- [HTTP](../../http/http.md) — the full HttpClient story, Fetch vs XHR backend choice, transfer cache
-- [RxJS — higher-order operators](../../reactivity/rxjs/rxjs-higher-order.md) — `map`, `filter`, custom operator patterns
+- [HTTP](../../concepts/http/http.md) — the full HttpClient story, Fetch vs XHR backend choice, transfer cache
+- [RxJS — higher-order operators](../../concepts/reactivity/rxjs/rxjs-higher-order.md) — `map`, `filter`, custom operator patterns
 - [`takeUntilDestroyed`](../reactivity/take-until-destroyed.md) — the cleanup primitive used here, and the companion "custom operator" recipe
-- [Signals](../../reactivity/signals.md) — `signal()` for component state
+- [Signals](../../concepts/reactivity/signals.md) — `signal()` for component state
 - [`HttpEvent` API (angular.dev)](https://angular.dev/api/common/http/HttpEvent) — the full event-type catalogue
 
 ## References

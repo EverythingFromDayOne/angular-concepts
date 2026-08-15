@@ -1,11 +1,9 @@
 ---
 recipe_id: "service-worker-offline-first"
-title: "Service Worker: Offline-First Without Losing User Data"
-file: "recipes/pwa/service-worker-offline-first.md"
 primary_concept: "tooling/pwa"
 related_concepts: ["reactivity/signals", "http/http", "dependency-injection/dependency-injection"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "advanced"
 status:
   upgraded: true
@@ -23,7 +21,7 @@ status:
 > "new version available" refresh UX. Real users on subways,
 > flights, and flaky mobile networks stop losing their work.
 >
-> **Concepts you'll touch:** [PWA / Tooling](../../tooling/pwa.md), [Signals](../../reactivity/signals.md), [HTTP](../../http/http.md), [Dependency Injection](../../dependency-injection/dependency-injection.md)
+> **Concepts you'll touch:** [PWA / Tooling](../../concepts/tooling/pwa.md), [Signals](../../concepts/reactivity/signals.md), [HTTP](../../concepts/http/http.md), [Dependency Injection](../../concepts/dependency-injection/dependency-injection.md)
 >
 > **Time:** ~40 minutes to read; ~1 day to retrofit a real app
 > including testing the queue behavior under simulated offline
@@ -707,12 +705,12 @@ The `caches.keys()` / `caches.delete()` APIs are native browser APIs, not Angula
 
 ## See also
 
-- [Optimistic Updates](../forms-and-search/optimistic-updates.md) — the pending-operation queue pattern this recipe extends with persistence
+- [Optimistic Updates](../form-and-search/optimistic-updates.md) — the pending-operation queue pattern this recipe extends with persistence
 - [Retry with Backoff](../http/retry-with-backoff.md) — the retryable-error taxonomy and idempotency-key pattern the queue depends on
 - [Token Storage Security](../auth/token-storage-security.md) — token-handling context; the cache-clear-on-logout pattern comes from here
 - [Race Conditions](../reactivity/race-conditions.md) — the queue's serial processing avoids many of these; still worth reading
 - [Component Communication](../components/component-communication.md) — the `ConnectionService` pattern is a direct application of the "shared service with signals" pattern
-- [HTTP](../../http/http.md) — `HttpClient` fundamentals
+- [HTTP](../../concepts/http/http.md) — `HttpClient` fundamentals
 
 ## References
 

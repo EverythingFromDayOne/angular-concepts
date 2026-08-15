@@ -1,11 +1,9 @@
 ---
 recipe_id: "step-up-authentication"
-title: "Step-up Authentication: Re-auth for Sensitive Actions"
-file: "recipes/auth/step-up-authentication.md"
 primary_concept: "http/interceptors"
 related_concepts: ["dependency-injection/dependency-injection", "reactivity/signals", "http/http"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "advanced"
 status:
   upgraded: true
@@ -22,7 +20,7 @@ status:
 > elevated-scope token, and quietly retries the original request — all
 > without the calling component knowing any of this happened.
 >
-> **Concepts you'll touch:** [HTTP Interceptors](../../http/interceptors.md), [Dependency Injection](../../dependency-injection/dependency-injection.md), [Signals](../../reactivity/signals.md), [HTTP](../../http/http.md)
+> **Concepts you'll touch:** [HTTP Interceptors](../../concepts/http/interceptors.md), [Dependency Injection](../../concepts/dependency-injection/dependency-injection.md), [Signals](../../concepts/reactivity/signals.md), [HTTP](../../concepts/http/http.md)
 >
 > **Time:** ~30 minutes to read; ~3 hours to wire up end-to-end and verify all the edge cases.
 
@@ -583,9 +581,9 @@ The trade-off vs scope-based: cleaner separation between regular and sudo state,
 - [JWT Interceptor: Breaking the Circular Dependency](./jwt-interceptor-circular-dep.md) — the interceptor foundation; this recipe extends its `catchError` chain
 - [Token Storage Security](./token-storage-security.md) — token lifecycle, refresh coordinator, the 401 refresh flow that composes with step-up
 - [App Initialization](./app-initialization.md) — silent token restoration; sudo mode kicks in after the user has been browsing for a while, which only happens once `initApp` has restored the session
-- [HTTP](../../http/http.md) — `HttpInterceptorFn`, request cloning, error handling
-- [Signals](../../reactivity/signals.md) — the modal-state pattern with `signal` + `computed`
-- [Dependency Injection — Lazy injection](../../dependency-injection/dependency-injection.md#lazy-injection--injector-as-an-escape-hatch) — the `Injector.get(AuthService)` mechanism the interceptor uses
+- [HTTP](../../concepts/http/http.md) — `HttpInterceptorFn`, request cloning, error handling
+- [Signals](../../concepts/reactivity/signals.md) — the modal-state pattern with `signal` + `computed`
+- [Dependency Injection — Lazy injection](../../concepts/dependency-injection/dependency-injection.md#lazy-injection--injector-as-an-escape-hatch) — the `Injector.get(AuthService)` mechanism the interceptor uses
 
 ## References
 

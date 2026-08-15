@@ -1,11 +1,9 @@
 ---
 recipe_id: "multi-step-wizards"
-title: "Multi-Step Wizards: State That Survives the Back Button"
-file: "recipes/forms-and-search/multi-step-wizards.md"
 primary_concept: "forms/reactive-forms"
 related_concepts: ["reactivity/signals", "routing/routing", "components/components"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true
@@ -24,7 +22,7 @@ status:
 > "you have unsaved changes"; step-completion tracking that
 > prevents jumping ahead.
 >
-> **Concepts you'll touch:** [Reactive Forms](../../forms/reactive-forms.md), [Signals](../../reactivity/signals.md), [Routing](../../routing/routing.md), [Components](../../components/components.md)
+> **Concepts you'll touch:** [Reactive Forms](../../concepts/forms/reactive-forms.md), [Signals](../../concepts/reactivity/signals.md), [Routing](../../concepts/routing/routing.md), Components
 >
 > **Time:** ~25 minutes to read; ~4 hours to implement a real
 > wizard including persistence and edge-case testing.
@@ -311,7 +309,7 @@ export const onboardingRoutes: Routes = [
 **Three things worth absorbing:**
 
 - **`providers: [WizardStateService]` on the parent route** — the service is instantiated when the parent activates; destroyed when the user navigates away. Child routes inject the same instance.
-- **Lazy-loaded step components** — each step's code is a separate chunk. Users who abandon at step 2 never download step 5's code. Composes with the [bundle-splitting recipe](./bundle-splitting-strategies.md).
+- **Lazy-loaded step components** — each step's code is a separate chunk. Users who abandon at step 2 never download step 5's code. Composes with the [bundle-splitting recipe](../performance/bundle-splitting-strategies.md).
 - **`canActivate: [stepGuard(...)]`** — the guard checks whether previous steps are completed before allowing navigation to a later step.
 
 ### The step guard
@@ -710,8 +708,8 @@ The effect runs whenever step visibility changes. If the current index is out of
 - [Optimistic Updates](./optimistic-updates.md) — for wizards that save intermediate state to the server (save on step transition, retry on failure)
 - [Component Communication](../components/component-communication.md) — the subtree-scoped service pattern (Pattern 4)
 - [App Initialization](../auth/app-initialization.md) — the `CanActivateFn` pattern used by `stepGuard`
-- [Routing](../../routing/routing.md) — `provideRouter`, nested routes, guards
-- [Signals](../../reactivity/signals.md) — the state primitive
+- [Routing](../../concepts/routing/routing.md) — `provideRouter`, nested routes, guards
+- [Signals](../../concepts/reactivity/signals.md) — the state primitive
 
 ## References
 

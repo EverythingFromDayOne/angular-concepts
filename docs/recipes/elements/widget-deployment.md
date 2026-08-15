@@ -1,15 +1,9 @@
 ---
-roadmap_node: "cdk-coercion"
-title: "Input Coercion: built-in transforms and CDK utilities"
-file: "tooling/cdk-coercion.md"
-source_days: [42]
-original_authors: ["Chau Tran", "Trung Vo"]
+recipe_id: "widget-deployment"
+angular_baseline: "22.1.1"
 status:
-  translated: true
   upgraded: true
   reviewed: false
-angular_when_written: "9"
-angular_baseline: "22"
 ---
 
 # Input Coercion: built-in transforms and CDK utilities
@@ -42,7 +36,7 @@ angular_baseline: "22"
 > functions are framed as the niche/library-author toolbox they actually are
 > in v22.
 >
-> **See also**: [Signal Inputs](../reactivity/signal-inputs.md) · [Attribute Directives](../directives/attribute-directives.md)
+> **See also**: [Signal Inputs](../../concepts/reactivity/signal-inputs.md) · [Attribute Directives](../../concepts/directives/attribute-directives.md)
 
 ---
 
@@ -344,9 +338,9 @@ the same behavior with less ceremony.
 
 ## See also
 
-- [Signal Inputs](../reactivity/signal-inputs.md) — `input()`, `input.required()`, and the transform option in depth
-- [Attribute Directives](../directives/attribute-directives.md) — coercion in custom directive inputs
-- [Reactive Forms](../forms/reactive-forms.md) — typed forms use a related pattern (typed value flows)
+- [Signal Inputs](../../concepts/reactivity/signal-inputs.md) — `input()`, `input.required()`, and the transform option in depth
+- [Attribute Directives](../../concepts/directives/attribute-directives.md) — coercion in custom directive inputs
+- [Reactive Forms](../../concepts/forms/reactive-forms.md) — typed forms use a related pattern (typed value flows)
 
 ## Source code
 
@@ -359,9 +353,3 @@ https://stackblitz.com/edit/angular-ivy-cdk-coercion?file=src/app/child/child.co
 - [Input transforms guide (angular.dev)](https://angular.dev/guide/components/inputs#transforms)
 - [`@angular/cdk/coercion` source](https://github.com/angular/components/tree/main/src/cdk/coercion)
 - [JS type coercion explained (freeCodeCamp)](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/)
-
-## Author
-
-Chau Tran — https://github.com/nartc · Trung Vo — https://github.com/trungk18
-
-*Adapted from the Vietnamese ["100 Days of Angular"](https://github.com/angular-vietnam/100-days-of-angular) series (Day 46) by Angular Vietnam. MIT licensed.*

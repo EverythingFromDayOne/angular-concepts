@@ -1,11 +1,9 @@
 ---
 recipe_id: "async-validation"
-title: "Async Validation: Username Availability Without the Flicker"
-file: "recipes/forms-and-search/async-validation.md"
 primary_concept: "forms/validation"
 related_concepts: ["forms/reactive-forms", "reactivity/rxjs/rxjs-higher-order", "reactivity/signals", "http/http"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true
@@ -21,7 +19,7 @@ status:
 > *checking*, *available*, *taken*, or *errored* — all in idiomatic v22
 > reactive forms with functional async validators.
 >
-> **Concepts you'll touch:** [Validation](../../forms/validation.md), [Reactive Forms](../../forms/reactive-forms.md), [RxJS higher-order operators](../../reactivity/rxjs/rxjs-higher-order.md), [Signals](../../reactivity/signals.md), [HTTP](../../http/http.md)
+> **Concepts you'll touch:** [Validation](../../concepts/forms/validation.md), [Reactive Forms](../../concepts/forms/reactive-forms.md), [RxJS higher-order operators](../../concepts/reactivity/rxjs/rxjs-higher-order.md), [Signals](../../concepts/reactivity/signals.md), [HTTP](../../concepts/http/http.md)
 >
 > **Time:** ~25 minutes to read; ~1 hour to add to a registration form
 > with proper UX states.
@@ -447,8 +445,8 @@ Trade-off: less correct (you're claiming validity before knowing), but smoother 
 
 ## See also
 
-- [Validation](../../forms/validation.md) — sync and async validators, custom validator patterns, error message strategies
-- [Reactive Forms](../../forms/reactive-forms.md) — typed forms, FormBuilder, control APIs
+- [Validation](../../concepts/forms/validation.md) — sync and async validators, custom validator patterns, error message strategies
+- [Reactive Forms](../../concepts/forms/reactive-forms.md) — typed forms, FormBuilder, control APIs
 - [Dynamic Forms](./dynamic-forms.md) — the previous recipe; uses `updateValueAndValidity` for related validation-shape changes
 - [Race Conditions](../reactivity/race-conditions.md) — the `switchMap` cancellation that the validator relies on
 - [Request Deduplication](../http/request-deduplication.md) — the `shareReplay` pattern that backs the availability cache

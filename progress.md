@@ -26,51 +26,74 @@ Modernizing Phase 1 translations to v22 idioms: signals, `inject()`, functional 
 
 | Article | Status | Notes |
 | --- | --- | --- |
-| `dependency-injection/dependency-injection.md` | 🟢 | Includes lazy-injection escape-hatch section — referenced by all 4 auth recipes and the interceptor recipes |
-| `routing/routing.md` | 🟢 | `provideRouter`, functional guards, functional resolvers |
-| `forms/reactive-forms.md` | 🟢 | `NonNullableFormBuilder`, typed forms, `inject(FormBuilder)` |
-| `reactivity/signals.md` | ⚪ | **Highest-priority queued** — recipes across the project lean on it |
-| `components/change-detection.md` | ⚪ | Zone.js → signals → zoneless evolution |
-| `components/components.md` | ⚪ | Standalone-by-default; `input()`/`output()`/`model()` |
-| `ssr/ssr-hydration.md` | ⚪ | Complements the `recipes/ssr/ssr-hydration-deep-dive.md` recipe |
+| `concepts/dependency-injection/dependency-injection.md` | 🟢 | Includes lazy-injection escape-hatch section — referenced by all 4 auth recipes and the interceptor recipes |
+| `concepts/routing/routing.md` | 🟢 | `provideRouter`, functional guards, functional resolvers |
+| `concepts/forms/reactive-forms.md` | 🟢 | `NonNullableFormBuilder`, typed forms, `inject(FormBuilder)` |
+| `concepts/components/change-detection.md` | ⚪ | Zone.js → signals → zoneless evolution |
+| `concepts/components/components.md` | ⚪ unwritten | Standalone-by-default; `input()`/`output()`/`model()` |
+| `concepts/rendering/ssr-hydration.md` | ⚪ | Complements the `recipes/ssr/ssr-hydration-deep-dive.md` recipe |
+
+`reactivity/signals.md` was previously listed here as "highest-priority queued." It isn't a Phase 2 item: its frontmatter is `translated: false, upgraded: true` and it opens with a banner stating it was written fresh for v22 — it's a Phase 3 gap article, already complete. See the Phase 3 section above.
 
 ### Application architecture (mixed tier)
 
 | Article | Status | Notes |
 | --- | --- | --- |
-| `http/http.md` | 🟢 | Polished during Phase 3 |
-| `state-management/ngrx.md` | 🟢 | Polished during Phase 3; Signal Store framing included |
-| `monorepo/module-federation.md` | 🟢 | Modern federation; standalone-aware |
-| `components/dynamic-components.md` | 🟢 | `ViewContainerRef.createComponent()` (v14+) |
-| `forms/forms.md` | ⚪ | Template-driven overview |
-| `forms/validation.md` | ⚪ | Sync + async patterns |
-| `routing/lazy-loading.md` | ⚪ | `loadComponent`, `loadChildren` |
-| `routing/route-guards.md` | ⚪ | Functional guards |
+| `concepts/http/http.md` | 🟢 | Polished during Phase 3 |
+| `concepts/state-management/ngrx.md` | 🟢 | Polished during Phase 3; Signal Store framing included |
+| `concepts/monorepo/module-federation.md` | 🟢 | Modern federation; standalone-aware |
+| `concepts/components/dynamic-components.md` | 🟢 | `ViewContainerRef.createComponent()` (v14+) |
+| `concepts/forms/template-driven-forms.md` | ⚪ | Template-driven overview |
+| `concepts/forms/validation.md` | ⚪ | Sync + async patterns |
+| `concepts/routing/lazy-loading.md` | ⚪ | `loadComponent`, `loadChildren` |
+| `concepts/routing/guards-resolvers.md` | ⚪ | Functional guards |
+| `concepts/routing/router-configuration.md` | ⚪ | Feature modules, child routes, services |
 
 ### Common patterns (Sonnet tier)
 
 | Article | Status |
 | --- | --- |
-| `directives/structural-directives.md` | ⚪ |
-| `directives/attribute-directives.md` | ⚪ |
-| `pipes/pipes.md` | ⚪ |
-| `pipes/custom-pipes.md` | ⚪ |
-| `components/component-interactions.md` | ⚪ (point to `recipes/components/component-communication.md` as canonical decision tree) |
-| `components/lifecycle-hooks.md` | ⚪ |
-| `styling/style-binding.md` | ⚪ |
-| `styling/view-encapsulation.md` | ⚪ |
-| `styling/ng-content.md` | ⚪ |
-| `testing/component-testing.md` | ⚪ (complements `recipes/testing/testing-signal-components.md`) |
-| `testing/service-testing.md` | ⚪ |
+| `concepts/directives/structural-directives.md` | ⚪ |
+| `concepts/directives/attribute-directives.md` | ⚪ |
+| `concepts/directives/directive-composition.md` | ⚪ |
+| `concepts/directives/ng-template-ng-container.md` | ⚪ |
+| `concepts/pipes/pipes.md` | ⚪ |
+| `pipes/custom-pipes.md` | ⚪ unwritten |
+| `concepts/components/component-interactions.md` | ⚪ (point to `recipes/components/component-communication.md` as canonical decision tree) |
+| `concepts/components/templates/content-projection.md` | ⚪ |
+| `concepts/components/templates/data-binding.md` | ⚪ |
+| `concepts/components/templates/templates-architecture.md` | ⚪ |
+| `concepts/forms/control-value-accessor.md` | ⚪ |
+| `components/lifecycle-hooks.md` | ⚪ (disk: `concepts/components/lifecycle.md` — a gap article, `translated: false`; not actually part of the Phase 2 translated-article queue, see ambiguities in `REFACTOR-REPORT.md`) |
+| `styling/style-binding.md` | ⚪ unwritten |
+| `styling/view-encapsulation.md` | ⚪ (disk: `concepts/components/styling/view-encapsulation.md` — a gap article, `translated: false`; not actually part of the Phase 2 translated-article queue, see ambiguities in `REFACTOR-REPORT.md`) |
+| `styling/ng-content.md` | ⚪ unwritten |
+| `testing/component-testing.md` | ⚪ unwritten (complements `recipes/testing/testing-signal-components.md`) |
+| `testing/service-testing.md` | ⚪ unwritten |
+
+### RxJS operators (Sonnet tier)
+
+The entire 8-article RxJS block was translated in Phase 1 but had gone untracked here.
+
+| Article | Status |
+| --- | --- |
+| `concepts/reactivity/rxjs/rxjs.md` | ⚪ |
+| `concepts/reactivity/rxjs/rxjs-combination.md` | ⚪ |
+| `concepts/reactivity/rxjs/rxjs-creation.md` | ⚪ |
+| `concepts/reactivity/rxjs/rxjs-error-handling.md` | ⚪ |
+| `concepts/reactivity/rxjs/rxjs-filtering.md` | ⚪ |
+| `concepts/reactivity/rxjs/rxjs-higher-order.md` | ⚪ |
+| `concepts/reactivity/rxjs/rxjs-subjects.md` | ⚪ |
+| `concepts/reactivity/rxjs/rxjs-transformation.md` | ⚪ |
 
 ### Tooling (Sonnet tier)
 
 | Article | Status |
 | --- | --- |
-| `tooling/built-in-i18n.md` | ⚪ |
-| `tooling/cdk-coercion.md` | ✅ (from orphan migration; reframed around `booleanAttribute`/`numberAttribute`) |
-| `tooling/ng-cli.md` | ⚪ |
-| `tooling/pwa.md` | ⚪ (complements `recipes/pwa/service-worker-offline-first.md`) |
+| `concepts/tooling/built-in-i18n.md` | ⚪ |
+| `concepts/tooling/cdk-coercion.md` | ✅ (from orphan migration; reframed around `booleanAttribute`/`numberAttribute`) |
+| `tooling/ng-cli.md` | ⚪ unwritten |
+| `concepts/tooling/pwa.md` | ⚪ (complements `recipes/pwa/service-worker-offline-first.md`) |
 
 ---
 
@@ -93,7 +116,7 @@ Sourced from the Vietnamese series' demos.
 | Widget deployment | `recipes/elements/widget-deployment.md` | 534 |
 | takeUntilDestroyed | `recipes/reactivity/take-until-destroyed.md` | 516 |
 | Preloading strategy | `recipes/routing/preloading-strategy.md` | 636 |
-| Search engine (multi-stage) | `recipes/forms-and-search/search-engine.md` | 885 |
+| Search engine (multi-stage) | `recipes/form-and-search/search-engine.md` | 885 |
 | Progress tracking | `recipes/http/progress-tracking.md` | 562 |
 
 ### Auth series (✅ complete — 4)
@@ -119,10 +142,10 @@ Tightly composed chain — each recipe builds on the previous.
 
 | Recipe | File | Lines |
 | --- | --- | --- |
-| Dynamic forms | `recipes/forms-and-search/dynamic-forms.md` | 748 |
-| Async validation | `recipes/forms-and-search/async-validation.md` | 467 |
-| Optimistic updates | `recipes/forms-and-search/optimistic-updates.md` | 603 |
-| Multi-step wizards | `recipes/forms-and-search/multi-step-wizards.md` | 725 |
+| Dynamic forms | `recipes/form-and-search/dynamic-forms.md` | 748 |
+| Async validation | `recipes/form-and-search/async-validation.md` | 467 |
+| Optimistic updates | `recipes/form-and-search/optimistic-updates.md` | 603 |
+| Multi-step wizards | `recipes/form-and-search/multi-step-wizards.md` | 725 |
 
 ### Components at scale (✅ complete — 2)
 
@@ -198,7 +221,7 @@ Recipes cross-reference densely. Foundational recipes (heaviest in-degree):
 | Undo/redo with signal stack | Editor-style history without memory explosion |
 | Bidirectional infinite scroll | Extends virtual-scrolling for chat-history "load up" |
 | Breadcrumb generation | Router-data-driven with signal composition |
-| i18n with lazy locale loading | Companion to `tooling/built-in-i18n.md` |
+| i18n with lazy locale loading | Companion to `concepts/tooling/built-in-i18n.md` |
 | Confirm-on-leave deep-dive | Beyond `CanDeactivate` — unload events, tab-close vs navigation |
 | Image / file upload with chunking + resume | Extends progress-tracking for large uploads |
 
@@ -271,11 +294,8 @@ Show old vs new patterns side by side with the marker comment:
 
 ## Open questions / TODOs
 
-- [ ] `CREDITS.md` — referenced from README, not yet created; needs per-day author attribution mapped to the original Vietnamese series authors
-- [ ] `LICENSE` — MIT text + copyright not yet at the repo root
 - [ ] Footer slim sweep — Cursor regex prompt was handed off; status unknown across the 9 target files
-- [ ] Phase 2 Sonnet-tier tail — ~24 articles queued (see tables above)
-- [ ] **`reactivity/signals.md` is the highest-priority Phase 2 target** — the entire recipe library leans on it; modernizing it earliest maximizes leverage
-- [ ] `tooling/pwa.md` and `ssr/ssr-hydration.md` concept articles pair with their new recipe counterparts
+- [ ] Phase 2 Sonnet-tier tail — ~28 articles queued (see tables above)
+- [ ] `concepts/tooling/pwa.md` and `concepts/rendering/ssr-hydration.md` concept articles pair with their new recipe counterparts
 - [ ] Consider a `recipes/index.md` with longer-form recipe descriptions (bigger than README's symptom table)
 - [ ] Testing recipe series still has 3 planned entries queued (HTTP, forms, routing) — biggest gap in the recipe library

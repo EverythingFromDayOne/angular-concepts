@@ -1,11 +1,9 @@
 ---
 recipe_id: "web-worker-integration"
-title: "Web Workers: Heavy Computation Without Freezing the UI"
-file: "recipes/performance/web-worker-integration.md"
 primary_concept: "components/components"
 related_concepts: ["performance/performance-auditing", "reactivity/signals", "http/http"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "advanced"
 status:
   upgraded: true
@@ -24,7 +22,7 @@ status:
 > Angular integration patterns (service wrappers, signal-based
 > progress signals, clean shutdown on service destroy).
 >
-> **Concepts you'll touch:** [Components](../../components/components.md), [Performance Auditing](./performance-auditing.md), [Signals](../../reactivity/signals.md), [HTTP](../../http/http.md)
+> **Concepts you'll touch:** Components, [Performance Auditing](./performance-auditing.md), [Signals](../../concepts/reactivity/signals.md), [HTTP](../../concepts/http/http.md)
 >
 > **Time:** ~30 minutes to read; ~1 day to add workers to a real
 > feature with proper cancellation and cleanup.
@@ -44,7 +42,7 @@ Before code: these are unrelated features that share "worker" in their names.
 | **Angular API** | `@angular/service-worker` | No specific API; native + Comlink |
 | **Solves** | "App breaks when offline" | "App freezes during heavy computation" |
 
-The [Service Worker recipe](./service-worker-offline-first.md) covers offline-first patterns. **This recipe is different** — it's about moving CPU-heavy JavaScript off the main thread so the UI stays responsive.
+The [Service Worker recipe](../pwa/service-worker-offline-first.md) covers offline-first patterns. **This recipe is different** — it's about moving CPU-heavy JavaScript off the main thread so the UI stays responsive.
 
 ---
 
@@ -678,10 +676,10 @@ Without it, workers can crash and you'd never see the error in the console.
 ## See also
 
 - [Performance Auditing](./performance-auditing.md) — Symptom 4 (slow click → action) diagnosis; this recipe is the fix for CPU-bound cases
-- [Service Worker + Offline-First](./service-worker-offline-first.md) — the OTHER kind of worker (network layer, not compute)
+- [Service Worker + Offline-First](../pwa/service-worker-offline-first.md) — the OTHER kind of worker (network layer, not compute)
 - [Progress Tracking](../http/progress-tracking.md) — for HTTP progress; the progress-reporting pattern here is similar in shape
-- [Optimistic Updates](../forms-and-search/optimistic-updates.md) — long-running worker operations can compose with optimistic UI (show the result immediately, refine when the real result arrives)
-- [Signals](../../reactivity/signals.md) — the primitive for signaling progress from the worker back to templates
+- [Optimistic Updates](../form-and-search/optimistic-updates.md) — long-running worker operations can compose with optimistic UI (show the result immediately, refine when the real result arrives)
+- [Signals](../../concepts/reactivity/signals.md) — the primitive for signaling progress from the worker back to templates
 
 ## References
 

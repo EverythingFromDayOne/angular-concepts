@@ -1,11 +1,9 @@
 ---
 recipe_id: "testing-signal-components"
-title: "Testing Signal-Based Components: Patterns for the v22 Era"
-file: "recipes/testing/testing-signal-components.md"
 primary_concept: "testing/component-testing"
 related_concepts: ["reactivity/signals", "components/components", "dependency-injection/dependency-injection"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true
@@ -24,7 +22,7 @@ status:
 > the specific TestBed patterns that stopped working when signals
 > arrived and the ones that replaced them.
 >
-> **Concepts you'll touch:** [Testing / Component Testing](../../testing/component-testing.md), [Signals](../../reactivity/signals.md), [Components](../../components/components.md), [Dependency Injection](../../dependency-injection/dependency-injection.md)
+> **Concepts you'll touch:** Testing / Component Testing, [Signals](../../concepts/reactivity/signals.md), Components, [Dependency Injection](../../concepts/dependency-injection/dependency-injection.md)
 >
 > **Time:** ~30 minutes to read; ~1 day to modernize a real test
 > suite from Zone-era patterns to signal-native ones.
@@ -585,7 +583,7 @@ it('username availability validator returns null for empty input', async () => {
 });
 ```
 
-Without `runInInjectionContext`, calling `usernameAvailable()` (from the [async-validation recipe](../forms-and-search/async-validation.md)) would throw — the factory uses `inject(HttpClient)`, which requires an active injection context.
+Without `runInInjectionContext`, calling `usernameAvailable()` (from the [async-validation recipe](../form-and-search/async-validation.md)) would throw — the factory uses `inject(HttpClient)`, which requires an active injection context.
 
 This is v16+. Use it whenever you're calling a factory function that itself uses `inject()`.
 
@@ -787,12 +785,12 @@ describe('UserListComponent', () => {
 
 ## See also
 
-- [Testing / Component Testing (concept article)](../../testing/component-testing.md) — the broader testing primer this recipe extends
-- [Signals](../../reactivity/signals.md) — the state primitive being tested
+- Testing / Component Testing (concept article) — the broader testing primer this recipe extends
+- [Signals](../../concepts/reactivity/signals.md) — the state primitive being tested
 - [Component Communication](../components/component-communication.md) — the signal-based service pattern this recipe mocks
-- [Async Validation](../forms-and-search/async-validation.md) — the async validator pattern tested with `runInInjectionContext`
-- [Optimistic Updates](../forms-and-search/optimistic-updates.md) — testing UI updates with rollback semantics
-- [Search Engine](../forms-and-search/search-engine.md) — testing debounce with `fakeAsync + tick`
+- [Async Validation](../form-and-search/async-validation.md) — the async validator pattern tested with `runInInjectionContext`
+- [Optimistic Updates](../form-and-search/optimistic-updates.md) — testing UI updates with rollback semantics
+- [Search Engine](../form-and-search/search-engine.md) — testing debounce with `fakeAsync + tick`
 
 ## References
 

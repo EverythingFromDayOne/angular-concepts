@@ -81,7 +81,7 @@ After the frontmatter, add the callout:
 
 ## Style
 
-All voice, terminology, and English-variant decisions are in [`glossary.md`](./glossary.md).
+All voice, terminology, and English-variant decisions are in [`glossary.md`](./docs/glossary.md).
 Short version: American English, friendly tutorial voice, code identifiers stay as-is,
 Angular API terms stay in English, drop social hashtags.
 

@@ -1,11 +1,9 @@
 ---
 recipe_id: "websocket-real-time"
-title: "WebSocket Integration: Real-Time Data Without the Reconnection Hell"
-file: "recipes/http/websocket-real-time.md"
 primary_concept: "http/http"
 related_concepts: ["reactivity/signals", "reactivity/rxjs/rxjs", "dependency-injection/dependency-injection"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true
@@ -23,7 +21,7 @@ status:
 > connection. Plus the **Server-Sent Events** alternative for the
 > common case where you only need server-to-client updates.
 >
-> **Concepts you'll touch:** [HTTP](../../http/http.md), [Signals](../../reactivity/signals.md), [RxJS](../../reactivity/rxjs/rxjs.md), [Dependency Injection](../../dependency-injection/dependency-injection.md)
+> **Concepts you'll touch:** [HTTP](../../concepts/http/http.md), [Signals](../../concepts/reactivity/signals.md), [RxJS](../../concepts/reactivity/rxjs/rxjs.md), [Dependency Injection](../../concepts/dependency-injection/dependency-injection.md)
 >
 > **Time:** ~30 minutes to read; ~3 hours to wire up against a real
 > backend including the auth handshake and verify reconnection works.
@@ -596,8 +594,8 @@ The composition is clean: `AuthService` knows how to refresh; `RealtimeService` 
 - [Token Storage Security](../auth/token-storage-security.md) — the auth state the WebSocket service consumes via `effect()`
 - [Race Conditions](../reactivity/race-conditions.md) — message handlers that mutate state need the same operator discipline as HTTP responses
 - [Component Communication](../components/component-communication.md) — when to use Subject-based services vs signal-based services (Pattern 2 of that recipe)
-- [HTTP](../../http/http.md) — for comparison; when to choose HTTP polling vs WebSockets vs SSE
-- [Signals](../../reactivity/signals.md) — `signal`, `computed`, `effect` patterns used throughout the service
+- [HTTP](../../concepts/http/http.md) — for comparison; when to choose HTTP polling vs WebSockets vs SSE
+- [Signals](../../concepts/reactivity/signals.md) — `signal`, `computed`, `effect` patterns used throughout the service
 
 ## References
 

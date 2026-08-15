@@ -1,11 +1,9 @@
 ---
 recipe_id: "component-communication"
-title: "Component Communication: When NgRx Is Overkill (And When It Isn't)"
-file: "recipes/components/component-communication.md"
 primary_concept: "components/component-interactions"
 related_concepts: ["reactivity/signals", "dependency-injection/dependency-injection", "routing/routing", "state-management/ngrx"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true
@@ -22,7 +20,7 @@ status:
 > honest framing of when NgRx is actually the right answer rather than
 > a reflex.
 >
-> **Concepts you'll touch:** [Component interactions](../../components/component-interactions.md), [Signals](../../reactivity/signals.md), [Dependency Injection](../../dependency-injection/dependency-injection.md), [Routing](../../routing/routing.md), [NgRx](../../state-management/ngrx.md)
+> **Concepts you'll touch:** [Component interactions](../../concepts/components/component-interactions.md), [Signals](../../concepts/reactivity/signals.md), [Dependency Injection](../../concepts/dependency-injection/dependency-injection.md), [Routing](../../concepts/routing/routing.md), [NgRx](../../concepts/state-management/ngrx.md)
 >
 > **Time:** ~30 minutes to read; ~3 hours to audit your codebase for
 > patterns that aren't matching this decision tree.
@@ -669,7 +667,7 @@ NgRx (and its lighter cousin Signal Store) solves problems that signals + servic
 ### Common pitfalls
 
 - **Forgetting `asReadonly()`** — exposing the mutable signal lets any consumer call `.set()`/`.update()` directly, bypassing the service's business rules. The `private writable / public readonly` pattern is the encapsulation contract.
-- **Circular service dependencies** — `ServiceA` injects `ServiceB`, which injects `ServiceA`. Detect at startup, but only if it's at the constructor level. With `inject()` and lazy lookups (the [DI lazy injection](../../dependency-injection/dependency-injection.md#lazy-injection--injector-as-an-escape-hatch) pattern), accidental cycles can slip past.
+- **Circular service dependencies** — `ServiceA` injects `ServiceB`, which injects `ServiceA`. Detect at startup, but only if it's at the constructor level. With `inject()` and lazy lookups (the [DI lazy injection](../../concepts/dependency-injection/dependency-injection.md#lazy-injection--injector-as-an-escape-hatch) pattern), accidental cycles can slip past.
 - **Using `Subject` for state.** Subjects don't replay; a late subscriber doesn't know the current value. For state, use signals or `BehaviorSubject`.
 - **Using `signal` for events.** Signals always have a current value; firing the "same" event twice in a row doesn't trigger consumers (signals dedupe equal values by default). For events with no current-value semantics, use `Subject`.
 - **`providedIn: 'root'` for state that's actually feature-scoped** — the state leaks across feature navigation. Use a `providers: []` on a feature component to scope it.
@@ -684,13 +682,13 @@ NgRx (and its lighter cousin Signal Store) solves problems that signals + servic
 
 ## See also
 
-- [Component interactions](../../components/component-interactions.md) — the concept article with input/output API details
-- [Signals](../../reactivity/signals.md) — `signal`, `computed`, `effect`, `model`
-- [Dependency Injection](../../dependency-injection/dependency-injection.md) — `inject()`, `providedIn`, subtree providers
-- [Routing](../../routing/routing.md) — `ActivatedRoute`, `queryParamMap`, programmatic navigation
-- [NgRx](../../state-management/ngrx.md) — when and how to use the full store pattern
+- [Component interactions](../../concepts/components/component-interactions.md) — the concept article with input/output API details
+- [Signals](../../concepts/reactivity/signals.md) — `signal`, `computed`, `effect`, `model`
+- [Dependency Injection](../../concepts/dependency-injection/dependency-injection.md) — `inject()`, `providedIn`, subtree providers
+- [Routing](../../concepts/routing/routing.md) — `ActivatedRoute`, `queryParamMap`, programmatic navigation
+- [NgRx](../../concepts/state-management/ngrx.md) — when and how to use the full store pattern
 - [Request Deduplication](../http/request-deduplication.md) — HTTP-layer caching that often substitutes for "state management" in simple data apps
-- [Optimistic Updates](../forms-and-search/optimistic-updates.md) — using signals for fast UI updates across components
+- [Optimistic Updates](../form-and-search/optimistic-updates.md) — using signals for fast UI updates across components
 
 ## References
 

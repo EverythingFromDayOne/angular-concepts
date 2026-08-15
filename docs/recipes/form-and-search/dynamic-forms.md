@@ -1,11 +1,9 @@
 ---
 recipe_id: "dynamic-forms"
-title: "Dynamic Forms: Shape That Changes With User Input"
-file: "recipes/forms-and-search/dynamic-forms.md"
 primary_concept: "forms/reactive-forms"
 related_concepts: ["forms/validation", "reactivity/signals", "reactivity/to-signal"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true
@@ -21,7 +19,7 @@ status:
 > dynamic validators. Plus the one method call (`updateValueAndValidity`)
 > that nobody talks about and everybody forgets.
 >
-> **Concepts you'll touch:** [Reactive Forms](../../forms/reactive-forms.md), [Validation](../../forms/validation.md), [Signals](../../reactivity/signals.md), [toSignal / toObservable](../../reactivity/to-signal.md)
+> **Concepts you'll touch:** [Reactive Forms](../../concepts/forms/reactive-forms.md), [Validation](../../concepts/forms/validation.md), [Signals](../../concepts/reactivity/signals.md), [toSignal / toObservable](../../concepts/reactivity/to-signal.md)
 >
 > **Time:** ~30 minutes to read; an afternoon to refactor a real form once
 > you can see the patterns.
@@ -727,11 +725,11 @@ The same `updateValueAndValidity()` story: when the password changes, the confir
 
 ## See also
 
-- [Reactive Forms](../../forms/reactive-forms.md) — typed forms, `FormBuilder`, control APIs
-- [Validation](../../forms/validation.md) — synchronous/async validators, custom validator patterns
+- [Reactive Forms](../../concepts/forms/reactive-forms.md) — typed forms, `FormBuilder`, control APIs
+- [Validation](../../concepts/forms/validation.md) — synchronous/async validators, custom validator patterns
 - [Race Conditions](../reactivity/race-conditions.md) — the `switchMap` story used in the cascading pattern
 - [Search Engine](./search-engine.md) — `valueChanges` + RxJS composition patterns
-- [Signals](../../reactivity/signals.md) — the storage primitive for buffer state and form-shape signals
+- [Signals](../../concepts/reactivity/signals.md) — the storage primitive for buffer state and form-shape signals
 
 ## References
 

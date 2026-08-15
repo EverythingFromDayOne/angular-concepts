@@ -1,11 +1,9 @@
 ---
 recipe_id: "take-until-destroyed"
-title: "Custom RxJS Operators with takeUntilDestroyed"
-file: "recipes/reactivity/take-until-destroyed.md"
 primary_concept: "reactivity/rxjs/rxjs"
 related_concepts: ["dependency-injection/dependency-injection", "reactivity/to-signal", "reactivity/signals"]
 demo_repo: "https://github.com/EverythingFromDayOne/AngularDemos/tree/development/apps/angular-demos/src/app/features/takeUntilDestroyed"
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true
@@ -20,7 +18,7 @@ status:
 > remembering to unsubscribe. Then a tiny stock-ticker component that uses
 > the operator in one line.
 >
-> **Concepts you'll touch:** [RxJS](../../reactivity/rxjs/rxjs.md), [Dependency Injection](../../dependency-injection/dependency-injection.md), [toSignal](../../reactivity/to-signal.md)
+> **Concepts you'll touch:** [RxJS](../../concepts/reactivity/rxjs/rxjs.md), [Dependency Injection](../../concepts/dependency-injection/dependency-injection.md), [toSignal](../../concepts/reactivity/to-signal.md)
 >
 > **Time:** ~15 minutes to read; ~30 minutes to implement and wire up tests.
 
@@ -442,7 +440,7 @@ describe('autoRefresh operator', () => {
 
 `runInInjectionContext` is the v22 helper that opens an injection context
 on demand — useful for tests where you'd otherwise need a full component
-fixture just to call `inject(DestroyRef)`. See [Dependency Injection](../../dependency-injection/dependency-injection.md)
+fixture just to call `inject(DestroyRef)`. See [Dependency Injection](../../concepts/dependency-injection/dependency-injection.md)
 for the full injection-context story.
 
 ---
@@ -498,11 +496,11 @@ for the full injection-context story.
 
 ## See also
 
-- [RxJS](../../reactivity/rxjs/rxjs.md) — operator factories, higher-order observables, the operator anatomy
-- [toSignal](../../reactivity/to-signal.md) — converting the observable result to a signal for templates
-- [Dependency Injection](../../dependency-injection/dependency-injection.md) — `inject()`, `DestroyRef`, injection contexts, `runInInjectionContext`
-- [HTTP](../../http/http.md) — `HttpClient` cancellation semantics that polling relies on
-- [Signal Inputs](../../reactivity/signal-inputs.md) — bridging signal inputs to polling chains via `toObservable`
+- [RxJS](../../concepts/reactivity/rxjs/rxjs.md) — operator factories, higher-order observables, the operator anatomy
+- [toSignal](../../concepts/reactivity/to-signal.md) — converting the observable result to a signal for templates
+- [Dependency Injection](../../concepts/dependency-injection/dependency-injection.md) — `inject()`, `DestroyRef`, injection contexts, `runInInjectionContext`
+- [HTTP](../../concepts/http/http.md) — `HttpClient` cancellation semantics that polling relies on
+- [Signal Inputs](../../concepts/reactivity/signal-inputs.md) — bridging signal inputs to polling chains via `toObservable`
 
 ## References
 

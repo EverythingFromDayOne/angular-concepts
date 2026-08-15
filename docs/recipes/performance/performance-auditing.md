@@ -1,11 +1,9 @@
 ---
 recipe_id: "performance-auditing"
-title: "Performance Auditing: \"The App Is Slow, Where Do I Look?\""
-file: "recipes/performance/performance-auditing.md"
 primary_concept: "components/change-detection"
 related_concepts: ["reactivity/signals", "components/components", "routing/lazy-loading"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true
@@ -22,7 +20,7 @@ status:
 > mental model (Zone vs OnPush vs Signals vs Zoneless) you need to
 > interpret what the tools show.
 >
-> **Concepts you'll touch:** [Change Detection](../../components/change-detection.md), [Signals](../../reactivity/signals.md), [Components](../../components/components.md), [Lazy Loading](../../routing/lazy-loading.md)
+> **Concepts you'll touch:** [Change Detection](../../concepts/components/change-detection.md), [Signals](../../concepts/reactivity/signals.md), Components, [Lazy Loading](../../concepts/routing/lazy-loading.md)
 >
 > **Time:** ~30 minutes to read; ~half a day for a real audit
 > against a production app.
@@ -407,7 +405,7 @@ this.form.controls.search.valueChanges.pipe(
 ).subscribe(/* … */);
 ```
 
-Covered in detail in the [Search Engine recipe](../forms-and-search/search-engine.md). The keystroke-by-keystroke firing becomes a per-stable-input firing.
+Covered in detail in the [Search Engine recipe](../form-and-search/search-engine.md). The keystroke-by-keystroke firing becomes a per-stable-input firing.
 
 ---
 
@@ -523,7 +521,7 @@ The `setTimeout(fn, 0)` defers the work to the next event loop tick, after the b
 
 ### Optimistic UI
 
-For network-bound clicks (Like, save, etc.), the [Optimistic Updates recipe](../forms-and-search/optimistic-updates.md) reduces perceived latency to zero. The UI flips immediately; the HTTP call fires in the background; rollback on failure.
+For network-bound clicks (Like, save, etc.), the [Optimistic Updates recipe](../form-and-search/optimistic-updates.md) reduces perceived latency to zero. The UI flips immediately; the HTTP call fires in the background; rollback on failure.
 
 ### Use `afterNextRender` for post-render work
 
@@ -728,12 +726,12 @@ The second form is shorter and follows the universal rule.
 
 - [Virtual Scrolling](../components/virtual-scrolling.md) — for janky-scroll cases with large lists
 - [takeUntilDestroyed](../reactivity/take-until-destroyed.md) — the memory-leak prevention rule
-- [Optimistic Updates](../forms-and-search/optimistic-updates.md) — for perceived-latency improvements on user actions
+- [Optimistic Updates](../form-and-search/optimistic-updates.md) — for perceived-latency improvements on user actions
 - [Request Deduplication](../http/request-deduplication.md) — for "5 components fetch the same URL" performance bugs
-- [Search Engine](../forms-and-search/search-engine.md) — for the debounce + switchMap pattern for typing-triggered work
-- [Change Detection](../../components/change-detection.md) — the concept article with deeper coverage of OnPush, Zone.js, and zoneless internals
-- [Signals](../../reactivity/signals.md) — the underlying reactivity model
-- [Lazy Loading](../../routing/lazy-loading.md) — `loadChildren`, `loadComponent`, preload strategies
+- [Search Engine](../form-and-search/search-engine.md) — for the debounce + switchMap pattern for typing-triggered work
+- [Change Detection](../../concepts/components/change-detection.md) — the concept article with deeper coverage of OnPush, Zone.js, and zoneless internals
+- [Signals](../../concepts/reactivity/signals.md) — the underlying reactivity model
+- [Lazy Loading](../../concepts/routing/lazy-loading.md) — `loadChildren`, `loadComponent`, preload strategies
 
 ## References
 

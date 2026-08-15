@@ -1,11 +1,9 @@
 ---
 recipe_id: "virtual-scrolling"
-title: "Virtual Scrolling: Rendering 10,000 Items Without Killing the Browser"
-file: "recipes/components/virtual-scrolling.md"
 primary_concept: "components/components"
 related_concepts: ["reactivity/signals", "http/http", "components/standalone-components"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true
@@ -21,7 +19,7 @@ status:
 > don't see a loading spinner, and the bounded-window pattern for truly
 > massive datasets where keeping everything in memory isn't an option.
 >
-> **Concepts you'll touch:** [Components](../../components/components.md), [Signals](../../reactivity/signals.md), [HTTP](../../http/http.md), [Standalone components](../../components/standalone-components.md)
+> **Concepts you'll touch:** Components, [Signals](../../concepts/reactivity/signals.md), [HTTP](../../concepts/http/http.md), Standalone components
 >
 > **Time:** ~25 minutes to read; ~1 hour to retrofit a slow list page.
 
@@ -546,9 +544,9 @@ Same applies to sorting and to reloading data — anytime the array's items chan
 
 ## See also
 
-- [Components](../../components/components.md) — component basics, change detection, OnPush
-- [Standalone components](../../components/standalone-components.md) — the v22 default; how CDK modules import into them
-- [Signals](../../reactivity/signals.md) — the data source primitive for virtual lists
+- Components — component basics, change detection, OnPush
+- Standalone components — the v22 default; how CDK modules import into them
+- [Signals](../../concepts/reactivity/signals.md) — the data source primitive for virtual lists
 - [Request Deduplication](../http/request-deduplication.md) — composes with paginated fetches when multiple lists could fetch the same page
 - [Retry with Backoff](../http/retry-with-backoff.md) — wraps page-fetch HTTP calls so transient failures don't break pagination
 - [Race Conditions](../reactivity/race-conditions.md) — handles concurrent paginated fetches; the `exhaustMap` pattern for "don't fetch while one is in flight"

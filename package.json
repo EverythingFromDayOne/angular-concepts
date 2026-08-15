@@ -1,0 +1,14 @@
+{
+  "name": "angular-concepts",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Concept articles and symptom-first recipes for Angular — English translation and v22 modernization of the 100 Days of Angular series.",
+  "packageManager": "pnpm@10.33.0",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "verify:links": "node scripts/verify-links.mjs",
+    "verify:frontmatter": "node scripts/verify-frontmatter.mjs",
+    "verify": "pnpm verify:links && pnpm verify:frontmatter"
+  },
+  "license": "SEE LICENSE IN LICENSE"
+}

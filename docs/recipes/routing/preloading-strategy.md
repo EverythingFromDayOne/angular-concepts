@@ -1,11 +1,9 @@
 ---
 recipe_id: "preloading-strategy"
-title: "Hover- and Viewport-Triggered Route Preloading"
-file: "recipes/routing/preloading-strategy.md"
 primary_concept: "routing/routing"
 related_concepts: ["routing/lazy-loading", "routing/router-configuration", "dependency-injection/dependency-injection"]
 demo_repo: "https://github.com/EverythingFromDayOne/AngularDemos/tree/development/apps/angular-demos/src/app/features/preloading-strategy"
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true
@@ -20,7 +18,7 @@ status:
 > — whichever happens first. All gated by a network-quality check that
 > skips preloading on slow connections or when Data Saver is on.
 >
-> **Concepts you'll touch:** [Routing](../../routing/routing.md), [Lazy Loading](../../routing/lazy-loading.md), [Router Configuration](../../routing/router-configuration.md), [Dependency Injection](../../dependency-injection/dependency-injection.md)
+> **Concepts you'll touch:** [Routing](../../concepts/routing/routing.md), [Lazy Loading](../../concepts/routing/lazy-loading.md), [Router Configuration](../../concepts/routing/router-configuration.md), [Dependency Injection](../../concepts/dependency-injection/dependency-injection.md)
 >
 > **Time:** ~20 minutes to read; ~1 hour to wire up and test against your routes.
 
@@ -440,7 +438,7 @@ export const appConfig: ApplicationConfig = {
 ```
 
 `withPreloading()` is a feature function for `provideRouter()` — see
-[Router Configuration](../../routing/router-configuration.md) for the
+[Router Configuration](../../concepts/routing/router-configuration.md) for the
 full set. It registers your strategy as the one the router will call
 `preload()` on after every navigation.
 
@@ -617,10 +615,10 @@ the hover strategy.
 
 ## See also
 
-- [Routing](../../routing/routing.md) — `provideRouter()` and feature functions
-- [Router Configuration](../../routing/router-configuration.md) — the full `withX()` feature catalogue including `withPreloading`
-- [Lazy Loading](../../routing/lazy-loading.md) — `loadComponent` and `loadChildren` patterns
-- [Dependency Injection](../../dependency-injection/dependency-injection.md) — `inject()`, `DestroyRef`, service registries
+- [Routing](../../concepts/routing/routing.md) — `provideRouter()` and feature functions
+- [Router Configuration](../../concepts/routing/router-configuration.md) — the full `withX()` feature catalogue including `withPreloading`
+- [Lazy Loading](../../concepts/routing/lazy-loading.md) — `loadComponent` and `loadChildren` patterns
+- [Dependency Injection](../../concepts/dependency-injection/dependency-injection.md) — `inject()`, `DestroyRef`, service registries
 - [`takeUntilDestroyed`](../reactivity/take-until-destroyed.md) — the v22 cleanup primitive used in the debounced-hover variant
 
 ## References

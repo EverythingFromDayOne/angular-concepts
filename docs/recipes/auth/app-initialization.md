@@ -1,11 +1,9 @@
 ---
 recipe_id: "app-initialization"
-title: "App Initialization: Silent Token Restoration on Reload"
-file: "recipes/auth/app-initialization.md"
 primary_concept: "routing/routing"
 related_concepts: ["dependency-injection/dependency-injection", "http/http", "reactivity/signals"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true
@@ -21,7 +19,7 @@ status:
 > companion auth guard and `returnUrl` flow that picks up where the
 > initializer leaves off.
 >
-> **Concepts you'll touch:** [Routing](../../routing/routing.md), [Dependency Injection](../../dependency-injection/dependency-injection.md), [HTTP](../../http/http.md), [Signals](../../reactivity/signals.md)
+> **Concepts you'll touch:** [Routing](../../concepts/routing/routing.md), [Dependency Injection](../../concepts/dependency-injection/dependency-injection.md), [HTTP](../../concepts/http/http.md), [Signals](../../concepts/reactivity/signals.md)
 >
 > **Time:** ~20 minutes to read; ~1 hour to wire up and verify the no-flash UX.
 
@@ -476,8 +474,8 @@ The marker isn't a security token — losing it just means an unnecessary refres
 - [JWT Interceptor: Breaking the Circular Dependency](./jwt-interceptor-circular-dep.md) — the interceptor that handles ongoing auth after init
 - [Token Storage Security](./token-storage-security.md) — the in-memory architecture this recipe restores. Specifically the `RefreshCoordinator` pattern composes with `initApp` (the initializer is "request 0" through that coordinator).
 - [Step-up Authentication](./step-up-authentication.md) — scope-based re-auth for sensitive actions; runs *after* normal auth is established
-- [Routing](../../routing/routing.md) — `provideRouter`, route guards, query parameters
-- [Dependency Injection](../../dependency-injection/dependency-injection.md) — `inject()` in injection contexts (initializers are one)
+- [Routing](../../concepts/routing/routing.md) — `provideRouter`, route guards, query parameters
+- [Dependency Injection](../../concepts/dependency-injection/dependency-injection.md) — `inject()` in injection contexts (initializers are one)
 
 ## References
 

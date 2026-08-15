@@ -1,11 +1,9 @@
 ---
 recipe_id: "token-storage-security"
-title: "Token Storage: Where Tokens Should Actually Live"
-file: "recipes/auth/token-storage-security.md"
 primary_concept: "http/http"
 related_concepts: ["dependency-injection/dependency-injection", "reactivity/signals", "http/interceptors"]
 demo_repo: null
-angular_baseline: "22"
+angular_baseline: "22.1.1"
 difficulty: "intermediate"
 status:
   upgraded: true
@@ -20,7 +18,7 @@ status:
 > the refresh-queue coordination pattern that prevents N parallel 401s from
 > triggering N parallel refresh calls.
 >
-> **Concepts you'll touch:** [HTTP](../../http/http.md), [Dependency Injection](../../dependency-injection/dependency-injection.md), [Signals](../../reactivity/signals.md), [HTTP Interceptors](../../http/interceptors.md)
+> **Concepts you'll touch:** [HTTP](../../concepts/http/http.md), [Dependency Injection](../../concepts/dependency-injection/dependency-injection.md), [Signals](../../concepts/reactivity/signals.md), [HTTP Interceptors](../../concepts/http/interceptors.md)
 >
 > **Time:** ~25 minutes to read; ~2 hours to retrofit an existing localStorage-based auth system without breaking the login flow.
 
@@ -433,9 +431,9 @@ The decision point usually comes when you add the second tier of features — wa
 - [JWT Interceptor: Breaking the Circular Dependency](./jwt-interceptor-circular-dep.md) — the previous recipe; the SRP refactor and lazy-injection mechanics this recipe builds on
 - [App Initialization](./app-initialization.md) — handling the F5/reload case where in-memory tokens are lost
 - [Step-up Authentication](./step-up-authentication.md) — scope-based re-auth for sensitive actions like payment
-- [HTTP](../../http/http.md) — `HttpClient`, request options, `withCredentials`
-- [Signals](../../reactivity/signals.md) — `signal()`, `computed()`, when to reach for signals vs Subjects
-- [Dependency Injection — Lazy injection](../../dependency-injection/dependency-injection.md#lazy-injection--injector-as-an-escape-hatch) — the mechanism for the `Injector.get(AuthService)` call in the 401 handler
+- [HTTP](../../concepts/http/http.md) — `HttpClient`, request options, `withCredentials`
+- [Signals](../../concepts/reactivity/signals.md) — `signal()`, `computed()`, when to reach for signals vs Subjects
+- [Dependency Injection — Lazy injection](../../concepts/dependency-injection/dependency-injection.md#lazy-injection--injector-as-an-escape-hatch) — the mechanism for the `Injector.get(AuthService)` call in the 401 handler
 
 ## References
 
