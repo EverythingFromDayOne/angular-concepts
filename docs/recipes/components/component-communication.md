@@ -1,5 +1,6 @@
 ---
 recipe_id: "component-communication"
+description: "Where shared state belongs is usually answered by a scoped service and signals, with NgRx as the exception rather than the default"
 primary_concept: "components/component-interactions"
 related_concepts: ["reactivity/signals", "dependency-injection/dependency-injection", "routing/routing", "state-management/ngrx"]
 demo_repo: null

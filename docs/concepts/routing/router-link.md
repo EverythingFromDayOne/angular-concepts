@@ -1,5 +1,6 @@
 ---
 article_id: router-link
+description: routerLink navigates inside the app instead of asking the browser for a new document, and routerLinkActive marks the current route
 concept_folder: routing
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

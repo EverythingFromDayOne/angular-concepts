@@ -1,5 +1,6 @@
 ---
 recipe_id: "ssr-hydration-deep-dive"
+description: "Most hydration bugs trace back to server and client rendering different markup, and the console warning usually names the mismatch"
 primary_concept: "ssr/ssr-hydration"
 related_concepts: ["reactivity/signals", "http/http", "components/change-detection"]
 demo_repo: null

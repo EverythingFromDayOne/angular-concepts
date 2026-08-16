@@ -1,5 +1,6 @@
 ---
 article_id: ionic
+description: Ionic adds a platform-adaptive mobile UI layer to Angular, and Capacitor packages the same codebase into real iOS and Android apps
 concept_folder: tooling
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

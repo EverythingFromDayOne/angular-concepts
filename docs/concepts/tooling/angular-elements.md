@@ -1,5 +1,6 @@
 ---
 article_id: angular-elements
+description: Angular Elements wraps a component as a native custom element, so a React, Vue, or plain HTML page can embed it without Angular
 concept_folder: tooling
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

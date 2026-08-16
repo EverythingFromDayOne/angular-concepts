@@ -1,5 +1,6 @@
 ---
 article_id: angular-material
+description: Google's official component library ships accessible Material Design 3 components with build-time theming through CSS custom properties
 concept_folder: components/styling
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

@@ -1,5 +1,6 @@
 ---
 recipe_id: "image-optimization"
+description: "NgOptimizedImage handles the sizing, format, and priority hints that most LCP problems come down to, without rewriting the page"
 primary_concept: "components/components"
 related_concepts: ["performance/performance-auditing", "routing/routing", "ssr/ssr-hydration"]
 demo_repo: null

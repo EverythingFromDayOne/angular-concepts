@@ -1,5 +1,6 @@
 ---
 article_id: schematics
+description: A schematic writes files through a virtual tree rather than the disk, which is what makes generation previewable and safe to abort
 concept_folder: tooling
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

@@ -1,5 +1,6 @@
 ---
 article_id: pwa
+description: Registering a service worker gives an Angular app offline support, cached repeat loads, background updates, and installability
 concept_folder: tooling
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

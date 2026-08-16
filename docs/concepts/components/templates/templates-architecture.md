@@ -1,5 +1,6 @@
 ---
 article_id: templates-architecture
+description: Template reference variables reach elements from the template, while ViewChild and ContentChild queries reach them from the class
 concept_folder: components/templates
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

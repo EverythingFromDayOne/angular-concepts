@@ -1,5 +1,6 @@
 ---
 article_id: structural-directives
+description: Structural directives add, remove, and reshape the DOM, and the asterisk is shorthand for the ng-template they work through
 concept_folder: directives
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

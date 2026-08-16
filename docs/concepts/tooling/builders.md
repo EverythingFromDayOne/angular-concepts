@@ -1,5 +1,6 @@
 ---
 article_id: builders
+description: Every CLI command delegates to a builder, a schema-validated task function you can configure precisely or replace with your own
 concept_folder: tooling
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

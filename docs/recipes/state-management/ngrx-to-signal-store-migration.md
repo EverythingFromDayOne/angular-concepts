@@ -1,5 +1,6 @@
 ---
 recipe_id: "ngrx-to-signal-store-migration"
+description: "Both stores can run side by side, so moving from NgRx to Signal Store happens one feature slice at a time rather than in one rewrite"
 primary_concept: "state-management/ngrx"
 related_concepts: ["reactivity/signals", "dependency-injection/dependency-injection", "http/http"]
 demo_repo: null

@@ -1,5 +1,6 @@
 ---
 article_id: rxjs-subjects
+description: A Subject multicasts one execution to many subscribers, which is also where unsubscribing in Angular stops being optional
 concept_folder: reactivity/rxjs
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

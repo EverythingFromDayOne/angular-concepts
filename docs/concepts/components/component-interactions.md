@@ -1,5 +1,6 @@
 ---
 article_id: component-interactions
+description: Parent and child talk through inputs, outputs, and two-way bindings, and an Observable can serve directly as an output
 concept_folder: components
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

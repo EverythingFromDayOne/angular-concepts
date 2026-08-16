@@ -1,5 +1,6 @@
 ---
 article_id: view-encapsulation
+description: Three encapsulation modes decide whether a component's styles stay private or leak, which explains most CSS that will not apply
 concept_folder: components/styling
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

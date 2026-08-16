@@ -1,5 +1,6 @@
 ---
 article_id: guards-resolvers
+description: Guards and resolvers hook into the router's navigation cycle, so access checks and data loading finish before a route renders
 concept_folder: routing
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

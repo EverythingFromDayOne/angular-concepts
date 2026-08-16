@@ -1,5 +1,6 @@
 ---
 article_id: signals
+description: A signal tracks every place its value is read, which lets Angular update only the consumers that depend on what changed
 concept_folder: reactivity
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

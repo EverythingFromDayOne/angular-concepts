@@ -1,5 +1,6 @@
 ---
 article_id: angular-devtools
+description: The official browser extension inspects your component tree, profiles change detection, and maps the injector hierarchy
 concept_folder: components
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

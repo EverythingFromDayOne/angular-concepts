@@ -1,5 +1,6 @@
 ---
 recipe_id: "search-engine"
+description: "Search as you type grows in five stages, from debounce and switchMap to URL-synced filters with stale-while-revalidate caching"
 primary_concept: "reactivity/rxjs/rxjs"
 related_concepts: ["reactivity/signals", "reactivity/to-signal", "http/http", "routing/routing"]
 demo_repo: "https://github.com/EverythingFromDayOne/AngularDemos/tree/development/apps/angular-demos/src/app/features/search-engine"

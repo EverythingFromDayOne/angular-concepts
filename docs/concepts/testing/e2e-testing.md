@@ -1,5 +1,6 @@
 ---
 article_id: e2e-testing
+description: End-to-end tests drive a real browser through whole user journeys, catching production-build and cross-component failures units miss
 concept_folder: testing
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

@@ -1,5 +1,6 @@
 ---
 article_id: change-detection
+description: Change detection in v22 is re-engineered around signals — OnPush by default, zoneless new apps, and updates only where data changed
 concept_folder: components
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

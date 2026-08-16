@@ -1,5 +1,6 @@
 ---
 article_id: ngxs
+description: NGXS keeps unidirectional data flow but expresses actions as classes and state changes as decorated methods on a state class
 concept_folder: state-management
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

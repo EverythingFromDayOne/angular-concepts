@@ -1,5 +1,6 @@
 ---
 article_id: integration-tests
+description: Integration tests widen the boundary to a real component tree or route, faking only what genuinely sits outside the app
 concept_folder: testing
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

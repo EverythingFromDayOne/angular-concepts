@@ -1,5 +1,6 @@
 ---
 article_id: typescript-prereqs
+description: The TypeScript you need before Angular makes sense, from interfaces and generics to the utility types v22 code leans on
 concept_folder: foundations
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

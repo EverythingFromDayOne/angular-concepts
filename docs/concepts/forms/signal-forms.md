@@ -1,5 +1,6 @@
 ---
 article_id: signal-forms
+description: Signal Forms drops FormGroup for a plain signal of data plus a field tree exposing value, errors, and touched as signals
 concept_folder: forms
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

@@ -1,5 +1,6 @@
 ---
 recipe_id: "progress-tracking"
+description: "One custom operator turns HttpClient's raw event stream into the status and percentage a progress bar can bind to directly"
 primary_concept: "http/http"
 related_concepts: ["reactivity/rxjs/rxjs", "reactivity/rxjs/rxjs-higher-order", "reactivity/signals", "reactivity/to-signal"]
 demo_repo: "https://github.com/EverythingFromDayOne/AngularDemos/tree/development/apps/angular-demos/src/app/features/self-rewrite-code"

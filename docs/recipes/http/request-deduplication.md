@@ -1,5 +1,6 @@
 ---
 recipe_id: "request-deduplication"
+description: "When several callers ask for the same resource at once, an in-flight cache collapses them into a single HTTP round trip"
 primary_concept: "http/http"
 related_concepts: ["http/interceptors", "reactivity/rxjs/rxjs", "reactivity/signals"]
 demo_repo: null

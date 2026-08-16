@@ -1,5 +1,6 @@
 ---
 recipe_id: "jwt-interceptor-circular-dep"
+description: "The cycle between an auth service and its JWT interceptor is an architecture problem, and extracting a token service is the fix"
 primary_concept: "dependency-injection/dependency-injection"
 related_concepts: ["http/http", "http/interceptors"]
 demo_repo: null

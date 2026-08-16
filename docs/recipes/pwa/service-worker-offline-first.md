@@ -1,5 +1,6 @@
 ---
 recipe_id: "service-worker-offline-first"
+description: "Offline support is more than caching assets, because the work users actually lose is the pending mutation that never reached the server"
 primary_concept: "tooling/pwa"
 related_concepts: ["reactivity/signals", "http/http", "dependency-injection/dependency-injection"]
 demo_repo: null

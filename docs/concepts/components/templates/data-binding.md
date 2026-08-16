@@ -1,5 +1,6 @@
 ---
 article_id: data-binding
+description: Every Angular binding syntax is sorted by the direction data travels between the component class and its template
 concept_folder: components/templates
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

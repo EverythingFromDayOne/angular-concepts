@@ -1,5 +1,6 @@
 ---
 article_id: directive-composition
+description: Pairing a directive with an injection token lets one shared select control pick its data source declaratively at each call site
 concept_folder: directives
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

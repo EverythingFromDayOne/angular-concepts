@@ -1,5 +1,6 @@
 ---
 recipe_id: "retry-with-backoff"
+description: "Retrying with exponential backoff hides transient failures, but only if the policy separates retryable errors from terminal ones"
 primary_concept: "http/http"
 related_concepts: ["http/interceptors", "reactivity/rxjs/rxjs-error-handling", "reactivity/signals"]
 demo_repo: null

@@ -1,5 +1,6 @@
 ---
 article_id: animations
+description: Angular's animation DSL is a state machine — you declare states and transitions, and the runtime handles interpolation and cleanup
 concept_folder: components
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

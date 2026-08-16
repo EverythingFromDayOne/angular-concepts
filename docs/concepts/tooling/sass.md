@@ -1,5 +1,6 @@
 ---
 article_id: sass
+description: Angular compiles SCSS out of the box, so the real work is pairing Sass authoring features with component style encapsulation
 concept_folder: tooling
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

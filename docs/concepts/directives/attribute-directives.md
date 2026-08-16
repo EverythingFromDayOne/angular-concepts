@@ -1,5 +1,6 @@
 ---
 article_id: attribute-directives
+description: Attribute directives change how an existing element looks or behaves, which is what separates them from structural directives
 concept_folder: directives
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

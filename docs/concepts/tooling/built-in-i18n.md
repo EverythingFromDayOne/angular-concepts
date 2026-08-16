@@ -1,5 +1,6 @@
 ---
 article_id: built-in-i18n
+description: Built-in i18n inlines translations at build time into one bundle per locale, costing nothing at runtime but tying language to the URL
 concept_folder: tooling
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

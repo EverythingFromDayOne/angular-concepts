@@ -1,5 +1,6 @@
 ---
 article_id: error-handling
+description: Angular wraps every HTTP failure into one HttpErrorResponse, and a status of zero is what tells network errors apart from server errors
 concept_folder: http
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

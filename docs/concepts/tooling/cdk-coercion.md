@@ -1,5 +1,6 @@
 ---
 article_id: cdk-coercion
+description: Built-in input transforms replaced the CDK setter dance for boolean and number inputs, leaving CDK coercion for the rest
 concept_folder: tooling
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

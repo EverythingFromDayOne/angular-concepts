@@ -1,5 +1,6 @@
 ---
 article_id: pipes
+description: Pipes turn raw values into display-ready output inside the template, and reuse better than a formatting method per component
 concept_folder: pipes
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

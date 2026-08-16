@@ -1,5 +1,6 @@
 ---
 recipe_id: "testing-signal-components"
+description: "Signal-based components need different test patterns, starting with effects that do not run until the test tells them to"
 primary_concept: "testing/component-testing"
 related_concepts: ["reactivity/signals", "components/components", "dependency-injection/dependency-injection"]
 demo_repo: null

@@ -1,5 +1,6 @@
 ---
 article_id: rxjs
+description: Angular leans on RxJS everywhere, and the shift it demands is thinking in streams of values over time rather than single results
 concept_folder: reactivity/rxjs
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

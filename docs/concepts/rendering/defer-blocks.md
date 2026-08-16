@@ -1,5 +1,6 @@
 ---
 article_id: defer-blocks
+description: Deferred blocks code-split part of a template, so its dependencies download only when a trigger such as viewport entry fires
 concept_folder: rendering
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

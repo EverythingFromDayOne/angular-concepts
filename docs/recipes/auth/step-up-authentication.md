@@ -1,5 +1,6 @@
 ---
 recipe_id: "step-up-authentication"
+description: "An interceptor can catch a step-up challenge, collect fresh credentials, and retry the original request without the caller knowing"
 primary_concept: "http/interceptors"
 related_concepts: ["dependency-injection/dependency-injection", "reactivity/signals", "http/http"]
 demo_repo: null

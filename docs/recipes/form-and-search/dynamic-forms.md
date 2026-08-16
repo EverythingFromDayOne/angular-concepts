@@ -1,5 +1,6 @@
 ---
 recipe_id: "dynamic-forms"
+description: "Forms that change shape at runtime lose user input unless you cache removed control values and revalidate the controls yourself"
 primary_concept: "forms/reactive-forms"
 related_concepts: ["forms/validation", "reactivity/signals", "reactivity/to-signal"]
 demo_repo: null

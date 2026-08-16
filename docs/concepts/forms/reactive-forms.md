@@ -1,5 +1,6 @@
 ---
 article_id: reactive-forms
+description: The FormGroup runtime model is unchanged, but typed forms and nonNullable controls changed how you declare a form and how it infers
 concept_folder: forms
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

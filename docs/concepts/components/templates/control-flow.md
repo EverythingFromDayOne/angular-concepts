@@ -1,5 +1,6 @@
 ---
 article_id: control-flow
+description: Built-in blocks replaced the structural directives with no imports to remember, a required track, and real TypeScript narrowing
 concept_folder: components/templates
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

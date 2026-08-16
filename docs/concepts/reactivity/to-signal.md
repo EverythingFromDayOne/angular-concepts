@@ -1,5 +1,6 @@
 ---
 article_id: to-signal
+description: These two helpers bridge Angular's two reactivity models, letting Observable sources and signal consumers meet in one component
 concept_folder: reactivity
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

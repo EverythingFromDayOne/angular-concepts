@@ -1,5 +1,6 @@
 ---
 article_id: ngx-translate
+description: Loading translation JSON at runtime buys instant language switching, at the cost of parsing and lookup work in the browser
 concept_folder: tooling
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

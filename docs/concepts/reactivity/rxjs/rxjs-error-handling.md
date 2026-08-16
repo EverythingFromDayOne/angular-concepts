@@ -1,5 +1,6 @@
 ---
 article_id: rxjs-error-handling
+description: An error terminates an Observable, so catchError and retry exist to replace or restart the stream rather than resume it
 concept_folder: reactivity/rxjs
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

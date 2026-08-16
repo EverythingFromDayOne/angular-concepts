@@ -1,5 +1,6 @@
 ---
 recipe_id: "take-until-destroyed"
+description: "A custom operator can bake teardown into a polling stream, so consumers get cleanup on destroy without writing ngOnDestroy"
 primary_concept: "reactivity/rxjs/rxjs"
 related_concepts: ["dependency-injection/dependency-injection", "reactivity/to-signal", "reactivity/signals"]
 demo_repo: "https://github.com/EverythingFromDayOne/AngularDemos/tree/development/apps/angular-demos/src/app/features/takeUntilDestroyed"

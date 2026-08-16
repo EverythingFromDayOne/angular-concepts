@@ -1,5 +1,6 @@
 ---
 recipe_id: "optimistic-updates"
+description: "Applying the user's intent locally and rolling back on failure is what makes an interface feel instant without misreporting results"
 primary_concept: "reactivity/signals"
 related_concepts: ["reactivity/signals", "http/http", "reactivity/rxjs/rxjs-higher-order"]
 demo_repo: null

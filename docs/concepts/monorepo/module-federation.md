@@ -1,5 +1,6 @@
 ---
 article_id: module-federation
+description: Micro frontends still work the same way, but the esbuild builder means Native Federation and import maps replaced webpack federation
 concept_folder: monorepo
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"
