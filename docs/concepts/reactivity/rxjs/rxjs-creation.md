@@ -1,5 +1,6 @@
 ---
 article_id: rxjs-creation
+description: Creation operators build Observables for you, so you stop hand-writing subscribe and teardown functions for every source
 concept_folder: reactivity/rxjs
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

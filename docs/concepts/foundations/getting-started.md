@@ -1,5 +1,6 @@
 ---
 article_id: getting-started
+description: Scaffolding a v22 app produces standalone components and an app config file rather than the AppModule the CLI used to generate
 concept_folder: foundations
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

@@ -1,5 +1,6 @@
 ---
 article_id: interceptors
+description: Interceptors are middleware for HttpClient, one ordered place to attach auth headers, retry requests, or normalize errors app-wide
 concept_folder: http
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

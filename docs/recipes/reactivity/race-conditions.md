@@ -1,5 +1,6 @@
 ---
 recipe_id: "race-conditions"
+description: "Most Angular race conditions are one wrong higher-order operator, and switchMap, exhaustMap, concatMap, and mergeMap each fix a different one"
 primary_concept: "reactivity/rxjs/rxjs-higher-order"
 related_concepts: ["reactivity/rxjs/rxjs", "reactivity/signals", "http/http", "reactivity/to-signal"]
 demo_repo: null

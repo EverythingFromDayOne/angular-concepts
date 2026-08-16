@@ -1,5 +1,6 @@
 ---
 article_id: lifecycle
+description: Angular calls lifecycle hooks in a fixed order, and knowing exactly when each one fires is what separates subtle bugs from solid components
 concept_folder: components
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

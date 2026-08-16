@@ -1,5 +1,6 @@
 ---
 recipe_id: "performance-auditing"
+description: "Pick one symptom and profile it before optimizing, because blind OnPush and trackBy changes usually spend the budget on nothing"
 primary_concept: "components/change-detection"
 related_concepts: ["reactivity/signals", "components/components", "routing/lazy-loading"]
 demo_repo: null

@@ -1,5 +1,6 @@
 ---
 recipe_id: "web-worker-integration"
+description: "Moving CPU-heavy work to a worker keeps the UI responsive, and Comlink makes the message protocol read like ordinary method calls"
 primary_concept: "components/components"
 related_concepts: ["performance/performance-auditing", "reactivity/signals", "http/http"]
 demo_repo: null

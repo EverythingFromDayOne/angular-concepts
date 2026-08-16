@@ -1,5 +1,6 @@
 ---
 article_id: unit-tests
+description: TestBed builds a minimal Angular environment per spec, so one component runs with real DI and templates but fake dependencies
 concept_folder: testing
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

@@ -1,5 +1,6 @@
 ---
 recipe_id: "bundle-splitting-strategies"
+description: "Lazy routes alone rarely shrink the initial bundle, because the weight usually sits in libraries the entry point still imports"
 primary_concept: "tooling/ng-cli"
 related_concepts: ["routing/lazy-loading", "components/components", "performance/performance-auditing"]
 demo_repo: null

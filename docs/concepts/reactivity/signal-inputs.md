@@ -1,5 +1,6 @@
 ---
 article_id: signal-inputs
+description: Signal inputs arrive as read-only signals, so parent values feed computed and effect directly with no ngOnChanges plumbing
 concept_folder: reactivity
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

@@ -1,5 +1,6 @@
 ---
 article_id: ngrx
+description: NgRx brings Redux to Angular with real boilerplate cost, paid back in predictable state transitions and time-travel debugging
 concept_folder: state-management
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

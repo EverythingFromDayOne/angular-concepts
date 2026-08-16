@@ -1,5 +1,6 @@
 ---
 article_id: validation
+description: Async validators cover the checks that need a server answer, such as whether the username someone typed is already taken
 concept_folder: forms
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

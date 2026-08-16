@@ -1,5 +1,6 @@
 ---
 article_id: rxjs-higher-order
+description: Higher-order operators map each value to an inner Observable, and the flattening strategy decides what happens when they overlap
 concept_folder: reactivity/rxjs
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

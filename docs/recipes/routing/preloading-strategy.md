@@ -1,5 +1,6 @@
 ---
 recipe_id: "preloading-strategy"
+description: "Preloading lazy chunks on hover or viewport entry removes the click-then-wait pause, as long as slow connections are excluded"
 primary_concept: "routing/routing"
 related_concepts: ["routing/lazy-loading", "routing/router-configuration", "dependency-injection/dependency-injection"]
 demo_repo: "https://github.com/EverythingFromDayOne/AngularDemos/tree/development/apps/angular-demos/src/app/features/preloading-strategy"

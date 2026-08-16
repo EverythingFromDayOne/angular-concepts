@@ -1,5 +1,6 @@
 ---
 recipe_id: "multi-step-wizards"
+description: "A wizard's state has to outlive its step components, which is why the form model belongs in a subtree-scoped service"
 primary_concept: "forms/reactive-forms"
 related_concepts: ["reactivity/signals", "routing/routing", "components/components"]
 demo_repo: null

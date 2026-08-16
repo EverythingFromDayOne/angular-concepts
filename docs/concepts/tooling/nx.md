@@ -1,5 +1,6 @@
 ---
 article_id: nx
+description: Nx makes a monorepo practical by mapping project dependencies, then rebuilding and retesting only the projects a change affects
 concept_folder: tooling
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

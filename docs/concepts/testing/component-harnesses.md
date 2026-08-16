@@ -1,5 +1,6 @@
 ---
 article_id: component-harnesses
+description: A harness puts a stable API in front of a component's DOM, so restructuring the template stops breaking every test that touched it
 concept_folder: testing
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

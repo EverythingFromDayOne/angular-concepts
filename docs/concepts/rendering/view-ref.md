@@ -1,5 +1,6 @@
 ---
 article_id: view-ref
+description: The view container and renderer APIs cover the small share of DOM work that Angular templates cannot express declaratively
 concept_folder: rendering
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

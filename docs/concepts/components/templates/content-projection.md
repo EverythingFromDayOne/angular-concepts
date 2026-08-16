@@ -1,5 +1,6 @@
 ---
 article_id: content-projection
+description: Content projection passes markup written between a component's tags into its template, the Angular equivalent of a web component slot
 concept_folder: components/templates
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

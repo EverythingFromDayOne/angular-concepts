@@ -1,5 +1,6 @@
 ---
 recipe_id: "virtual-scrolling"
+description: "Rendering only the visible window keeps a ten-thousand row list responsive, provided tracking and viewport height are set correctly"
 primary_concept: "components/components"
 related_concepts: ["reactivity/signals", "http/http", "components/standalone-components"]
 demo_repo: null

@@ -1,5 +1,6 @@
 ---
 recipe_id: "async-validation"
+description: "A server-backed availability check needs debouncing, deduplication, and explicit pending states or the field flickers and hangs"
 primary_concept: "forms/validation"
 related_concepts: ["forms/reactive-forms", "reactivity/rxjs/rxjs-higher-order", "reactivity/signals", "http/http"]
 demo_repo: null

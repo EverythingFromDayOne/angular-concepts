@@ -1,5 +1,6 @@
 ---
 article_id: rxjs-filtering
+description: Filtering operators drop values on their way through a stream, the Observable counterpart to filtering an array
 concept_folder: reactivity/rxjs
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

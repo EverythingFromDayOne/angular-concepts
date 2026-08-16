@@ -1,5 +1,6 @@
 ---
 article_id: routing
+description: The router still maps a config tree onto outlets, but provideRouter replaced RouterModule.forRoot and the routing module around it
 concept_folder: routing
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

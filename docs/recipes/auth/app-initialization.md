@@ -1,5 +1,6 @@
 ---
 recipe_id: "app-initialization"
+description: "A silent refresh call before the app renders is what keeps in-memory tokens from logging users out on every page reload"
 primary_concept: "routing/routing"
 related_concepts: ["dependency-injection/dependency-injection", "http/http", "reactivity/signals"]
 demo_repo: null

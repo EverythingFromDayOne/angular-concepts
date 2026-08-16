@@ -1,5 +1,6 @@
 ---
 article_id: template-driven-forms
+description: Template-driven forms build the model from directives in the template, with two-way binding keeping component state in sync
 concept_folder: forms
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

@@ -1,5 +1,6 @@
 ---
 article_id: ui-library-comparison
+description: Angular Material is the safest long-term bet, while PrimeNG, NG-ZORRO, and the commercial suites win on breadth or data-heavy grids
 concept_folder: components/styling
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

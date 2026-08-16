@@ -1,5 +1,6 @@
 ---
 article_id: dynamic-components
+description: Runtime component creation survived intact but its API did not, and setInput is now required for signal inputs to react
 concept_folder: components
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

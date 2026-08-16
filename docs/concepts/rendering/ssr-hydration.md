@@ -1,5 +1,6 @@
 ---
 article_id: ssr-hydration
+description: Server rendering ships HTML the browser paints immediately, and hydration reuses that DOM instead of discarding and rebuilding it
 concept_folder: rendering
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

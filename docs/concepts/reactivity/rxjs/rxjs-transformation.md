@@ -1,5 +1,6 @@
 ---
 article_id: rxjs-transformation
+description: Pipeable operators return a new Observable instead of mutating the source, and transformation operators reshape each value in flight
 concept_folder: reactivity/rxjs
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

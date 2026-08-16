@@ -1,5 +1,6 @@
 ---
 article_id: router-outlets
+description: An outlet marks where the matched component is inserted, and named outlets let independent sections update from a single URL
 concept_folder: routing
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

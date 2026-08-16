@@ -1,5 +1,6 @@
 ---
 article_id: http
+description: HttpClient is a typed layer over the browser's Fetch API with an interceptor pipeline every request and response passes through
 concept_folder: http
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

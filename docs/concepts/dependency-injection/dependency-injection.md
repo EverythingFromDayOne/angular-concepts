@@ -1,5 +1,6 @@
 ---
 article_id: dependency-injection
+description: The DI mental model is unchanged since Angular 9, but inject() now reaches places a constructor cannot, like guards and interceptors
 concept_folder: dependency-injection
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

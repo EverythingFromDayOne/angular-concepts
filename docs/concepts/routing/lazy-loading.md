@@ -1,5 +1,6 @@
 ---
 article_id: lazy-loading
+description: Lazy loading defers a feature's code until someone navigates to it, so the initial bundle carries only what the first screen needs
 concept_folder: routing
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

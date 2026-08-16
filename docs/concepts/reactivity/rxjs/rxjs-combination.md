@@ -1,5 +1,6 @@
 ---
 article_id: rxjs-combination
+description: Combination operators merge several Observables into one, and choosing between forkJoin, combineLatest, and zip is a timing decision
 concept_folder: reactivity/rxjs
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

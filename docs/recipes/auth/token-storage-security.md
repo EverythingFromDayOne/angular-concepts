@@ -1,5 +1,6 @@
 ---
 recipe_id: "token-storage-security"
+description: "Access tokens belong in memory and refresh tokens in an HttpOnly cookie, because anything in localStorage is readable by any script"
 primary_concept: "http/http"
 related_concepts: ["dependency-injection/dependency-injection", "reactivity/signals", "http/interceptors"]
 demo_repo: null

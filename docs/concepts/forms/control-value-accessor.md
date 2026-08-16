@@ -1,5 +1,6 @@
 ---
 article_id: control-value-accessor
+description: Reactive forms warn against the disabled attribute in templates, and a small directive is the supported way to keep disabling declarative
 concept_folder: forms
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

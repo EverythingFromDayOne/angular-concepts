@@ -1,5 +1,6 @@
 ---
 article_id: ngrx-signal-store
+description: Signal Store keeps the NgRx family but drops the Redux ceremony, replacing actions and reducers with state signals and methods
 concept_folder: state-management
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

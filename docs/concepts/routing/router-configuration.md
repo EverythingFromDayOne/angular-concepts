@@ -1,5 +1,6 @@
 ---
 article_id: router-configuration
+description: Child routes and per-feature route files keep a growing app's routing config from collapsing into one flat list at the root
 concept_folder: routing
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

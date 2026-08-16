@@ -1,5 +1,6 @@
 ---
 article_id: ng-template-ng-container
+description: ng-template stores markup that never renders where it is defined, and ngTemplateOutlet decides when and where it lands
 concept_folder: directives
 angular_baseline: "22.1.1"
 verified_against: "@angular/core@22.1.1"

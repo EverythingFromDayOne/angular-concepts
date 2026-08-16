@@ -1,5 +1,6 @@
 ---
 recipe_id: "websocket-real-time"
+description: "One shared connection with backoff reconnection and a heartbeat is what separates a working real-time layer from a demo"
 primary_concept: "http/http"
 related_concepts: ["reactivity/signals", "reactivity/rxjs/rxjs", "dependency-injection/dependency-injection"]
 demo_repo: null
