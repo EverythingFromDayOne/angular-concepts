@@ -237,7 +237,7 @@ Recipes cross-reference densely. Foundational recipes (heaviest in-degree):
 
 ### Article structure (concept articles)
 
-1. Frontmatter (recipe_id, related concepts, baseline version)
+1. Frontmatter (article_id, description, related concepts, baseline version)
 2. Lead-with-this callout (one-paragraph hook)
 3. What it is
 4. How it works under the hood (old-vs-new mechanism)
@@ -249,7 +249,7 @@ Recipes cross-reference densely. Foundational recipes (heaviest in-degree):
 
 ### Recipe structure
 
-1. Frontmatter
+1. Frontmatter (recipe_id, description)
 2. "What you'll build" callout (scenario summary)
 3. The scenario (concrete failure mode)
 4. Walkthrough (multi-stage if complex)
